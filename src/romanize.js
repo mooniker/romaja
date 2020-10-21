@@ -1,14 +1,5 @@
-const hangulPattern = require('./hangul/unicode/hangulPattern')
 const { decomposeHangul } = require('./hangul/unicode/decompose')
 const jamos = require('./jamo')
-
-/**
- * Transforms a given string by replacing each Hangul character-containing substring with romaja
- * @param {string} text
- * @param {Object} options
- */
-const romanize = (text, options) =>
-  text.replace(hangulPattern, word => romanizeWord(word, options))
 
 const getJamoDictionary = (jamo, idx) =>
   jamos[idx].find(o => o.jamo === jamo) ||
@@ -122,4 +113,4 @@ function romanizeWord (word, options = {}) {
     : mappedToRoman.replace(/-$/, '')
 }
 
-module.exports = { searchJamo, syllableParser, romanizeWord, romanize }
+module.exports = { searchJamo, syllableParser, romanizeWord }

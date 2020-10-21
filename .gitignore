@@ -83,3 +83,5 @@ typings/
 
 # Misc.
 .history/
+
+dist/
