@@ -95,9 +95,15 @@ const syllableParser = method =>
     })
   }
 
-const romanizeWord = (word, options) => {
-  const { method = 'RR', hyphenate = method === 'RRT' || undefined } =
-    typeof options === 'object' ? options : {}
+/**
+ * Transform a Hangul encoded string to Roman equivalent
+ * @param {string} word
+ * @param {Object} options
+ * @param {string} [options.method]
+ * @param {boolean} [options.hyphenate]
+ */
+function romanizeWord (word, options = {}) {
+  const { method = 'RR', hyphenate = method === 'RRT' || undefined } = options
 
   const mappedToRoman = decomposeHangul(word)
     .map(syllableParser(method))
