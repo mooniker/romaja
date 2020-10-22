@@ -4,7 +4,8 @@
   "description": "String conversion utility to romanize Korean characters",
   "main": "dist/main.js",
   "files": [
-    "dist/**"
+    "dist/**",
+    "src/cli.js"
   ],
   "scripts": {
     "cli": "node src/cli.js",
