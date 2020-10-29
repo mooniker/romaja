@@ -2,19 +2,16 @@
   "name": "romaja",
   "version": "0.2.4",
   "description": "String conversion utility to romanize Korean characters",
-  "main": "dist/main.js",
-  "files": [
-    "dist/**",
-    "src/cli.js"
-  ],
+  "main": "./dist/main.js",
   "scripts": {
-    "cli": "node src/cli.js",
+    "cli": "node bin/cli.js",
     "test": "modern test",
     "test:coverage": "modern test --coverage",
     "format": "modern format",
     "lint": "modern lint",
     "precommit": "modern precommit",
-    "build": "webpack"
+    "prepare": "webpack --target node",
+    "build": "webpack --color --progress --target node --mode development"
   },
   "keywords": [
     "alphabet",
@@ -55,7 +52,7 @@
   },
   "dependencies": {},
   "bin": {
-    "romaja": "./src/cli.js"
+    "romaja": "./bin/cli.js"
   },
   "repository": {
     "type": "git",
