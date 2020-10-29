@@ -46,11 +46,12 @@
     "@types/jest": "^26.0.15",
     "modern-node": "^2.9.0",
     "prettier-standard": "^16.4.1",
-    "unicode": "^12.1.0",
     "webpack": "^5.1.3",
     "webpack-cli": "^4.1.0"
   },
-  "dependencies": {},
+  "dependencies": {
+    "unicode": "^12.1.0"
+  },
   "bin": {
     "romaja": "./bin/cli.js"
   },
