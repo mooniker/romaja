@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-const romanize = require('./')
+const romanize = require('../dist/main.js')
 
 const { argv } = process
 
