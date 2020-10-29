@@ -1,301 +1,304 @@
-// "...what have the Romans ever done for us?"
+const isHangul = require('./hangul/isHangul')
 
-const isHangul = require("./hangul/isHangul");
 const fromPairs = pairs =>
   pairs.reduce((cache, pair) => {
-    cache[pair[0]] = pair[1];
-    return cache;
-  }, {});
+    cache[pair[0]] = pair[1]
+    return cache
+  }, {})
 
 const [
   initialConsonants,
   medialVowels,
   finalConsonants
-] = require("./hangul/unicode/hangul-jamo");
+] = require('./hangul/unicode/hangul-jamo')
 
+/**
+ * Create a map function for a given unicode jamo/letter type (initial/middle/last)...
+ * @param {Object[]} jamoSet
+ * @returns {Function}
+ */
 const jamoMapper = jamoSet => ({ jamo, roman }, idx) => {
-  const unicodeJamo = jamoSet[idx].jamo;
+  const unicodeJamo = jamoSet[idx].jamo
 
   const compatJamo =
     jamo &&
     jamo !== unicodeJamo &&
-    isHangul(jamo) === "HANGUL_COMPATIBILITY_JAMO"
+    isHangul(jamo) === 'HANGUL_COMPATIBILITY_JAMO'
       ? jamo
-      : undefined;
+      : undefined
 
   const compatJamoHex = compatJamo
     ? compatJamo.codePointAt(0).toString(16)
-    : undefined;
+    : undefined
 
-  return Object.assign(jamoSet[idx], { roman, compatJamo, compatJamoHex });
-};
+  return Object.assign(jamoSet[idx], { roman, compatJamo, compatJamoHex })
+}
 
 // initial consonants
 const choseong = [
-  { jamo: "ㄱ", roman: { default: "g", MR: "k" } },
-  { jamo: "ㄲ", roman: "kk" },
+  { jamo: 'ㄱ', roman: { default: 'g', MR: 'k' } },
+  { jamo: 'ㄲ', roman: 'kk' },
   {
-    jamo: "ㄴ",
+    jamo: 'ㄴ',
     roman: {
-      default: "n",
-      ㄹ: "l",
-      [String.fromCodePoint(4527)]: "l"
+      default: 'n',
+      ㄹ: 'l',
+      [String.fromCodePoint(4527)]: 'l'
     }
   },
   {
-    jamo: "ㄷ",
+    jamo: 'ㄷ',
     roman: {
-      default: "d",
-      ㄵ: "dd",
+      default: 'd',
+      ㄵ: 'dd',
       // ㄶ: "",
-      ㄼ: "dd"
+      ㄼ: 'dd'
     }
   },
-  { jamo: "ㄸ", roman: "tt" },
+  { jamo: 'ㄸ', roman: 'tt' },
   {
-    jamo: "ㄹ", // initial
+    jamo: 'ㄹ', // initial
     roman: {
-      default: "r",
+      default: 'r',
       // ㄱ
-      ㄴ: "l",
-      [String.fromCodePoint(0x11ab)]: "l",
-      [String.fromCodePoint(4527)]: "l",
-      ㄷ: "n",
-      ㄹ: "l",
-      ㅁ: "n",
-      ㅂ: "n",
-      [String.fromCodePoint(4536)]: "n",
-      ㅅ: "n",
-      ㅇ: "n",
-      [String.fromCodePoint(4540)]: "n",
-      ㅈ: "n",
-      ㅊ: "n",
-      ㅌ: "n",
-      ㅎ: "n",
-      RRT: "l"
+      ㄴ: 'l',
+      [String.fromCodePoint(0x11ab)]: 'l',
+      [String.fromCodePoint(4527)]: 'l',
+      ㄷ: 'n',
+      ㄹ: 'l',
+      ㅁ: 'n',
+      ㅂ: 'n',
+      [String.fromCodePoint(4536)]: 'n',
+      ㅅ: 'n',
+      ㅇ: 'n',
+      [String.fromCodePoint(4540)]: 'n',
+      ㅈ: 'n',
+      ㅊ: 'n',
+      ㅌ: 'n',
+      ㅎ: 'n',
+      RRT: 'l'
     }
   },
-  { jamo: "ㅁ", roman: "m" },
-  { jamo: "ㅂ", roman: "b" },
-  { jamo: "ㅃ", roman: "pp" },
-  { jamo: "ㅅ", roman: "s" },
-  { jamo: "ㅆ", roman: "ss" },
+  { jamo: 'ㅁ', roman: 'm' },
+  { jamo: 'ㅂ', roman: 'b' },
+  { jamo: 'ㅃ', roman: 'pp' },
+  { jamo: 'ㅅ', roman: 's' },
+  { jamo: 'ㅆ', roman: 'ss' },
   {
-    jamo: "ㅇ",
+    jamo: 'ㅇ',
     roman: {
-      default: "",
-      ㄵ: "j",
+      default: '',
+      ㄵ: 'j',
       // ㄶ: "",
-      ㄼ: "b"
+      ㄼ: 'b'
     }
   },
-  { jamo: "ㅈ", roman: "j" },
-  { jamo: "ㅉ", roman: "jj" },
-  { jamo: "ㅊ", roman: "ch" },
+  { jamo: 'ㅈ', roman: 'j' },
+  { jamo: 'ㅉ', roman: 'jj' },
+  { jamo: 'ㅊ', roman: 'ch' },
   {
-    jamo: "ㅋ",
+    jamo: 'ㅋ',
     roman: {
-      default: "k",
+      default: 'k',
       MR: "k'"
     }
   },
-  { jamo: "ㅌ", roman: "t" },
-  { jamo: "ㅍ", roman: "p" },
-  { jamo: "ㅎ", roman: "h" }
-].map(jamoMapper(initialConsonants));
+  { jamo: 'ㅌ', roman: 't' },
+  { jamo: 'ㅍ', roman: 'p' },
+  { jamo: 'ㅎ', roman: 'h' }
+].map(jamoMapper(initialConsonants))
 
 // medial vowels
 const jungseong = [
-  { jamo: "ㅏ", roman: "a", bright: true },
-  { jamo: "ㅐ", roman: "ae", bright: true },
-  { jamo: "ㅑ", roman: "ya", dark: true },
-  { jamo: "ㅒ", roman: "yae", bright: true },
-  { jamo: "ㅓ", roman: "eo", dark: true },
-  { jamo: "ㅔ", roman: "e", dark: true },
-  { jamo: "ㅕ", roman: "yeo", dark: true },
-  { jamo: "ㅖ", roman: "ye", dark: true },
-  { jamo: "ㅗ", roman: "o", bright: true },
-  { jamo: "ㅘ", roman: "wa", bright: true },
-  { jamo: "ㅙ", roman: "wae", bright: true },
-  { jamo: "ㅚ", roman: "woe", bright: true },
-  { jamo: "ㅛ", roman: "yo", bright: true },
-  { jamo: "ㅜ", roman: "u", dark: true },
-  { jamo: "ㅝ", roman: "wo", dark: true },
-  { jamo: "ㅞ", roman: "we", dark: true },
-  { jamo: "ㅟ", roman: "wi", dark: true },
-  { jamo: "ㅠ", roman: "yu", dark: true },
-  { jamo: "ㅡ", roman: "eu" },
-  { jamo: "ㅢ", roman: "ui" },
-  { jamo: "ㅣ", roman: "i" }
-].map(jamoMapper(medialVowels));
+  { jamo: 'ㅏ', roman: 'a', bright: true },
+  { jamo: 'ㅐ', roman: 'ae', bright: true },
+  { jamo: 'ㅑ', roman: 'ya', dark: true },
+  { jamo: 'ㅒ', roman: 'yae', bright: true },
+  { jamo: 'ㅓ', roman: 'eo', dark: true },
+  { jamo: 'ㅔ', roman: 'e', dark: true },
+  { jamo: 'ㅕ', roman: 'yeo', dark: true },
+  { jamo: 'ㅖ', roman: 'ye', dark: true },
+  { jamo: 'ㅗ', roman: 'o', bright: true },
+  { jamo: 'ㅘ', roman: 'wa', bright: true },
+  { jamo: 'ㅙ', roman: 'wae', bright: true },
+  { jamo: 'ㅚ', roman: 'woe', bright: true },
+  { jamo: 'ㅛ', roman: 'yo', bright: true },
+  { jamo: 'ㅜ', roman: 'u', dark: true },
+  { jamo: 'ㅝ', roman: 'wo', dark: true },
+  { jamo: 'ㅞ', roman: 'we', dark: true },
+  { jamo: 'ㅟ', roman: 'wi', dark: true },
+  { jamo: 'ㅠ', roman: 'yu', dark: true },
+  { jamo: 'ㅡ', roman: 'eu' },
+  { jamo: 'ㅢ', roman: 'ui' },
+  { jamo: 'ㅣ', roman: 'i' }
+].map(jamoMapper(medialVowels))
 
-const assimilate = (jamos, sound) =>
-  fromPairs(jamos.map(jamo => [jamo, sound]));
+const assimilate = (jamos, sound) => fromPairs(jamos.map(jamo => [jamo, sound]))
 
 const nasalAssimilators = [
-  "ㄴ",
+  'ㄴ',
   String.fromCodePoint(0x1102),
-  "n",
-  "ㅁ",
+  'n',
+  'ㅁ',
   String.fromCodePoint(0x1106),
-  "m",
-  "ㅇ",
+  'm',
+  'ㅇ',
   String.fromCodePoint(0x110b)
-];
+]
 
 // nasal assimilation/nasalization when followed by ㅁ, ㄴ
 const nasalAssimilation = {
-  // 	ㅂ ㅍ ㅄ ㄿ ㄼ => ㅁ
-  trailingBM: assimilate(nasalAssimilators, "m"),
+  // ㅂ ㅍ ㅄ ㄿ ㄼ => ㅁ
+  trailingBM: assimilate(nasalAssimilators, 'm'),
   // ㄷ ㅌ ㅈ ㅊ ㅅ ㅆ ㅎ => ㄴ
-  trailingDN: assimilate(nasalAssimilators, "n"),
+  trailingDN: assimilate(nasalAssimilators, 'n'),
   // ㄱ ㅋ ㄲ ㄳ ㄺ => ㅇ
-  trailingGNg: assimilate(nasalAssimilators, "ng")
-};
+  trailingGNg: assimilate(nasalAssimilators, 'ng')
+}
 
 // final consonants
 const jongseong = [
-  { jamo: null, roman: "" },
+  { jamo: null, roman: '' },
   {
-    jamo: "ㄱ",
+    jamo: 'ㄱ',
     roman: {
-      default: "k",
-      vowelNext: "g",
-      ㄹ: "ng",
-      [String.fromCodePoint(0x1105)]: "ng",
+      default: 'k',
+      vowelNext: 'g',
+      ㄹ: 'ng',
+      [String.fromCodePoint(0x1105)]: 'ng',
       ...nasalAssimilation.trailingGNg,
-      RRT: "g"
+      RRT: 'g'
     }
   },
   {
-    jamo: "ㄲ",
-    roman: { default: "kk", RRT: "kk", ...nasalAssimilation.trailingGNg }
+    jamo: 'ㄲ',
+    roman: { default: 'kk', RRT: 'kk', ...nasalAssimilation.trailingGNg }
   },
-  { jamo: "ㄳ", roman: { default: "k", ...nasalAssimilation.trailingGNg } },
+  { jamo: 'ㄳ', roman: { default: 'k', ...nasalAssimilation.trailingGNg } },
   {
-    jamo: "ㄴ", // final
+    jamo: 'ㄴ', // final
     roman: {
-      default: "n",
-      ㄱ: "n",
-      [String.fromCodePoint(0x1100)]: "n",
-      ㄹ: "l",
-      [String.fromCodePoint(4357)]: "l"
+      default: 'n',
+      ㄱ: 'n',
+      [String.fromCodePoint(0x1100)]: 'n',
+      ㄹ: 'l',
+      [String.fromCodePoint(4357)]: 'l'
     }
   },
-  { jamo: "ㄵ", roman: "n" },
-  { jamo: "ㄶ", roman: "n" },
+  { jamo: 'ㄵ', roman: 'n' },
+  { jamo: 'ㄶ', roman: 'n' },
   {
-    jamo: "ㄷ",
+    jamo: 'ㄷ',
     roman: {
-      default: "t",
-      vowelNext: "d",
-      ㄹ: "n",
+      default: 't',
+      vowelNext: 'd',
+      ㄹ: 'n',
       ...nasalAssimilation.trailingDN,
-      RRT: "d"
+      RRT: 'd'
     }
   },
   {
-    jamo: "ㄹ",
-    roman: { default: "l", RRT: "l", vowelNext: "r", ㄴ: "l", ㄹ: "l" }
+    jamo: 'ㄹ',
+    roman: { default: 'l', RRT: 'l', vowelNext: 'r', ㄴ: 'l', ㄹ: 'l' }
   },
   {
-    jamo: "ㄺ",
-    roman: { default: "r", vowelNext: "lg", ...nasalAssimilation.trailingGNg }
+    jamo: 'ㄺ',
+    roman: { default: 'r', vowelNext: 'lg', ...nasalAssimilation.trailingGNg }
   },
-  { jamo: "ㄻ", roman: "lm" },
-  { jamo: "ㄼ", roman: { default: "lb", ...nasalAssimilation.trailingBM } },
-  { jamo: "ㄽ", roman: "ls" },
-  { jamo: "ㄾ", roman: "lt" },
-  { jamo: "ㄿ", roman: { default: "lp", ...nasalAssimilation.trailingBM } },
-  { jamo: "ㅀ", roman: "lh" },
-  { jamo: "ㅁ", roman: "m" },
+  { jamo: 'ㄻ', roman: 'lm' },
+  { jamo: 'ㄼ', roman: { default: 'lb', ...nasalAssimilation.trailingBM } },
+  { jamo: 'ㄽ', roman: 'ls' },
+  { jamo: 'ㄾ', roman: 'lt' },
+  { jamo: 'ㄿ', roman: { default: 'lp', ...nasalAssimilation.trailingBM } },
+  { jamo: 'ㅀ', roman: 'lh' },
+  { jamo: 'ㅁ', roman: 'm' },
   {
-    jamo: "ㅂ",
+    jamo: 'ㅂ',
     roman: {
-      default: "p",
-      vowelNext: "b",
-      ㄹ: "m",
-      [String.fromCodePoint(0x1105)]: "m", // ㄹ
+      default: 'p',
+      vowelNext: 'b',
+      ㄹ: 'm',
+      [String.fromCodePoint(0x1105)]: 'm', // ㄹ
       ...nasalAssimilation.trailingBM,
-      RRT: "b"
+      RRT: 'b'
     }
   },
   {
-    jamo: "ㅄ",
-    roman: { default: "bs", RRT: "bs", ...nasalAssimilation.trailingBM }
+    jamo: 'ㅄ',
+    roman: { default: 'bs', RRT: 'bs', ...nasalAssimilation.trailingBM }
   },
   {
-    jamo: "ㅅ",
+    jamo: 'ㅅ',
     roman: {
-      default: "t",
-      vowelNext: "s",
-      ㄹ: "n",
+      default: 't',
+      vowelNext: 's',
+      ㄹ: 'n',
       ...nasalAssimilation.trailingDN,
-      RRT: "s"
+      RRT: 's'
     }
   },
   {
-    jamo: "ㅆ",
+    jamo: 'ㅆ',
     roman: {
-      default: "ss",
+      default: 'ss',
       ...nasalAssimilation.trailingDN
     }
   },
   {
-    jamo: "ㅇ",
+    jamo: 'ㅇ',
     roman: {
-      default: "ng",
-      vowelNext: "ng-"
+      default: 'ng',
+      vowelNext: 'ng-'
     }
   },
   {
-    jamo: "ㅈ",
+    jamo: 'ㅈ',
     roman: {
-      default: "t",
-      vowelNext: "j",
-      ㄹ: "n",
+      default: 't',
+      vowelNext: 'j',
+      ㄹ: 'n',
       ...nasalAssimilation.trailingDN
     }
   },
   {
-    jamo: "ㅊ",
+    jamo: 'ㅊ',
     roman: {
-      default: "t",
-      vowelNext: "ch",
-      ㄱ: "n",
-      ㄹ: "n",
+      default: 't',
+      vowelNext: 'ch',
+      ㄱ: 'n',
+      ㄹ: 'n',
       ...nasalAssimilation.trailingDN,
-      RRT: "ch"
+      RRT: 'ch'
     }
   },
   {
-    jamo: "ㅋ",
+    jamo: 'ㅋ',
     roman: {
-      default: "k",
-      RRT: "k",
+      default: 'k',
+      RRT: 'k',
       ...nasalAssimilation.trailingGNg
     }
   },
   {
-    jamo: "ㅌ",
+    jamo: 'ㅌ',
     roman: {
-      default: "t",
-      ㄹ: "n",
+      default: 't',
+      ㄹ: 'n',
       ...nasalAssimilation.trailingDN
     }
   },
-  { jamo: "ㅍ", roman: { default: "p", ...nasalAssimilation.trailingBM } },
+  { jamo: 'ㅍ', roman: { default: 'p', ...nasalAssimilation.trailingBM } },
   {
-    jamo: "ㅎ",
+    jamo: 'ㅎ',
     roman: {
-      default: "t",
-      vowelNext: "h",
-      ㄱ: "n",
-      ㄹ: "n",
-      ㅁ: "n",
-      RRT: "h"
+      default: 't',
+      vowelNext: 'h',
+      ㄱ: 'n',
+      ㄹ: 'n',
+      ㅁ: 'n',
+      RRT: 'h'
     }
   }
-].map(jamoMapper(finalConsonants));
+].map(jamoMapper(finalConsonants))
 
-module.exports = [choseong, jungseong, jongseong];
+module.exports = [choseong, jungseong, jongseong]
