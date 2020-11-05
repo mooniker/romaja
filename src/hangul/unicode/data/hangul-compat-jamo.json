@@ -1,0 +1,1464 @@
+[
+  {
+    "jamo": "ㄱ",
+    "archaic": false,
+    "mapsTo": "ᄀ",
+    "unicodeData": {
+      "value": "3131",
+      "name": "HANGUL LETTER KIYEOK",
+      "category": "Lo",
+      "class": "0",
+      "bidirectionalCategory": "L",
+      "mapping": "<compat> 1100",
+      "mirrored": "N",
+      "unicodeName": "HANGUL LETTER GIYEOG",
+      "symbol": "ㄱ"
+    }
+  },
+  {
+    "jamo": "ㄲ",
+    "archaic": false,
+    "mapsTo": "ᄁ",
+    "unicodeData": {
+      "value": "3132",
+      "name": "HANGUL LETTER SSANGKIYEOK",
+      "category": "Lo",
+      "class": "0",
+      "bidirectionalCategory": "L",
+      "mapping": "<compat> 1101",
+      "mirrored": "N",
+      "unicodeName": "HANGUL LETTER SSANG GIYEOG",
+      "symbol": "ㄲ"
+    }
+  },
+  {
+    "jamo": "ㄳ",
+    "archaic": false,
+    "mapsTo": "ᆪ",
+    "unicodeData": {
+      "value": "3133",
+      "name": "HANGUL LETTER KIYEOK-SIOS",
+      "category": "Lo",
+      "class": "0",
+      "bidirectionalCategory": "L",
+      "mapping": "<compat> 11AA",
+      "mirrored": "N",
+      "unicodeName": "HANGUL LETTER GIYEOG SIOS",
+      "symbol": "ㄳ"
+    }
+  },
+  {
+    "jamo": "ㄴ",
+    "archaic": false,
+    "mapsTo": "ᄂ",
+    "unicodeData": {
+      "value": "3134",
+      "name": "HANGUL LETTER NIEUN",
+      "category": "Lo",
+      "class": "0",
+      "bidirectionalCategory": "L",
+      "mapping": "<compat> 1102",
+      "mirrored": "N",
+      "symbol": "ㄴ"
+    }
+  },
+  {
+    "jamo": "ㄵ",
+    "archaic": false,
+    "mapsTo": "ᆬ",
+    "unicodeData": {
+      "value": "3135",
+      "name": "HANGUL LETTER NIEUN-CIEUC",
+      "category": "Lo",
+      "class": "0",
+      "bidirectionalCategory": "L",
+      "mapping": "<compat> 11AC",
+      "mirrored": "N",
+      "unicodeName": "HANGUL LETTER NIEUN JIEUJ",
+      "symbol": "ㄵ"
+    }
+  },
+  {
+    "jamo": "ㄶ",
+    "archaic": false,
+    "mapsTo": "ᆭ",
+    "unicodeData": {
+      "value": "3136",
+      "name": "HANGUL LETTER NIEUN-HIEUH",
+      "category": "Lo",
+      "class": "0",
+      "bidirectionalCategory": "L",
+      "mapping": "<compat> 11AD",
+      "mirrored": "N",
+      "unicodeName": "HANGUL LETTER NIEUN HIEUH",
+      "symbol": "ㄶ"
+    }
+  },
+  {
+    "jamo": "ㄷ",
+    "archaic": false,
+    "mapsTo": "ᄃ",
+    "unicodeData": {
+      "value": "3137",
+      "name": "HANGUL LETTER TIKEUT",
+      "category": "Lo",
+      "class": "0",
+      "bidirectionalCategory": "L",
+      "mapping": "<compat> 1103",
+      "mirrored": "N",
+      "unicodeName": "HANGUL LETTER DIGEUD",
+      "symbol": "ㄷ"
+    }
+  },
+  {
+    "jamo": "ㄸ",
+    "archaic": false,
+    "mapsTo": "ᄄ",
+    "unicodeData": {
+      "value": "3138",
+      "name": "HANGUL LETTER SSANGTIKEUT",
+      "category": "Lo",
+      "class": "0",
+      "bidirectionalCategory": "L",
+      "mapping": "<compat> 1104",
+      "mirrored": "N",
+      "unicodeName": "HANGUL LETTER SSANG DIGEUD",
+      "symbol": "ㄸ"
+    }
+  },
+  {
+    "jamo": "ㄹ",
+    "archaic": false,
+    "mapsTo": "ᄅ",
+    "unicodeData": {
+      "value": "3139",
+      "name": "HANGUL LETTER RIEUL",
+      "category": "Lo",
+      "class": "0",
+      "bidirectionalCategory": "L",
+      "mapping": "<compat> 1105",
+      "mirrored": "N",
+      "unicodeName": "HANGUL LETTER LIEUL",
+      "symbol": "ㄹ"
+    }
+  },
+  {
+    "jamo": "ㄺ",
+    "archaic": false,
+    "mapsTo": "ᆰ",
+    "unicodeData": {
+      "value": "313A",
+      "name": "HANGUL LETTER RIEUL-KIYEOK",
+      "category": "Lo",
+      "class": "0",
+      "bidirectionalCategory": "L",
+      "mapping": "<compat> 11B0",
+      "mirrored": "N",
+      "unicodeName": "HANGUL LETTER LIEUL GIYEOG",
+      "symbol": "ㄺ"
+    }
+  },
+  {
+    "jamo": "ㄻ",
+    "archaic": false,
+    "mapsTo": "ᆱ",
+    "unicodeData": {
+      "value": "313B",
+      "name": "HANGUL LETTER RIEUL-MIEUM",
+      "category": "Lo",
+      "class": "0",
+      "bidirectionalCategory": "L",
+      "mapping": "<compat> 11B1",
+      "mirrored": "N",
+      "unicodeName": "HANGUL LETTER LIEUL MIEUM",
+      "symbol": "ㄻ"
+    }
+  },
+  {
+    "jamo": "ㄼ",
+    "archaic": false,
+    "mapsTo": "ᆲ",
+    "unicodeData": {
+      "value": "313C",
+      "name": "HANGUL LETTER RIEUL-PIEUP",
+      "category": "Lo",
+      "class": "0",
+      "bidirectionalCategory": "L",
+      "mapping": "<compat> 11B2",
+      "mirrored": "N",
+      "unicodeName": "HANGUL LETTER LIEUL BIEUB",
+      "symbol": "ㄼ"
+    }
+  },
+  {
+    "jamo": "ㄽ",
+    "archaic": false,
+    "mapsTo": "ᆳ",
+    "unicodeData": {
+      "value": "313D",
+      "name": "HANGUL LETTER RIEUL-SIOS",
+      "category": "Lo",
+      "class": "0",
+      "bidirectionalCategory": "L",
+      "mapping": "<compat> 11B3",
+      "mirrored": "N",
+      "unicodeName": "HANGUL LETTER LIEUL SIOS",
+      "symbol": "ㄽ"
+    }
+  },
+  {
+    "jamo": "ㄾ",
+    "archaic": false,
+    "mapsTo": "ᆴ",
+    "unicodeData": {
+      "value": "313E",
+      "name": "HANGUL LETTER RIEUL-THIEUTH",
+      "category": "Lo",
+      "class": "0",
+      "bidirectionalCategory": "L",
+      "mapping": "<compat> 11B4",
+      "mirrored": "N",
+      "unicodeName": "HANGUL LETTER LIEUL TIEUT",
+      "symbol": "ㄾ"
+    }
+  },
+  {
+    "jamo": "ㄿ",
+    "archaic": false,
+    "mapsTo": "ᆵ",
+    "unicodeData": {
+      "value": "313F",
+      "name": "HANGUL LETTER RIEUL-PHIEUPH",
+      "category": "Lo",
+      "class": "0",
+      "bidirectionalCategory": "L",
+      "mapping": "<compat> 11B5",
+      "mirrored": "N",
+      "unicodeName": "HANGUL LETTER LIEUL PIEUP",
+      "symbol": "ㄿ"
+    }
+  },
+  {
+    "jamo": "ㅀ",
+    "archaic": false,
+    "mapsTo": "ᄚ",
+    "unicodeData": {
+      "value": "3140",
+      "name": "HANGUL LETTER RIEUL-HIEUH",
+      "category": "Lo",
+      "class": "0",
+      "bidirectionalCategory": "L",
+      "mapping": "<compat> 111A",
+      "mirrored": "N",
+      "unicodeName": "HANGUL LETTER LIEUL HIEUH",
+      "symbol": "ㅀ"
+    }
+  },
+  {
+    "jamo": "ㅁ",
+    "archaic": false,
+    "mapsTo": "ᄆ",
+    "unicodeData": {
+      "value": "3141",
+      "name": "HANGUL LETTER MIEUM",
+      "category": "Lo",
+      "class": "0",
+      "bidirectionalCategory": "L",
+      "mapping": "<compat> 1106",
+      "mirrored": "N",
+      "symbol": "ㅁ"
+    }
+  },
+  {
+    "jamo": "ㅂ",
+    "archaic": false,
+    "mapsTo": "ᄇ",
+    "unicodeData": {
+      "value": "3142",
+      "name": "HANGUL LETTER PIEUP",
+      "category": "Lo",
+      "class": "0",
+      "bidirectionalCategory": "L",
+      "mapping": "<compat> 1107",
+      "mirrored": "N",
+      "unicodeName": "HANGUL LETTER BIEUB",
+      "symbol": "ㅂ"
+    }
+  },
+  {
+    "jamo": "ㅃ",
+    "archaic": false,
+    "mapsTo": "ᄈ",
+    "unicodeData": {
+      "value": "3143",
+      "name": "HANGUL LETTER SSANGPIEUP",
+      "category": "Lo",
+      "class": "0",
+      "bidirectionalCategory": "L",
+      "mapping": "<compat> 1108",
+      "mirrored": "N",
+      "unicodeName": "HANGUL LETTER SSANG BIEUB",
+      "symbol": "ㅃ"
+    }
+  },
+  {
+    "jamo": "ㅄ",
+    "archaic": false,
+    "mapsTo": "ᄡ",
+    "unicodeData": {
+      "value": "3144",
+      "name": "HANGUL LETTER PIEUP-SIOS",
+      "category": "Lo",
+      "class": "0",
+      "bidirectionalCategory": "L",
+      "mapping": "<compat> 1121",
+      "mirrored": "N",
+      "unicodeName": "HANGUL LETTER BIEUB SIOS",
+      "symbol": "ㅄ"
+    }
+  },
+  {
+    "jamo": "ㅅ",
+    "archaic": false,
+    "mapsTo": "ᄉ",
+    "unicodeData": {
+      "value": "3145",
+      "name": "HANGUL LETTER SIOS",
+      "category": "Lo",
+      "class": "0",
+      "bidirectionalCategory": "L",
+      "mapping": "<compat> 1109",
+      "mirrored": "N",
+      "symbol": "ㅅ"
+    }
+  },
+  {
+    "jamo": "ㅆ",
+    "archaic": false,
+    "mapsTo": "ᄊ",
+    "unicodeData": {
+      "value": "3146",
+      "name": "HANGUL LETTER SSANGSIOS",
+      "category": "Lo",
+      "class": "0",
+      "bidirectionalCategory": "L",
+      "mapping": "<compat> 110A",
+      "mirrored": "N",
+      "unicodeName": "HANGUL LETTER SSANG SIOS",
+      "symbol": "ㅆ"
+    }
+  },
+  {
+    "jamo": "ㅇ",
+    "archaic": false,
+    "mapsTo": "ᄋ",
+    "unicodeData": {
+      "value": "3147",
+      "name": "HANGUL LETTER IEUNG",
+      "category": "Lo",
+      "class": "0",
+      "bidirectionalCategory": "L",
+      "mapping": "<compat> 110B",
+      "mirrored": "N",
+      "symbol": "ㅇ"
+    }
+  },
+  {
+    "jamo": "ㅈ",
+    "archaic": false,
+    "mapsTo": "ᄌ",
+    "unicodeData": {
+      "value": "3148",
+      "name": "HANGUL LETTER CIEUC",
+      "category": "Lo",
+      "class": "0",
+      "bidirectionalCategory": "L",
+      "mapping": "<compat> 110C",
+      "mirrored": "N",
+      "unicodeName": "HANGUL LETTER JIEUJ",
+      "symbol": "ㅈ"
+    }
+  },
+  {
+    "jamo": "ㅉ",
+    "archaic": false,
+    "mapsTo": "ᄍ",
+    "unicodeData": {
+      "value": "3149",
+      "name": "HANGUL LETTER SSANGCIEUC",
+      "category": "Lo",
+      "class": "0",
+      "bidirectionalCategory": "L",
+      "mapping": "<compat> 110D",
+      "mirrored": "N",
+      "unicodeName": "HANGUL LETTER SSANG JIEUJ",
+      "symbol": "ㅉ"
+    }
+  },
+  {
+    "jamo": "ㅊ",
+    "archaic": false,
+    "mapsTo": "ᄎ",
+    "unicodeData": {
+      "value": "314A",
+      "name": "HANGUL LETTER CHIEUCH",
+      "category": "Lo",
+      "class": "0",
+      "bidirectionalCategory": "L",
+      "mapping": "<compat> 110E",
+      "mirrored": "N",
+      "unicodeName": "HANGUL LETTER CIEUC",
+      "symbol": "ㅊ"
+    }
+  },
+  {
+    "jamo": "ㅋ",
+    "archaic": false,
+    "mapsTo": "ᄏ",
+    "unicodeData": {
+      "value": "314B",
+      "name": "HANGUL LETTER KHIEUKH",
+      "category": "Lo",
+      "class": "0",
+      "bidirectionalCategory": "L",
+      "mapping": "<compat> 110F",
+      "mirrored": "N",
+      "unicodeName": "HANGUL LETTER KIYEOK",
+      "symbol": "ㅋ"
+    }
+  },
+  {
+    "jamo": "ㅌ",
+    "archaic": false,
+    "mapsTo": "ᄐ",
+    "unicodeData": {
+      "value": "314C",
+      "name": "HANGUL LETTER THIEUTH",
+      "category": "Lo",
+      "class": "0",
+      "bidirectionalCategory": "L",
+      "mapping": "<compat> 1110",
+      "mirrored": "N",
+      "unicodeName": "HANGUL LETTER TIEUT",
+      "symbol": "ㅌ"
+    }
+  },
+  {
+    "jamo": "ㅍ",
+    "archaic": false,
+    "mapsTo": "ᄑ",
+    "unicodeData": {
+      "value": "314D",
+      "name": "HANGUL LETTER PHIEUPH",
+      "category": "Lo",
+      "class": "0",
+      "bidirectionalCategory": "L",
+      "mapping": "<compat> 1111",
+      "mirrored": "N",
+      "unicodeName": "HANGUL LETTER PIEUP",
+      "symbol": "ㅍ"
+    }
+  },
+  {
+    "jamo": "ㅎ",
+    "archaic": false,
+    "mapsTo": "ᄒ",
+    "unicodeData": {
+      "value": "314E",
+      "name": "HANGUL LETTER HIEUH",
+      "category": "Lo",
+      "class": "0",
+      "bidirectionalCategory": "L",
+      "mapping": "<compat> 1112",
+      "mirrored": "N",
+      "symbol": "ㅎ"
+    }
+  },
+  {
+    "jamo": "ㅏ",
+    "archaic": false,
+    "mapsTo": "ᅡ",
+    "unicodeData": {
+      "value": "314F",
+      "name": "HANGUL LETTER A",
+      "category": "Lo",
+      "class": "0",
+      "bidirectionalCategory": "L",
+      "mapping": "<compat> 1161",
+      "mirrored": "N",
+      "symbol": "ㅏ"
+    }
+  },
+  {
+    "jamo": "ㅐ",
+    "archaic": false,
+    "mapsTo": "ᅢ",
+    "unicodeData": {
+      "value": "3150",
+      "name": "HANGUL LETTER AE",
+      "category": "Lo",
+      "class": "0",
+      "bidirectionalCategory": "L",
+      "mapping": "<compat> 1162",
+      "mirrored": "N",
+      "symbol": "ㅐ"
+    }
+  },
+  {
+    "jamo": "ㅑ",
+    "archaic": false,
+    "mapsTo": "ᅣ",
+    "unicodeData": {
+      "value": "3151",
+      "name": "HANGUL LETTER YA",
+      "category": "Lo",
+      "class": "0",
+      "bidirectionalCategory": "L",
+      "mapping": "<compat> 1163",
+      "mirrored": "N",
+      "symbol": "ㅑ"
+    }
+  },
+  {
+    "jamo": "ㅒ",
+    "archaic": false,
+    "mapsTo": "ᅤ",
+    "unicodeData": {
+      "value": "3152",
+      "name": "HANGUL LETTER YAE",
+      "category": "Lo",
+      "class": "0",
+      "bidirectionalCategory": "L",
+      "mapping": "<compat> 1164",
+      "mirrored": "N",
+      "symbol": "ㅒ"
+    }
+  },
+  {
+    "jamo": "ㅓ",
+    "archaic": false,
+    "mapsTo": "ᅥ",
+    "unicodeData": {
+      "value": "3153",
+      "name": "HANGUL LETTER EO",
+      "category": "Lo",
+      "class": "0",
+      "bidirectionalCategory": "L",
+      "mapping": "<compat> 1165",
+      "mirrored": "N",
+      "symbol": "ㅓ"
+    }
+  },
+  {
+    "jamo": "ㅔ",
+    "archaic": false,
+    "mapsTo": "ᅦ",
+    "unicodeData": {
+      "value": "3154",
+      "name": "HANGUL LETTER E",
+      "category": "Lo",
+      "class": "0",
+      "bidirectionalCategory": "L",
+      "mapping": "<compat> 1166",
+      "mirrored": "N",
+      "symbol": "ㅔ"
+    }
+  },
+  {
+    "jamo": "ㅕ",
+    "archaic": false,
+    "mapsTo": "ᅧ",
+    "unicodeData": {
+      "value": "3155",
+      "name": "HANGUL LETTER YEO",
+      "category": "Lo",
+      "class": "0",
+      "bidirectionalCategory": "L",
+      "mapping": "<compat> 1167",
+      "mirrored": "N",
+      "symbol": "ㅕ"
+    }
+  },
+  {
+    "jamo": "ㅖ",
+    "archaic": false,
+    "mapsTo": "ᅨ",
+    "unicodeData": {
+      "value": "3156",
+      "name": "HANGUL LETTER YE",
+      "category": "Lo",
+      "class": "0",
+      "bidirectionalCategory": "L",
+      "mapping": "<compat> 1168",
+      "mirrored": "N",
+      "symbol": "ㅖ"
+    }
+  },
+  {
+    "jamo": "ㅗ",
+    "archaic": false,
+    "mapsTo": "ᅩ",
+    "unicodeData": {
+      "value": "3157",
+      "name": "HANGUL LETTER O",
+      "category": "Lo",
+      "class": "0",
+      "bidirectionalCategory": "L",
+      "mapping": "<compat> 1169",
+      "mirrored": "N",
+      "symbol": "ㅗ"
+    }
+  },
+  {
+    "jamo": "ㅘ",
+    "archaic": false,
+    "mapsTo": "ᅪ",
+    "unicodeData": {
+      "value": "3158",
+      "name": "HANGUL LETTER WA",
+      "category": "Lo",
+      "class": "0",
+      "bidirectionalCategory": "L",
+      "mapping": "<compat> 116A",
+      "mirrored": "N",
+      "symbol": "ㅘ"
+    }
+  },
+  {
+    "jamo": "ㅙ",
+    "archaic": false,
+    "mapsTo": "ᅫ",
+    "unicodeData": {
+      "value": "3159",
+      "name": "HANGUL LETTER WAE",
+      "category": "Lo",
+      "class": "0",
+      "bidirectionalCategory": "L",
+      "mapping": "<compat> 116B",
+      "mirrored": "N",
+      "symbol": "ㅙ"
+    }
+  },
+  {
+    "jamo": "ㅚ",
+    "archaic": false,
+    "mapsTo": "ᅬ",
+    "unicodeData": {
+      "value": "315A",
+      "name": "HANGUL LETTER OE",
+      "category": "Lo",
+      "class": "0",
+      "bidirectionalCategory": "L",
+      "mapping": "<compat> 116C",
+      "mirrored": "N",
+      "symbol": "ㅚ"
+    }
+  },
+  {
+    "jamo": "ㅛ",
+    "archaic": false,
+    "mapsTo": "ᅭ",
+    "unicodeData": {
+      "value": "315B",
+      "name": "HANGUL LETTER YO",
+      "category": "Lo",
+      "class": "0",
+      "bidirectionalCategory": "L",
+      "mapping": "<compat> 116D",
+      "mirrored": "N",
+      "symbol": "ㅛ"
+    }
+  },
+  {
+    "jamo": "ㅜ",
+    "archaic": false,
+    "mapsTo": "ᅮ",
+    "unicodeData": {
+      "value": "315C",
+      "name": "HANGUL LETTER U",
+      "category": "Lo",
+      "class": "0",
+      "bidirectionalCategory": "L",
+      "mapping": "<compat> 116E",
+      "mirrored": "N",
+      "symbol": "ㅜ"
+    }
+  },
+  {
+    "jamo": "ㅝ",
+    "archaic": false,
+    "mapsTo": "ᅯ",
+    "unicodeData": {
+      "value": "315D",
+      "name": "HANGUL LETTER WEO",
+      "category": "Lo",
+      "class": "0",
+      "bidirectionalCategory": "L",
+      "mapping": "<compat> 116F",
+      "mirrored": "N",
+      "symbol": "ㅝ"
+    }
+  },
+  {
+    "jamo": "ㅞ",
+    "archaic": false,
+    "mapsTo": "ᅰ",
+    "unicodeData": {
+      "value": "315E",
+      "name": "HANGUL LETTER WE",
+      "category": "Lo",
+      "class": "0",
+      "bidirectionalCategory": "L",
+      "mapping": "<compat> 1170",
+      "mirrored": "N",
+      "symbol": "ㅞ"
+    }
+  },
+  {
+    "jamo": "ㅟ",
+    "archaic": false,
+    "mapsTo": "ᅱ",
+    "unicodeData": {
+      "value": "315F",
+      "name": "HANGUL LETTER WI",
+      "category": "Lo",
+      "class": "0",
+      "bidirectionalCategory": "L",
+      "mapping": "<compat> 1171",
+      "mirrored": "N",
+      "symbol": "ㅟ"
+    }
+  },
+  {
+    "jamo": "ㅠ",
+    "archaic": false,
+    "mapsTo": "ᅲ",
+    "unicodeData": {
+      "value": "3160",
+      "name": "HANGUL LETTER YU",
+      "category": "Lo",
+      "class": "0",
+      "bidirectionalCategory": "L",
+      "mapping": "<compat> 1172",
+      "mirrored": "N",
+      "symbol": "ㅠ"
+    }
+  },
+  {
+    "jamo": "ㅡ",
+    "archaic": false,
+    "mapsTo": "ᅳ",
+    "unicodeData": {
+      "value": "3161",
+      "name": "HANGUL LETTER EU",
+      "category": "Lo",
+      "class": "0",
+      "bidirectionalCategory": "L",
+      "mapping": "<compat> 1173",
+      "mirrored": "N",
+      "symbol": "ㅡ"
+    }
+  },
+  {
+    "jamo": "ㅢ",
+    "archaic": false,
+    "mapsTo": "ᅴ",
+    "unicodeData": {
+      "value": "3162",
+      "name": "HANGUL LETTER YI",
+      "category": "Lo",
+      "class": "0",
+      "bidirectionalCategory": "L",
+      "mapping": "<compat> 1174",
+      "mirrored": "N",
+      "symbol": "ㅢ"
+    }
+  },
+  {
+    "jamo": "ㅣ",
+    "archaic": false,
+    "mapsTo": "ᅵ",
+    "unicodeData": {
+      "value": "3163",
+      "name": "HANGUL LETTER I",
+      "category": "Lo",
+      "class": "0",
+      "bidirectionalCategory": "L",
+      "mapping": "<compat> 1175",
+      "mirrored": "N",
+      "symbol": "ㅣ"
+    }
+  },
+  {
+    "jamo": "ㅤ",
+    "archaic": false,
+    "mapsTo": "ᅠ",
+    "unicodeData": {
+      "value": "3164",
+      "name": "HANGUL FILLER",
+      "category": "Lo",
+      "class": "0",
+      "bidirectionalCategory": "L",
+      "mapping": "<compat> 1160",
+      "mirrored": "N",
+      "unicodeName": "HANGUL CAE OM",
+      "symbol": "ㅤ"
+    }
+  },
+  {
+    "jamo": "ㅥ",
+    "archaic": false,
+    "mapsTo": "ᄔ",
+    "unicodeData": {
+      "value": "3165",
+      "name": "HANGUL LETTER SSANGNIEUN",
+      "category": "Lo",
+      "class": "0",
+      "bidirectionalCategory": "L",
+      "mapping": "<compat> 1114",
+      "mirrored": "N",
+      "unicodeName": "HANGUL LETTER SSANG NIEUN",
+      "symbol": "ㅥ"
+    }
+  },
+  {
+    "jamo": "ㅦ",
+    "archaic": false,
+    "mapsTo": "ᄕ",
+    "unicodeData": {
+      "value": "3166",
+      "name": "HANGUL LETTER NIEUN-TIKEUT",
+      "category": "Lo",
+      "class": "0",
+      "bidirectionalCategory": "L",
+      "mapping": "<compat> 1115",
+      "mirrored": "N",
+      "unicodeName": "HANGUL LETTER NIEUN DIGEUD",
+      "symbol": "ㅦ"
+    }
+  },
+  {
+    "jamo": "ㅧ",
+    "archaic": false,
+    "mapsTo": "ᇇ",
+    "unicodeData": {
+      "value": "3167",
+      "name": "HANGUL LETTER NIEUN-SIOS",
+      "category": "Lo",
+      "class": "0",
+      "bidirectionalCategory": "L",
+      "mapping": "<compat> 11C7",
+      "mirrored": "N",
+      "unicodeName": "HANGUL LETTER NIEUN SIOS",
+      "symbol": "ㅧ"
+    }
+  },
+  {
+    "jamo": "ㅨ",
+    "archaic": false,
+    "mapsTo": "ᇈ",
+    "unicodeData": {
+      "value": "3168",
+      "name": "HANGUL LETTER NIEUN-PANSIOS",
+      "category": "Lo",
+      "class": "0",
+      "bidirectionalCategory": "L",
+      "mapping": "<compat> 11C8",
+      "mirrored": "N",
+      "unicodeName": "HANGUL LETTER NIEUN BAN CHI EUM",
+      "symbol": "ㅨ"
+    }
+  },
+  {
+    "jamo": "ㅩ",
+    "archaic": false,
+    "mapsTo": "ᇌ",
+    "unicodeData": {
+      "value": "3169",
+      "name": "HANGUL LETTER RIEUL-KIYEOK-SIOS",
+      "category": "Lo",
+      "class": "0",
+      "bidirectionalCategory": "L",
+      "mapping": "<compat> 11CC",
+      "mirrored": "N",
+      "unicodeName": "HANGUL LETTER LIEUL GIYEOG SIOS",
+      "symbol": "ㅩ"
+    }
+  },
+  {
+    "jamo": "ㅪ",
+    "archaic": false,
+    "mapsTo": "ᇎ",
+    "unicodeData": {
+      "value": "316A",
+      "name": "HANGUL LETTER RIEUL-TIKEUT",
+      "category": "Lo",
+      "class": "0",
+      "bidirectionalCategory": "L",
+      "mapping": "<compat> 11CE",
+      "mirrored": "N",
+      "unicodeName": "HANGUL LETTER LIEUL DIGEUD",
+      "symbol": "ㅪ"
+    }
+  },
+  {
+    "jamo": "ㅫ",
+    "archaic": false,
+    "mapsTo": "ᇓ",
+    "unicodeData": {
+      "value": "316B",
+      "name": "HANGUL LETTER RIEUL-PIEUP-SIOS",
+      "category": "Lo",
+      "class": "0",
+      "bidirectionalCategory": "L",
+      "mapping": "<compat> 11D3",
+      "mirrored": "N",
+      "unicodeName": "HANGUL LETTER LIEUL BIEUB SIOS",
+      "symbol": "ㅫ"
+    }
+  },
+  {
+    "jamo": "ㅬ",
+    "archaic": false,
+    "mapsTo": "ᇗ",
+    "unicodeData": {
+      "value": "316C",
+      "name": "HANGUL LETTER RIEUL-PANSIOS",
+      "category": "Lo",
+      "class": "0",
+      "bidirectionalCategory": "L",
+      "mapping": "<compat> 11D7",
+      "mirrored": "N",
+      "unicodeName": "HANGUL LETTER LIEUL BAN CHI EUM",
+      "symbol": "ㅬ"
+    }
+  },
+  {
+    "jamo": "ㅭ",
+    "archaic": false,
+    "mapsTo": "ᇙ",
+    "unicodeData": {
+      "value": "316D",
+      "name": "HANGUL LETTER RIEUL-YEORINHIEUH",
+      "category": "Lo",
+      "class": "0",
+      "bidirectionalCategory": "L",
+      "mapping": "<compat> 11D9",
+      "mirrored": "N",
+      "unicodeName": "HANGUL LETTER LIEUL YEOLIN HIEUH",
+      "symbol": "ㅭ"
+    }
+  },
+  {
+    "jamo": "ㅮ",
+    "archaic": false,
+    "mapsTo": "ᄜ",
+    "unicodeData": {
+      "value": "316E",
+      "name": "HANGUL LETTER MIEUM-PIEUP",
+      "category": "Lo",
+      "class": "0",
+      "bidirectionalCategory": "L",
+      "mapping": "<compat> 111C",
+      "mirrored": "N",
+      "unicodeName": "HANGUL LETTER MIEUM BIEUB",
+      "symbol": "ㅮ"
+    }
+  },
+  {
+    "jamo": "ㅯ",
+    "archaic": false,
+    "mapsTo": "ᇝ",
+    "unicodeData": {
+      "value": "316F",
+      "name": "HANGUL LETTER MIEUM-SIOS",
+      "category": "Lo",
+      "class": "0",
+      "bidirectionalCategory": "L",
+      "mapping": "<compat> 11DD",
+      "mirrored": "N",
+      "unicodeName": "HANGUL LETTER MIEUM SIOS",
+      "symbol": "ㅯ"
+    }
+  },
+  {
+    "jamo": "ㅰ",
+    "archaic": false,
+    "mapsTo": "ᇟ",
+    "unicodeData": {
+      "value": "3170",
+      "name": "HANGUL LETTER MIEUM-PANSIOS",
+      "category": "Lo",
+      "class": "0",
+      "bidirectionalCategory": "L",
+      "mapping": "<compat> 11DF",
+      "mirrored": "N",
+      "unicodeName": "HANGUL LETTER BIEUB BAN CHI EUM",
+      "symbol": "ㅰ"
+    }
+  },
+  {
+    "jamo": "ㅱ",
+    "archaic": false,
+    "mapsTo": "ᄝ",
+    "unicodeData": {
+      "value": "3171",
+      "name": "HANGUL LETTER KAPYEOUNMIEUM",
+      "category": "Lo",
+      "class": "0",
+      "bidirectionalCategory": "L",
+      "mapping": "<compat> 111D",
+      "mirrored": "N",
+      "unicodeName": "HANGUL LETTER MIEUM SUN GYEONG EUM",
+      "symbol": "ㅱ"
+    }
+  },
+  {
+    "jamo": "ㅲ",
+    "archaic": false,
+    "mapsTo": "ᄞ",
+    "unicodeData": {
+      "value": "3172",
+      "name": "HANGUL LETTER PIEUP-KIYEOK",
+      "category": "Lo",
+      "class": "0",
+      "bidirectionalCategory": "L",
+      "mapping": "<compat> 111E",
+      "mirrored": "N",
+      "unicodeName": "HANGUL LETTER BIEUB GIYEOG",
+      "symbol": "ㅲ"
+    }
+  },
+  {
+    "jamo": "ㅳ",
+    "archaic": false,
+    "mapsTo": "ᄠ",
+    "unicodeData": {
+      "value": "3173",
+      "name": "HANGUL LETTER PIEUP-TIKEUT",
+      "category": "Lo",
+      "class": "0",
+      "bidirectionalCategory": "L",
+      "mapping": "<compat> 1120",
+      "mirrored": "N",
+      "unicodeName": "HANGUL LETTER BIEUB DIGEUD",
+      "symbol": "ㅳ"
+    }
+  },
+  {
+    "jamo": "ㅴ",
+    "archaic": false,
+    "mapsTo": "ᄢ",
+    "unicodeData": {
+      "value": "3174",
+      "name": "HANGUL LETTER PIEUP-SIOS-KIYEOK",
+      "category": "Lo",
+      "class": "0",
+      "bidirectionalCategory": "L",
+      "mapping": "<compat> 1122",
+      "mirrored": "N",
+      "unicodeName": "HANGUL LETTER BIEUB SIOS GIYEOG",
+      "symbol": "ㅴ"
+    }
+  },
+  {
+    "jamo": "ㅵ",
+    "archaic": false,
+    "mapsTo": "ᄣ",
+    "unicodeData": {
+      "value": "3175",
+      "name": "HANGUL LETTER PIEUP-SIOS-TIKEUT",
+      "category": "Lo",
+      "class": "0",
+      "bidirectionalCategory": "L",
+      "mapping": "<compat> 1123",
+      "mirrored": "N",
+      "unicodeName": "HANGUL LETTER BIEUB SIOS DIGEUD",
+      "symbol": "ㅵ"
+    }
+  },
+  {
+    "jamo": "ㅶ",
+    "archaic": false,
+    "mapsTo": "ᄧ",
+    "unicodeData": {
+      "value": "3176",
+      "name": "HANGUL LETTER PIEUP-CIEUC",
+      "category": "Lo",
+      "class": "0",
+      "bidirectionalCategory": "L",
+      "mapping": "<compat> 1127",
+      "mirrored": "N",
+      "unicodeName": "HANGUL LETTER BIEUB JIEUJ",
+      "symbol": "ㅶ"
+    }
+  },
+  {
+    "jamo": "ㅷ",
+    "archaic": false,
+    "mapsTo": "ᄩ",
+    "unicodeData": {
+      "value": "3177",
+      "name": "HANGUL LETTER PIEUP-THIEUTH",
+      "category": "Lo",
+      "class": "0",
+      "bidirectionalCategory": "L",
+      "mapping": "<compat> 1129",
+      "mirrored": "N",
+      "unicodeName": "HANGUL LETTER BIEUB TIEUT",
+      "symbol": "ㅷ"
+    }
+  },
+  {
+    "jamo": "ㅸ",
+    "archaic": false,
+    "mapsTo": "ᄫ",
+    "unicodeData": {
+      "value": "3178",
+      "name": "HANGUL LETTER KAPYEOUNPIEUP",
+      "category": "Lo",
+      "class": "0",
+      "bidirectionalCategory": "L",
+      "mapping": "<compat> 112B",
+      "mirrored": "N",
+      "unicodeName": "HANGUL LETTER BIEUB SUN GYEONG EUM",
+      "symbol": "ㅸ"
+    }
+  },
+  {
+    "jamo": "ㅹ",
+    "archaic": false,
+    "mapsTo": "ᄬ",
+    "unicodeData": {
+      "value": "3179",
+      "name": "HANGUL LETTER KAPYEOUNSSANGPIEUP",
+      "category": "Lo",
+      "class": "0",
+      "bidirectionalCategory": "L",
+      "mapping": "<compat> 112C",
+      "mirrored": "N",
+      "unicodeName": "HANGUL LETTER SSANG BIEUB SUN GYEONG EUM",
+      "symbol": "ㅹ"
+    }
+  },
+  {
+    "jamo": "ㅺ",
+    "archaic": false,
+    "mapsTo": "ᄭ",
+    "unicodeData": {
+      "value": "317A",
+      "name": "HANGUL LETTER SIOS-KIYEOK",
+      "category": "Lo",
+      "class": "0",
+      "bidirectionalCategory": "L",
+      "mapping": "<compat> 112D",
+      "mirrored": "N",
+      "unicodeName": "HANGUL LETTER SIOS GIYEOG",
+      "symbol": "ㅺ"
+    }
+  },
+  {
+    "jamo": "ㅻ",
+    "archaic": false,
+    "mapsTo": "ᄮ",
+    "unicodeData": {
+      "value": "317B",
+      "name": "HANGUL LETTER SIOS-NIEUN",
+      "category": "Lo",
+      "class": "0",
+      "bidirectionalCategory": "L",
+      "mapping": "<compat> 112E",
+      "mirrored": "N",
+      "unicodeName": "HANGUL LETTER SIOS NIEUN",
+      "symbol": "ㅻ"
+    }
+  },
+  {
+    "jamo": "ㅼ",
+    "archaic": false,
+    "mapsTo": "ᄯ",
+    "unicodeData": {
+      "value": "317C",
+      "name": "HANGUL LETTER SIOS-TIKEUT",
+      "category": "Lo",
+      "class": "0",
+      "bidirectionalCategory": "L",
+      "mapping": "<compat> 112F",
+      "mirrored": "N",
+      "unicodeName": "HANGUL LETTER SIOS DIGEUD",
+      "symbol": "ㅼ"
+    }
+  },
+  {
+    "jamo": "ㅽ",
+    "archaic": false,
+    "mapsTo": "ᄲ",
+    "unicodeData": {
+      "value": "317D",
+      "name": "HANGUL LETTER SIOS-PIEUP",
+      "category": "Lo",
+      "class": "0",
+      "bidirectionalCategory": "L",
+      "mapping": "<compat> 1132",
+      "mirrored": "N",
+      "unicodeName": "HANGUL LETTER SIOS BIEUB",
+      "symbol": "ㅽ"
+    }
+  },
+  {
+    "jamo": "ㅾ",
+    "archaic": false,
+    "mapsTo": "ᄶ",
+    "unicodeData": {
+      "value": "317E",
+      "name": "HANGUL LETTER SIOS-CIEUC",
+      "category": "Lo",
+      "class": "0",
+      "bidirectionalCategory": "L",
+      "mapping": "<compat> 1136",
+      "mirrored": "N",
+      "unicodeName": "HANGUL LETTER SIOS JIEUJ",
+      "symbol": "ㅾ"
+    }
+  },
+  {
+    "jamo": "ㅿ",
+    "archaic": false,
+    "mapsTo": "ᅀ",
+    "unicodeData": {
+      "value": "317F",
+      "name": "HANGUL LETTER PANSIOS",
+      "category": "Lo",
+      "class": "0",
+      "bidirectionalCategory": "L",
+      "mapping": "<compat> 1140",
+      "mirrored": "N",
+      "unicodeName": "HANGUL LETTER BAN CHI EUM",
+      "symbol": "ㅿ"
+    }
+  },
+  {
+    "jamo": "ㆀ",
+    "archaic": false,
+    "mapsTo": "ᅇ",
+    "unicodeData": {
+      "value": "3180",
+      "name": "HANGUL LETTER SSANGIEUNG",
+      "category": "Lo",
+      "class": "0",
+      "bidirectionalCategory": "L",
+      "mapping": "<compat> 1147",
+      "mirrored": "N",
+      "unicodeName": "HANGUL LETTER SSANG IEUNG",
+      "symbol": "ㆀ"
+    }
+  },
+  {
+    "jamo": "ㆁ",
+    "archaic": false,
+    "mapsTo": "ᅌ",
+    "unicodeData": {
+      "value": "3181",
+      "name": "HANGUL LETTER YESIEUNG",
+      "category": "Lo",
+      "class": "0",
+      "bidirectionalCategory": "L",
+      "mapping": "<compat> 114C",
+      "mirrored": "N",
+      "unicodeName": "HANGUL LETTER NGIEUNG",
+      "symbol": "ㆁ"
+    }
+  },
+  {
+    "jamo": "ㆂ",
+    "archaic": false,
+    "mapsTo": "ᇱ",
+    "unicodeData": {
+      "value": "3182",
+      "name": "HANGUL LETTER YESIEUNG-SIOS",
+      "category": "Lo",
+      "class": "0",
+      "bidirectionalCategory": "L",
+      "mapping": "<compat> 11F1",
+      "mirrored": "N",
+      "unicodeName": "HANGUL LETTER NGIEUNG SIOS",
+      "symbol": "ㆂ"
+    }
+  },
+  {
+    "jamo": "ㆃ",
+    "archaic": false,
+    "mapsTo": "ᇲ",
+    "unicodeData": {
+      "value": "3183",
+      "name": "HANGUL LETTER YESIEUNG-PANSIOS",
+      "category": "Lo",
+      "class": "0",
+      "bidirectionalCategory": "L",
+      "mapping": "<compat> 11F2",
+      "mirrored": "N",
+      "unicodeName": "HANGUL LETTER NGIEUNG BAN CHI EUM",
+      "symbol": "ㆃ"
+    }
+  },
+  {
+    "jamo": "ㆄ",
+    "archaic": false,
+    "mapsTo": "ᅗ",
+    "unicodeData": {
+      "value": "3184",
+      "name": "HANGUL LETTER KAPYEOUNPHIEUPH",
+      "category": "Lo",
+      "class": "0",
+      "bidirectionalCategory": "L",
+      "mapping": "<compat> 1157",
+      "mirrored": "N",
+      "unicodeName": "HANGUL LETTER PIEUP SUN GYEONG EUM",
+      "symbol": "ㆄ"
+    }
+  },
+  {
+    "jamo": "ㆅ",
+    "archaic": false,
+    "mapsTo": "ᅘ",
+    "unicodeData": {
+      "value": "3185",
+      "name": "HANGUL LETTER SSANGHIEUH",
+      "category": "Lo",
+      "class": "0",
+      "bidirectionalCategory": "L",
+      "mapping": "<compat> 1158",
+      "mirrored": "N",
+      "unicodeName": "HANGUL LETTER SSANG HIEUH",
+      "symbol": "ㆅ"
+    }
+  },
+  {
+    "jamo": "ㆆ",
+    "archaic": false,
+    "mapsTo": "ᅙ",
+    "unicodeData": {
+      "value": "3186",
+      "name": "HANGUL LETTER YEORINHIEUH",
+      "category": "Lo",
+      "class": "0",
+      "bidirectionalCategory": "L",
+      "mapping": "<compat> 1159",
+      "mirrored": "N",
+      "unicodeName": "HANGUL LETTER YEOLIN HIEUH",
+      "symbol": "ㆆ"
+    }
+  },
+  {
+    "jamo": "ㆇ",
+    "archaic": false,
+    "mapsTo": "ᆄ",
+    "unicodeData": {
+      "value": "3187",
+      "name": "HANGUL LETTER YO-YA",
+      "category": "Lo",
+      "class": "0",
+      "bidirectionalCategory": "L",
+      "mapping": "<compat> 1184",
+      "mirrored": "N",
+      "unicodeName": "HANGUL LETTER YOYA",
+      "symbol": "ㆇ"
+    }
+  },
+  {
+    "jamo": "ㆈ",
+    "archaic": false,
+    "mapsTo": "ᆅ",
+    "unicodeData": {
+      "value": "3188",
+      "name": "HANGUL LETTER YO-YAE",
+      "category": "Lo",
+      "class": "0",
+      "bidirectionalCategory": "L",
+      "mapping": "<compat> 1185",
+      "mirrored": "N",
+      "unicodeName": "HANGUL LETTER YOYAE",
+      "symbol": "ㆈ"
+    }
+  },
+  {
+    "jamo": "ㆉ",
+    "archaic": false,
+    "mapsTo": "ᆈ",
+    "unicodeData": {
+      "value": "3189",
+      "name": "HANGUL LETTER YO-I",
+      "category": "Lo",
+      "class": "0",
+      "bidirectionalCategory": "L",
+      "mapping": "<compat> 1188",
+      "mirrored": "N",
+      "unicodeName": "HANGUL LETTER YOI",
+      "symbol": "ㆉ"
+    }
+  },
+  {
+    "jamo": "ㆊ",
+    "archaic": false,
+    "mapsTo": "ᆑ",
+    "unicodeData": {
+      "value": "318A",
+      "name": "HANGUL LETTER YU-YEO",
+      "category": "Lo",
+      "class": "0",
+      "bidirectionalCategory": "L",
+      "mapping": "<compat> 1191",
+      "mirrored": "N",
+      "unicodeName": "HANGUL LETTER YUYEO",
+      "symbol": "ㆊ"
+    }
+  },
+  {
+    "jamo": "ㆋ",
+    "archaic": false,
+    "mapsTo": "ᆒ",
+    "unicodeData": {
+      "value": "318B",
+      "name": "HANGUL LETTER YU-YE",
+      "category": "Lo",
+      "class": "0",
+      "bidirectionalCategory": "L",
+      "mapping": "<compat> 1192",
+      "mirrored": "N",
+      "unicodeName": "HANGUL LETTER YUYE",
+      "symbol": "ㆋ"
+    }
+  },
+  {
+    "jamo": "ㆌ",
+    "archaic": false,
+    "mapsTo": "ᆔ",
+    "unicodeData": {
+      "value": "318C",
+      "name": "HANGUL LETTER YU-I",
+      "category": "Lo",
+      "class": "0",
+      "bidirectionalCategory": "L",
+      "mapping": "<compat> 1194",
+      "mirrored": "N",
+      "unicodeName": "HANGUL LETTER YUI",
+      "symbol": "ㆌ"
+    }
+  },
+  {
+    "jamo": "ㆍ",
+    "archaic": false,
+    "mapsTo": "ᆞ",
+    "unicodeData": {
+      "value": "318D",
+      "name": "HANGUL LETTER ARAEA",
+      "category": "Lo",
+      "class": "0",
+      "bidirectionalCategory": "L",
+      "mapping": "<compat> 119E",
+      "mirrored": "N",
+      "unicodeName": "HANGUL LETTER ALAE A",
+      "symbol": "ㆍ"
+    }
+  }
+]

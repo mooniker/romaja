@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
-const romanize = require('../src')
+const { join } = require('path')
+const { romanize } = require(join(__dirname, '..', 'dist', 'main'))
 
 const { argv } = process
 

@@ -9,4 +9,4 @@ const { romanizeWord } = require('./romanize')
 const romanize = (text, options) =>
   text.replace(hangulPattern, word => romanizeWord(word, options))
 
-module.exports = romanize
+module.exports = { romanize }

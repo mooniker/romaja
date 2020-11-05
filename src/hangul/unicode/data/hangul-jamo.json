@@ -1,0 +1,3115 @@
+[
+  [
+    {
+      "jamo": "ᄀ",
+      "archaic": false,
+      "unicodeData": {
+        "value": "1100",
+        "name": "HANGUL CHOSEONG KIYEOK",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᄀ"
+      }
+    },
+    {
+      "jamo": "ᄁ",
+      "archaic": false,
+      "unicodeData": {
+        "value": "1101",
+        "name": "HANGUL CHOSEONG SSANGKIYEOK",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᄁ"
+      }
+    },
+    {
+      "jamo": "ᄂ",
+      "archaic": false,
+      "unicodeData": {
+        "value": "1102",
+        "name": "HANGUL CHOSEONG NIEUN",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᄂ"
+      }
+    },
+    {
+      "jamo": "ᄃ",
+      "archaic": false,
+      "unicodeData": {
+        "value": "1103",
+        "name": "HANGUL CHOSEONG TIKEUT",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᄃ"
+      }
+    },
+    {
+      "jamo": "ᄄ",
+      "archaic": false,
+      "unicodeData": {
+        "value": "1104",
+        "name": "HANGUL CHOSEONG SSANGTIKEUT",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᄄ"
+      }
+    },
+    {
+      "jamo": "ᄅ",
+      "archaic": false,
+      "unicodeData": {
+        "value": "1105",
+        "name": "HANGUL CHOSEONG RIEUL",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᄅ"
+      }
+    },
+    {
+      "jamo": "ᄆ",
+      "archaic": false,
+      "unicodeData": {
+        "value": "1106",
+        "name": "HANGUL CHOSEONG MIEUM",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᄆ"
+      }
+    },
+    {
+      "jamo": "ᄇ",
+      "archaic": false,
+      "unicodeData": {
+        "value": "1107",
+        "name": "HANGUL CHOSEONG PIEUP",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᄇ"
+      }
+    },
+    {
+      "jamo": "ᄈ",
+      "archaic": false,
+      "unicodeData": {
+        "value": "1108",
+        "name": "HANGUL CHOSEONG SSANGPIEUP",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᄈ"
+      }
+    },
+    {
+      "jamo": "ᄉ",
+      "archaic": false,
+      "unicodeData": {
+        "value": "1109",
+        "name": "HANGUL CHOSEONG SIOS",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᄉ"
+      }
+    },
+    {
+      "jamo": "ᄊ",
+      "archaic": false,
+      "unicodeData": {
+        "value": "110A",
+        "name": "HANGUL CHOSEONG SSANGSIOS",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᄊ"
+      }
+    },
+    {
+      "jamo": "ᄋ",
+      "archaic": false,
+      "unicodeData": {
+        "value": "110B",
+        "name": "HANGUL CHOSEONG IEUNG",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᄋ"
+      }
+    },
+    {
+      "jamo": "ᄌ",
+      "archaic": false,
+      "unicodeData": {
+        "value": "110C",
+        "name": "HANGUL CHOSEONG CIEUC",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᄌ"
+      }
+    },
+    {
+      "jamo": "ᄍ",
+      "archaic": false,
+      "unicodeData": {
+        "value": "110D",
+        "name": "HANGUL CHOSEONG SSANGCIEUC",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᄍ"
+      }
+    },
+    {
+      "jamo": "ᄎ",
+      "archaic": false,
+      "unicodeData": {
+        "value": "110E",
+        "name": "HANGUL CHOSEONG CHIEUCH",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᄎ"
+      }
+    },
+    {
+      "jamo": "ᄏ",
+      "archaic": false,
+      "unicodeData": {
+        "value": "110F",
+        "name": "HANGUL CHOSEONG KHIEUKH",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᄏ"
+      }
+    },
+    {
+      "jamo": "ᄐ",
+      "archaic": false,
+      "unicodeData": {
+        "value": "1110",
+        "name": "HANGUL CHOSEONG THIEUTH",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᄐ"
+      }
+    },
+    {
+      "jamo": "ᄑ",
+      "archaic": false,
+      "unicodeData": {
+        "value": "1111",
+        "name": "HANGUL CHOSEONG PHIEUPH",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᄑ"
+      }
+    },
+    {
+      "jamo": "ᄒ",
+      "archaic": false,
+      "unicodeData": {
+        "value": "1112",
+        "name": "HANGUL CHOSEONG HIEUH",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᄒ"
+      }
+    },
+    {
+      "jamo": "ᄓ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "1113",
+        "name": "HANGUL CHOSEONG NIEUN-KIYEOK",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᄓ"
+      }
+    },
+    {
+      "jamo": "ᄔ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "1114",
+        "name": "HANGUL CHOSEONG SSANGNIEUN",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᄔ"
+      }
+    },
+    {
+      "jamo": "ᄕ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "1115",
+        "name": "HANGUL CHOSEONG NIEUN-TIKEUT",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᄕ"
+      }
+    },
+    {
+      "jamo": "ᄖ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "1116",
+        "name": "HANGUL CHOSEONG NIEUN-PIEUP",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᄖ"
+      }
+    },
+    {
+      "jamo": "ᄗ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "1117",
+        "name": "HANGUL CHOSEONG TIKEUT-KIYEOK",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᄗ"
+      }
+    },
+    {
+      "jamo": "ᄘ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "1118",
+        "name": "HANGUL CHOSEONG RIEUL-NIEUN",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᄘ"
+      }
+    },
+    {
+      "jamo": "ᄙ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "1119",
+        "name": "HANGUL CHOSEONG SSANGRIEUL",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᄙ"
+      }
+    },
+    {
+      "jamo": "ᄚ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "111A",
+        "name": "HANGUL CHOSEONG RIEUL-HIEUH",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᄚ"
+      }
+    },
+    {
+      "jamo": "ᄛ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "111B",
+        "name": "HANGUL CHOSEONG KAPYEOUNRIEUL",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᄛ"
+      }
+    },
+    {
+      "jamo": "ᄜ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "111C",
+        "name": "HANGUL CHOSEONG MIEUM-PIEUP",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᄜ"
+      }
+    },
+    {
+      "jamo": "ᄝ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "111D",
+        "name": "HANGUL CHOSEONG KAPYEOUNMIEUM",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᄝ"
+      }
+    },
+    {
+      "jamo": "ᄞ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "111E",
+        "name": "HANGUL CHOSEONG PIEUP-KIYEOK",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᄞ"
+      }
+    },
+    {
+      "jamo": "ᄟ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "111F",
+        "name": "HANGUL CHOSEONG PIEUP-NIEUN",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᄟ"
+      }
+    },
+    {
+      "jamo": "ᄠ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "1120",
+        "name": "HANGUL CHOSEONG PIEUP-TIKEUT",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᄠ"
+      }
+    },
+    {
+      "jamo": "ᄡ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "1121",
+        "name": "HANGUL CHOSEONG PIEUP-SIOS",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᄡ"
+      }
+    },
+    {
+      "jamo": "ᄢ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "1122",
+        "name": "HANGUL CHOSEONG PIEUP-SIOS-KIYEOK",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᄢ"
+      }
+    },
+    {
+      "jamo": "ᄣ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "1123",
+        "name": "HANGUL CHOSEONG PIEUP-SIOS-TIKEUT",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᄣ"
+      }
+    },
+    {
+      "jamo": "ᄤ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "1124",
+        "name": "HANGUL CHOSEONG PIEUP-SIOS-PIEUP",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᄤ"
+      }
+    },
+    {
+      "jamo": "ᄥ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "1125",
+        "name": "HANGUL CHOSEONG PIEUP-SSANGSIOS",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᄥ"
+      }
+    },
+    {
+      "jamo": "ᄦ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "1126",
+        "name": "HANGUL CHOSEONG PIEUP-SIOS-CIEUC",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᄦ"
+      }
+    },
+    {
+      "jamo": "ᄧ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "1127",
+        "name": "HANGUL CHOSEONG PIEUP-CIEUC",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᄧ"
+      }
+    },
+    {
+      "jamo": "ᄨ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "1128",
+        "name": "HANGUL CHOSEONG PIEUP-CHIEUCH",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᄨ"
+      }
+    },
+    {
+      "jamo": "ᄩ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "1129",
+        "name": "HANGUL CHOSEONG PIEUP-THIEUTH",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᄩ"
+      }
+    },
+    {
+      "jamo": "ᄪ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "112A",
+        "name": "HANGUL CHOSEONG PIEUP-PHIEUPH",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᄪ"
+      }
+    },
+    {
+      "jamo": "ᄫ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "112B",
+        "name": "HANGUL CHOSEONG KAPYEOUNPIEUP",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᄫ"
+      }
+    },
+    {
+      "jamo": "ᄬ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "112C",
+        "name": "HANGUL CHOSEONG KAPYEOUNSSANGPIEUP",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᄬ"
+      }
+    },
+    {
+      "jamo": "ᄭ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "112D",
+        "name": "HANGUL CHOSEONG SIOS-KIYEOK",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᄭ"
+      }
+    },
+    {
+      "jamo": "ᄮ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "112E",
+        "name": "HANGUL CHOSEONG SIOS-NIEUN",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᄮ"
+      }
+    },
+    {
+      "jamo": "ᄯ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "112F",
+        "name": "HANGUL CHOSEONG SIOS-TIKEUT",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᄯ"
+      }
+    },
+    {
+      "jamo": "ᄰ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "1130",
+        "name": "HANGUL CHOSEONG SIOS-RIEUL",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᄰ"
+      }
+    },
+    {
+      "jamo": "ᄱ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "1131",
+        "name": "HANGUL CHOSEONG SIOS-MIEUM",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᄱ"
+      }
+    },
+    {
+      "jamo": "ᄲ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "1132",
+        "name": "HANGUL CHOSEONG SIOS-PIEUP",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᄲ"
+      }
+    },
+    {
+      "jamo": "ᄳ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "1133",
+        "name": "HANGUL CHOSEONG SIOS-PIEUP-KIYEOK",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᄳ"
+      }
+    },
+    {
+      "jamo": "ᄴ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "1134",
+        "name": "HANGUL CHOSEONG SIOS-SSANGSIOS",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᄴ"
+      }
+    },
+    {
+      "jamo": "ᄵ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "1135",
+        "name": "HANGUL CHOSEONG SIOS-IEUNG",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᄵ"
+      }
+    },
+    {
+      "jamo": "ᄶ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "1136",
+        "name": "HANGUL CHOSEONG SIOS-CIEUC",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᄶ"
+      }
+    },
+    {
+      "jamo": "ᄷ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "1137",
+        "name": "HANGUL CHOSEONG SIOS-CHIEUCH",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᄷ"
+      }
+    },
+    {
+      "jamo": "ᄸ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "1138",
+        "name": "HANGUL CHOSEONG SIOS-KHIEUKH",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᄸ"
+      }
+    },
+    {
+      "jamo": "ᄹ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "1139",
+        "name": "HANGUL CHOSEONG SIOS-THIEUTH",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᄹ"
+      }
+    },
+    {
+      "jamo": "ᄺ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "113A",
+        "name": "HANGUL CHOSEONG SIOS-PHIEUPH",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᄺ"
+      }
+    },
+    {
+      "jamo": "ᄻ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "113B",
+        "name": "HANGUL CHOSEONG SIOS-HIEUH",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᄻ"
+      }
+    },
+    {
+      "jamo": "ᄼ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "113C",
+        "name": "HANGUL CHOSEONG CHITUEUMSIOS",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᄼ"
+      }
+    },
+    {
+      "jamo": "ᄽ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "113D",
+        "name": "HANGUL CHOSEONG CHITUEUMSSANGSIOS",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᄽ"
+      }
+    },
+    {
+      "jamo": "ᄾ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "113E",
+        "name": "HANGUL CHOSEONG CEONGCHIEUMSIOS",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᄾ"
+      }
+    },
+    {
+      "jamo": "ᄿ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "113F",
+        "name": "HANGUL CHOSEONG CEONGCHIEUMSSANGSIOS",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᄿ"
+      }
+    },
+    {
+      "jamo": "ᅀ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "1140",
+        "name": "HANGUL CHOSEONG PANSIOS",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᅀ"
+      }
+    },
+    {
+      "jamo": "ᅁ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "1141",
+        "name": "HANGUL CHOSEONG IEUNG-KIYEOK",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᅁ"
+      }
+    },
+    {
+      "jamo": "ᅂ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "1142",
+        "name": "HANGUL CHOSEONG IEUNG-TIKEUT",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᅂ"
+      }
+    },
+    {
+      "jamo": "ᅃ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "1143",
+        "name": "HANGUL CHOSEONG IEUNG-MIEUM",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᅃ"
+      }
+    },
+    {
+      "jamo": "ᅄ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "1144",
+        "name": "HANGUL CHOSEONG IEUNG-PIEUP",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᅄ"
+      }
+    },
+    {
+      "jamo": "ᅅ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "1145",
+        "name": "HANGUL CHOSEONG IEUNG-SIOS",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᅅ"
+      }
+    },
+    {
+      "jamo": "ᅆ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "1146",
+        "name": "HANGUL CHOSEONG IEUNG-PANSIOS",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᅆ"
+      }
+    },
+    {
+      "jamo": "ᅇ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "1147",
+        "name": "HANGUL CHOSEONG SSANGIEUNG",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᅇ"
+      }
+    },
+    {
+      "jamo": "ᅈ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "1148",
+        "name": "HANGUL CHOSEONG IEUNG-CIEUC",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᅈ"
+      }
+    },
+    {
+      "jamo": "ᅉ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "1149",
+        "name": "HANGUL CHOSEONG IEUNG-CHIEUCH",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᅉ"
+      }
+    },
+    {
+      "jamo": "ᅊ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "114A",
+        "name": "HANGUL CHOSEONG IEUNG-THIEUTH",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᅊ"
+      }
+    },
+    {
+      "jamo": "ᅋ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "114B",
+        "name": "HANGUL CHOSEONG IEUNG-PHIEUPH",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᅋ"
+      }
+    },
+    {
+      "jamo": "ᅌ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "114C",
+        "name": "HANGUL CHOSEONG YESIEUNG",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᅌ"
+      }
+    },
+    {
+      "jamo": "ᅍ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "114D",
+        "name": "HANGUL CHOSEONG CIEUC-IEUNG",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᅍ"
+      }
+    },
+    {
+      "jamo": "ᅎ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "114E",
+        "name": "HANGUL CHOSEONG CHITUEUMCIEUC",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᅎ"
+      }
+    },
+    {
+      "jamo": "ᅏ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "114F",
+        "name": "HANGUL CHOSEONG CHITUEUMSSANGCIEUC",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᅏ"
+      }
+    },
+    {
+      "jamo": "ᅐ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "1150",
+        "name": "HANGUL CHOSEONG CEONGCHIEUMCIEUC",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᅐ"
+      }
+    },
+    {
+      "jamo": "ᅑ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "1151",
+        "name": "HANGUL CHOSEONG CEONGCHIEUMSSANGCIEUC",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᅑ"
+      }
+    },
+    {
+      "jamo": "ᅒ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "1152",
+        "name": "HANGUL CHOSEONG CHIEUCH-KHIEUKH",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᅒ"
+      }
+    },
+    {
+      "jamo": "ᅓ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "1153",
+        "name": "HANGUL CHOSEONG CHIEUCH-HIEUH",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᅓ"
+      }
+    },
+    {
+      "jamo": "ᅔ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "1154",
+        "name": "HANGUL CHOSEONG CHITUEUMCHIEUCH",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᅔ"
+      }
+    },
+    {
+      "jamo": "ᅕ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "1155",
+        "name": "HANGUL CHOSEONG CEONGCHIEUMCHIEUCH",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᅕ"
+      }
+    },
+    {
+      "jamo": "ᅖ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "1156",
+        "name": "HANGUL CHOSEONG PHIEUPH-PIEUP",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᅖ"
+      }
+    },
+    {
+      "jamo": "ᅗ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "1157",
+        "name": "HANGUL CHOSEONG KAPYEOUNPHIEUPH",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᅗ"
+      }
+    },
+    {
+      "jamo": "ᅘ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "1158",
+        "name": "HANGUL CHOSEONG SSANGHIEUH",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᅘ"
+      }
+    },
+    {
+      "jamo": "ᅙ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "1159",
+        "name": "HANGUL CHOSEONG YEORINHIEUH",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᅙ"
+      }
+    }
+  ],
+  [
+    {
+      "jamo": "ᅡ",
+      "archaic": false,
+      "unicodeData": {
+        "value": "1161",
+        "name": "HANGUL JUNGSEONG A",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᅡ"
+      }
+    },
+    {
+      "jamo": "ᅢ",
+      "archaic": false,
+      "unicodeData": {
+        "value": "1162",
+        "name": "HANGUL JUNGSEONG AE",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᅢ"
+      }
+    },
+    {
+      "jamo": "ᅣ",
+      "archaic": false,
+      "unicodeData": {
+        "value": "1163",
+        "name": "HANGUL JUNGSEONG YA",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᅣ"
+      }
+    },
+    {
+      "jamo": "ᅤ",
+      "archaic": false,
+      "unicodeData": {
+        "value": "1164",
+        "name": "HANGUL JUNGSEONG YAE",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᅤ"
+      }
+    },
+    {
+      "jamo": "ᅥ",
+      "archaic": false,
+      "unicodeData": {
+        "value": "1165",
+        "name": "HANGUL JUNGSEONG EO",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᅥ"
+      }
+    },
+    {
+      "jamo": "ᅦ",
+      "archaic": false,
+      "unicodeData": {
+        "value": "1166",
+        "name": "HANGUL JUNGSEONG E",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᅦ"
+      }
+    },
+    {
+      "jamo": "ᅧ",
+      "archaic": false,
+      "unicodeData": {
+        "value": "1167",
+        "name": "HANGUL JUNGSEONG YEO",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᅧ"
+      }
+    },
+    {
+      "jamo": "ᅨ",
+      "archaic": false,
+      "unicodeData": {
+        "value": "1168",
+        "name": "HANGUL JUNGSEONG YE",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᅨ"
+      }
+    },
+    {
+      "jamo": "ᅩ",
+      "archaic": false,
+      "unicodeData": {
+        "value": "1169",
+        "name": "HANGUL JUNGSEONG O",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᅩ"
+      }
+    },
+    {
+      "jamo": "ᅪ",
+      "archaic": false,
+      "unicodeData": {
+        "value": "116A",
+        "name": "HANGUL JUNGSEONG WA",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᅪ"
+      }
+    },
+    {
+      "jamo": "ᅫ",
+      "archaic": false,
+      "unicodeData": {
+        "value": "116B",
+        "name": "HANGUL JUNGSEONG WAE",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᅫ"
+      }
+    },
+    {
+      "jamo": "ᅬ",
+      "archaic": false,
+      "unicodeData": {
+        "value": "116C",
+        "name": "HANGUL JUNGSEONG OE",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᅬ"
+      }
+    },
+    {
+      "jamo": "ᅭ",
+      "archaic": false,
+      "unicodeData": {
+        "value": "116D",
+        "name": "HANGUL JUNGSEONG YO",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᅭ"
+      }
+    },
+    {
+      "jamo": "ᅮ",
+      "archaic": false,
+      "unicodeData": {
+        "value": "116E",
+        "name": "HANGUL JUNGSEONG U",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᅮ"
+      }
+    },
+    {
+      "jamo": "ᅯ",
+      "archaic": false,
+      "unicodeData": {
+        "value": "116F",
+        "name": "HANGUL JUNGSEONG WEO",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᅯ"
+      }
+    },
+    {
+      "jamo": "ᅰ",
+      "archaic": false,
+      "unicodeData": {
+        "value": "1170",
+        "name": "HANGUL JUNGSEONG WE",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᅰ"
+      }
+    },
+    {
+      "jamo": "ᅱ",
+      "archaic": false,
+      "unicodeData": {
+        "value": "1171",
+        "name": "HANGUL JUNGSEONG WI",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᅱ"
+      }
+    },
+    {
+      "jamo": "ᅲ",
+      "archaic": false,
+      "unicodeData": {
+        "value": "1172",
+        "name": "HANGUL JUNGSEONG YU",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᅲ"
+      }
+    },
+    {
+      "jamo": "ᅳ",
+      "archaic": false,
+      "unicodeData": {
+        "value": "1173",
+        "name": "HANGUL JUNGSEONG EU",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᅳ"
+      }
+    },
+    {
+      "jamo": "ᅴ",
+      "archaic": false,
+      "unicodeData": {
+        "value": "1174",
+        "name": "HANGUL JUNGSEONG YI",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᅴ"
+      }
+    },
+    {
+      "jamo": "ᅵ",
+      "archaic": false,
+      "unicodeData": {
+        "value": "1175",
+        "name": "HANGUL JUNGSEONG I",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᅵ"
+      }
+    },
+    {
+      "jamo": "ᅶ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "1176",
+        "name": "HANGUL JUNGSEONG A-O",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᅶ"
+      }
+    },
+    {
+      "jamo": "ᅷ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "1177",
+        "name": "HANGUL JUNGSEONG A-U",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᅷ"
+      }
+    },
+    {
+      "jamo": "ᅸ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "1178",
+        "name": "HANGUL JUNGSEONG YA-O",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᅸ"
+      }
+    },
+    {
+      "jamo": "ᅹ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "1179",
+        "name": "HANGUL JUNGSEONG YA-YO",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᅹ"
+      }
+    },
+    {
+      "jamo": "ᅺ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "117A",
+        "name": "HANGUL JUNGSEONG EO-O",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᅺ"
+      }
+    },
+    {
+      "jamo": "ᅻ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "117B",
+        "name": "HANGUL JUNGSEONG EO-U",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᅻ"
+      }
+    },
+    {
+      "jamo": "ᅼ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "117C",
+        "name": "HANGUL JUNGSEONG EO-EU",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᅼ"
+      }
+    },
+    {
+      "jamo": "ᅽ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "117D",
+        "name": "HANGUL JUNGSEONG YEO-O",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᅽ"
+      }
+    },
+    {
+      "jamo": "ᅾ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "117E",
+        "name": "HANGUL JUNGSEONG YEO-U",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᅾ"
+      }
+    },
+    {
+      "jamo": "ᅿ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "117F",
+        "name": "HANGUL JUNGSEONG O-EO",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᅿ"
+      }
+    },
+    {
+      "jamo": "ᆀ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "1180",
+        "name": "HANGUL JUNGSEONG O-E",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᆀ"
+      }
+    },
+    {
+      "jamo": "ᆁ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "1181",
+        "name": "HANGUL JUNGSEONG O-YE",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᆁ"
+      }
+    },
+    {
+      "jamo": "ᆂ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "1182",
+        "name": "HANGUL JUNGSEONG O-O",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᆂ"
+      }
+    },
+    {
+      "jamo": "ᆃ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "1183",
+        "name": "HANGUL JUNGSEONG O-U",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᆃ"
+      }
+    },
+    {
+      "jamo": "ᆄ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "1184",
+        "name": "HANGUL JUNGSEONG YO-YA",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᆄ"
+      }
+    },
+    {
+      "jamo": "ᆅ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "1185",
+        "name": "HANGUL JUNGSEONG YO-YAE",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᆅ"
+      }
+    },
+    {
+      "jamo": "ᆆ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "1186",
+        "name": "HANGUL JUNGSEONG YO-YEO",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᆆ"
+      }
+    },
+    {
+      "jamo": "ᆇ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "1187",
+        "name": "HANGUL JUNGSEONG YO-O",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᆇ"
+      }
+    },
+    {
+      "jamo": "ᆈ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "1188",
+        "name": "HANGUL JUNGSEONG YO-I",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᆈ"
+      }
+    },
+    {
+      "jamo": "ᆉ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "1189",
+        "name": "HANGUL JUNGSEONG U-A",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᆉ"
+      }
+    },
+    {
+      "jamo": "ᆊ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "118A",
+        "name": "HANGUL JUNGSEONG U-AE",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᆊ"
+      }
+    },
+    {
+      "jamo": "ᆋ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "118B",
+        "name": "HANGUL JUNGSEONG U-EO-EU",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᆋ"
+      }
+    },
+    {
+      "jamo": "ᆌ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "118C",
+        "name": "HANGUL JUNGSEONG U-YE",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᆌ"
+      }
+    },
+    {
+      "jamo": "ᆍ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "118D",
+        "name": "HANGUL JUNGSEONG U-U",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᆍ"
+      }
+    },
+    {
+      "jamo": "ᆎ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "118E",
+        "name": "HANGUL JUNGSEONG YU-A",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᆎ"
+      }
+    },
+    {
+      "jamo": "ᆏ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "118F",
+        "name": "HANGUL JUNGSEONG YU-EO",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᆏ"
+      }
+    },
+    {
+      "jamo": "ᆐ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "1190",
+        "name": "HANGUL JUNGSEONG YU-E",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᆐ"
+      }
+    },
+    {
+      "jamo": "ᆑ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "1191",
+        "name": "HANGUL JUNGSEONG YU-YEO",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᆑ"
+      }
+    },
+    {
+      "jamo": "ᆒ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "1192",
+        "name": "HANGUL JUNGSEONG YU-YE",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᆒ"
+      }
+    },
+    {
+      "jamo": "ᆓ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "1193",
+        "name": "HANGUL JUNGSEONG YU-U",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᆓ"
+      }
+    },
+    {
+      "jamo": "ᆔ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "1194",
+        "name": "HANGUL JUNGSEONG YU-I",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᆔ"
+      }
+    },
+    {
+      "jamo": "ᆕ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "1195",
+        "name": "HANGUL JUNGSEONG EU-U",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᆕ"
+      }
+    },
+    {
+      "jamo": "ᆖ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "1196",
+        "name": "HANGUL JUNGSEONG EU-EU",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᆖ"
+      }
+    },
+    {
+      "jamo": "ᆗ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "1197",
+        "name": "HANGUL JUNGSEONG YI-U",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᆗ"
+      }
+    },
+    {
+      "jamo": "ᆘ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "1198",
+        "name": "HANGUL JUNGSEONG I-A",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᆘ"
+      }
+    },
+    {
+      "jamo": "ᆙ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "1199",
+        "name": "HANGUL JUNGSEONG I-YA",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᆙ"
+      }
+    },
+    {
+      "jamo": "ᆚ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "119A",
+        "name": "HANGUL JUNGSEONG I-O",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᆚ"
+      }
+    },
+    {
+      "jamo": "ᆛ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "119B",
+        "name": "HANGUL JUNGSEONG I-U",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᆛ"
+      }
+    },
+    {
+      "jamo": "ᆜ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "119C",
+        "name": "HANGUL JUNGSEONG I-EU",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᆜ"
+      }
+    },
+    {
+      "jamo": "ᆝ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "119D",
+        "name": "HANGUL JUNGSEONG I-ARAEA",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᆝ"
+      }
+    },
+    {
+      "jamo": "ᆞ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "119E",
+        "name": "HANGUL JUNGSEONG ARAEA",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᆞ"
+      }
+    },
+    {
+      "jamo": "ᆟ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "119F",
+        "name": "HANGUL JUNGSEONG ARAEA-EO",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᆟ"
+      }
+    },
+    {
+      "jamo": "ᆠ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "11A0",
+        "name": "HANGUL JUNGSEONG ARAEA-U",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᆠ"
+      }
+    },
+    {
+      "jamo": "ᆡ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "11A1",
+        "name": "HANGUL JUNGSEONG ARAEA-I",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᆡ"
+      }
+    },
+    {
+      "jamo": "ᆢ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "11A2",
+        "name": "HANGUL JUNGSEONG SSANGARAEA",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᆢ"
+      }
+    }
+  ],
+  [
+    {
+      "jamo": "ᆧ",
+      "archaic": false,
+      "unicodeData": {
+        "value": "11A7",
+        "name": "HANGUL JUNGSEONG O-YAE",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᆧ"
+      }
+    },
+    {
+      "jamo": "ᆨ",
+      "archaic": false,
+      "unicodeData": {
+        "value": "11A8",
+        "name": "HANGUL JONGSEONG KIYEOK",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᆨ"
+      }
+    },
+    {
+      "jamo": "ᆩ",
+      "archaic": false,
+      "unicodeData": {
+        "value": "11A9",
+        "name": "HANGUL JONGSEONG SSANGKIYEOK",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᆩ"
+      }
+    },
+    {
+      "jamo": "ᆪ",
+      "archaic": false,
+      "unicodeData": {
+        "value": "11AA",
+        "name": "HANGUL JONGSEONG KIYEOK-SIOS",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᆪ"
+      }
+    },
+    {
+      "jamo": "ᆫ",
+      "archaic": false,
+      "unicodeData": {
+        "value": "11AB",
+        "name": "HANGUL JONGSEONG NIEUN",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᆫ"
+      }
+    },
+    {
+      "jamo": "ᆬ",
+      "archaic": false,
+      "unicodeData": {
+        "value": "11AC",
+        "name": "HANGUL JONGSEONG NIEUN-CIEUC",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᆬ"
+      }
+    },
+    {
+      "jamo": "ᆭ",
+      "archaic": false,
+      "unicodeData": {
+        "value": "11AD",
+        "name": "HANGUL JONGSEONG NIEUN-HIEUH",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᆭ"
+      }
+    },
+    {
+      "jamo": "ᆮ",
+      "archaic": false,
+      "unicodeData": {
+        "value": "11AE",
+        "name": "HANGUL JONGSEONG TIKEUT",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᆮ"
+      }
+    },
+    {
+      "jamo": "ᆯ",
+      "archaic": false,
+      "unicodeData": {
+        "value": "11AF",
+        "name": "HANGUL JONGSEONG RIEUL",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᆯ"
+      }
+    },
+    {
+      "jamo": "ᆰ",
+      "archaic": false,
+      "unicodeData": {
+        "value": "11B0",
+        "name": "HANGUL JONGSEONG RIEUL-KIYEOK",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᆰ"
+      }
+    },
+    {
+      "jamo": "ᆱ",
+      "archaic": false,
+      "unicodeData": {
+        "value": "11B1",
+        "name": "HANGUL JONGSEONG RIEUL-MIEUM",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᆱ"
+      }
+    },
+    {
+      "jamo": "ᆲ",
+      "archaic": false,
+      "unicodeData": {
+        "value": "11B2",
+        "name": "HANGUL JONGSEONG RIEUL-PIEUP",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᆲ"
+      }
+    },
+    {
+      "jamo": "ᆳ",
+      "archaic": false,
+      "unicodeData": {
+        "value": "11B3",
+        "name": "HANGUL JONGSEONG RIEUL-SIOS",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᆳ"
+      }
+    },
+    {
+      "jamo": "ᆴ",
+      "archaic": false,
+      "unicodeData": {
+        "value": "11B4",
+        "name": "HANGUL JONGSEONG RIEUL-THIEUTH",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᆴ"
+      }
+    },
+    {
+      "jamo": "ᆵ",
+      "archaic": false,
+      "unicodeData": {
+        "value": "11B5",
+        "name": "HANGUL JONGSEONG RIEUL-PHIEUPH",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᆵ"
+      }
+    },
+    {
+      "jamo": "ᆶ",
+      "archaic": false,
+      "unicodeData": {
+        "value": "11B6",
+        "name": "HANGUL JONGSEONG RIEUL-HIEUH",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᆶ"
+      }
+    },
+    {
+      "jamo": "ᆷ",
+      "archaic": false,
+      "unicodeData": {
+        "value": "11B7",
+        "name": "HANGUL JONGSEONG MIEUM",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᆷ"
+      }
+    },
+    {
+      "jamo": "ᆸ",
+      "archaic": false,
+      "unicodeData": {
+        "value": "11B8",
+        "name": "HANGUL JONGSEONG PIEUP",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᆸ"
+      }
+    },
+    {
+      "jamo": "ᆹ",
+      "archaic": false,
+      "unicodeData": {
+        "value": "11B9",
+        "name": "HANGUL JONGSEONG PIEUP-SIOS",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᆹ"
+      }
+    },
+    {
+      "jamo": "ᆺ",
+      "archaic": false,
+      "unicodeData": {
+        "value": "11BA",
+        "name": "HANGUL JONGSEONG SIOS",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᆺ"
+      }
+    },
+    {
+      "jamo": "ᆻ",
+      "archaic": false,
+      "unicodeData": {
+        "value": "11BB",
+        "name": "HANGUL JONGSEONG SSANGSIOS",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᆻ"
+      }
+    },
+    {
+      "jamo": "ᆼ",
+      "archaic": false,
+      "unicodeData": {
+        "value": "11BC",
+        "name": "HANGUL JONGSEONG IEUNG",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᆼ"
+      }
+    },
+    {
+      "jamo": "ᆽ",
+      "archaic": false,
+      "unicodeData": {
+        "value": "11BD",
+        "name": "HANGUL JONGSEONG CIEUC",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᆽ"
+      }
+    },
+    {
+      "jamo": "ᆾ",
+      "archaic": false,
+      "unicodeData": {
+        "value": "11BE",
+        "name": "HANGUL JONGSEONG CHIEUCH",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᆾ"
+      }
+    },
+    {
+      "jamo": "ᆿ",
+      "archaic": false,
+      "unicodeData": {
+        "value": "11BF",
+        "name": "HANGUL JONGSEONG KHIEUKH",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᆿ"
+      }
+    },
+    {
+      "jamo": "ᇀ",
+      "archaic": false,
+      "unicodeData": {
+        "value": "11C0",
+        "name": "HANGUL JONGSEONG THIEUTH",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᇀ"
+      }
+    },
+    {
+      "jamo": "ᇁ",
+      "archaic": false,
+      "unicodeData": {
+        "value": "11C1",
+        "name": "HANGUL JONGSEONG PHIEUPH",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᇁ"
+      }
+    },
+    {
+      "jamo": "ᇂ",
+      "archaic": false,
+      "unicodeData": {
+        "value": "11C2",
+        "name": "HANGUL JONGSEONG HIEUH",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᇂ"
+      }
+    },
+    {
+      "jamo": "ᇃ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "11C3",
+        "name": "HANGUL JONGSEONG KIYEOK-RIEUL",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᇃ"
+      }
+    },
+    {
+      "jamo": "ᇄ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "11C4",
+        "name": "HANGUL JONGSEONG KIYEOK-SIOS-KIYEOK",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᇄ"
+      }
+    },
+    {
+      "jamo": "ᇅ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "11C5",
+        "name": "HANGUL JONGSEONG NIEUN-KIYEOK",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᇅ"
+      }
+    },
+    {
+      "jamo": "ᇆ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "11C6",
+        "name": "HANGUL JONGSEONG NIEUN-TIKEUT",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᇆ"
+      }
+    },
+    {
+      "jamo": "ᇇ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "11C7",
+        "name": "HANGUL JONGSEONG NIEUN-SIOS",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᇇ"
+      }
+    },
+    {
+      "jamo": "ᇈ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "11C8",
+        "name": "HANGUL JONGSEONG NIEUN-PANSIOS",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᇈ"
+      }
+    },
+    {
+      "jamo": "ᇉ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "11C9",
+        "name": "HANGUL JONGSEONG NIEUN-THIEUTH",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᇉ"
+      }
+    },
+    {
+      "jamo": "ᇊ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "11CA",
+        "name": "HANGUL JONGSEONG TIKEUT-KIYEOK",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᇊ"
+      }
+    },
+    {
+      "jamo": "ᇋ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "11CB",
+        "name": "HANGUL JONGSEONG TIKEUT-RIEUL",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᇋ"
+      }
+    },
+    {
+      "jamo": "ᇌ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "11CC",
+        "name": "HANGUL JONGSEONG RIEUL-KIYEOK-SIOS",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᇌ"
+      }
+    },
+    {
+      "jamo": "ᇍ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "11CD",
+        "name": "HANGUL JONGSEONG RIEUL-NIEUN",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᇍ"
+      }
+    },
+    {
+      "jamo": "ᇎ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "11CE",
+        "name": "HANGUL JONGSEONG RIEUL-TIKEUT",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᇎ"
+      }
+    },
+    {
+      "jamo": "ᇏ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "11CF",
+        "name": "HANGUL JONGSEONG RIEUL-TIKEUT-HIEUH",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᇏ"
+      }
+    },
+    {
+      "jamo": "ᇐ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "11D0",
+        "name": "HANGUL JONGSEONG SSANGRIEUL",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᇐ"
+      }
+    },
+    {
+      "jamo": "ᇑ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "11D1",
+        "name": "HANGUL JONGSEONG RIEUL-MIEUM-KIYEOK",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᇑ"
+      }
+    },
+    {
+      "jamo": "ᇒ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "11D2",
+        "name": "HANGUL JONGSEONG RIEUL-MIEUM-SIOS",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᇒ"
+      }
+    },
+    {
+      "jamo": "ᇓ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "11D3",
+        "name": "HANGUL JONGSEONG RIEUL-PIEUP-SIOS",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᇓ"
+      }
+    },
+    {
+      "jamo": "ᇔ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "11D4",
+        "name": "HANGUL JONGSEONG RIEUL-PIEUP-HIEUH",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᇔ"
+      }
+    },
+    {
+      "jamo": "ᇕ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "11D5",
+        "name": "HANGUL JONGSEONG RIEUL-KAPYEOUNPIEUP",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᇕ"
+      }
+    },
+    {
+      "jamo": "ᇖ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "11D6",
+        "name": "HANGUL JONGSEONG RIEUL-SSANGSIOS",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᇖ"
+      }
+    },
+    {
+      "jamo": "ᇗ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "11D7",
+        "name": "HANGUL JONGSEONG RIEUL-PANSIOS",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᇗ"
+      }
+    },
+    {
+      "jamo": "ᇘ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "11D8",
+        "name": "HANGUL JONGSEONG RIEUL-KHIEUKH",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᇘ"
+      }
+    },
+    {
+      "jamo": "ᇙ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "11D9",
+        "name": "HANGUL JONGSEONG RIEUL-YEORINHIEUH",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᇙ"
+      }
+    },
+    {
+      "jamo": "ᇚ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "11DA",
+        "name": "HANGUL JONGSEONG MIEUM-KIYEOK",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᇚ"
+      }
+    },
+    {
+      "jamo": "ᇛ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "11DB",
+        "name": "HANGUL JONGSEONG MIEUM-RIEUL",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᇛ"
+      }
+    },
+    {
+      "jamo": "ᇜ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "11DC",
+        "name": "HANGUL JONGSEONG MIEUM-PIEUP",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᇜ"
+      }
+    },
+    {
+      "jamo": "ᇝ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "11DD",
+        "name": "HANGUL JONGSEONG MIEUM-SIOS",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᇝ"
+      }
+    },
+    {
+      "jamo": "ᇞ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "11DE",
+        "name": "HANGUL JONGSEONG MIEUM-SSANGSIOS",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᇞ"
+      }
+    },
+    {
+      "jamo": "ᇟ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "11DF",
+        "name": "HANGUL JONGSEONG MIEUM-PANSIOS",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᇟ"
+      }
+    },
+    {
+      "jamo": "ᇠ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "11E0",
+        "name": "HANGUL JONGSEONG MIEUM-CHIEUCH",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᇠ"
+      }
+    },
+    {
+      "jamo": "ᇡ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "11E1",
+        "name": "HANGUL JONGSEONG MIEUM-HIEUH",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᇡ"
+      }
+    },
+    {
+      "jamo": "ᇢ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "11E2",
+        "name": "HANGUL JONGSEONG KAPYEOUNMIEUM",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᇢ"
+      }
+    },
+    {
+      "jamo": "ᇣ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "11E3",
+        "name": "HANGUL JONGSEONG PIEUP-RIEUL",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᇣ"
+      }
+    },
+    {
+      "jamo": "ᇤ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "11E4",
+        "name": "HANGUL JONGSEONG PIEUP-PHIEUPH",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᇤ"
+      }
+    },
+    {
+      "jamo": "ᇥ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "11E5",
+        "name": "HANGUL JONGSEONG PIEUP-HIEUH",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᇥ"
+      }
+    },
+    {
+      "jamo": "ᇦ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "11E6",
+        "name": "HANGUL JONGSEONG KAPYEOUNPIEUP",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᇦ"
+      }
+    },
+    {
+      "jamo": "ᇧ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "11E7",
+        "name": "HANGUL JONGSEONG SIOS-KIYEOK",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᇧ"
+      }
+    },
+    {
+      "jamo": "ᇨ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "11E8",
+        "name": "HANGUL JONGSEONG SIOS-TIKEUT",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᇨ"
+      }
+    },
+    {
+      "jamo": "ᇩ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "11E9",
+        "name": "HANGUL JONGSEONG SIOS-RIEUL",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᇩ"
+      }
+    },
+    {
+      "jamo": "ᇪ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "11EA",
+        "name": "HANGUL JONGSEONG SIOS-PIEUP",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᇪ"
+      }
+    },
+    {
+      "jamo": "ᇫ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "11EB",
+        "name": "HANGUL JONGSEONG PANSIOS",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᇫ"
+      }
+    },
+    {
+      "jamo": "ᇬ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "11EC",
+        "name": "HANGUL JONGSEONG IEUNG-KIYEOK",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᇬ"
+      }
+    },
+    {
+      "jamo": "ᇭ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "11ED",
+        "name": "HANGUL JONGSEONG IEUNG-SSANGKIYEOK",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᇭ"
+      }
+    },
+    {
+      "jamo": "ᇮ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "11EE",
+        "name": "HANGUL JONGSEONG SSANGIEUNG",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᇮ"
+      }
+    },
+    {
+      "jamo": "ᇯ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "11EF",
+        "name": "HANGUL JONGSEONG IEUNG-KHIEUKH",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᇯ"
+      }
+    },
+    {
+      "jamo": "ᇰ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "11F0",
+        "name": "HANGUL JONGSEONG YESIEUNG",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᇰ"
+      }
+    },
+    {
+      "jamo": "ᇱ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "11F1",
+        "name": "HANGUL JONGSEONG YESIEUNG-SIOS",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᇱ"
+      }
+    },
+    {
+      "jamo": "ᇲ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "11F2",
+        "name": "HANGUL JONGSEONG YESIEUNG-PANSIOS",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᇲ"
+      }
+    },
+    {
+      "jamo": "ᇳ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "11F3",
+        "name": "HANGUL JONGSEONG PHIEUPH-PIEUP",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᇳ"
+      }
+    },
+    {
+      "jamo": "ᇴ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "11F4",
+        "name": "HANGUL JONGSEONG KAPYEOUNPHIEUPH",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᇴ"
+      }
+    },
+    {
+      "jamo": "ᇵ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "11F5",
+        "name": "HANGUL JONGSEONG HIEUH-NIEUN",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᇵ"
+      }
+    },
+    {
+      "jamo": "ᇶ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "11F6",
+        "name": "HANGUL JONGSEONG HIEUH-RIEUL",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᇶ"
+      }
+    },
+    {
+      "jamo": "ᇷ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "11F7",
+        "name": "HANGUL JONGSEONG HIEUH-MIEUM",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᇷ"
+      }
+    },
+    {
+      "jamo": "ᇸ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "11F8",
+        "name": "HANGUL JONGSEONG HIEUH-PIEUP",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᇸ"
+      }
+    },
+    {
+      "jamo": "ᇹ",
+      "archaic": true,
+      "unicodeData": {
+        "value": "11F9",
+        "name": "HANGUL JONGSEONG YEORINHIEUH",
+        "category": "Lo",
+        "class": "0",
+        "bidirectionalCategory": "L",
+        "mirrored": "N",
+        "symbol": "ᇹ"
+      }
+    }
+  ]
+]

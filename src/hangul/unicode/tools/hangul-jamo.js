@@ -1,6 +1,13 @@
 const getUnicodeDataFor = require('./getData')
 
-const { LBase, LCount, VBase, VCount, TBase, TCount } = require('./constraints')
+const {
+  LBase,
+  LCount,
+  VBase,
+  VCount,
+  TBase,
+  TCount
+} = require('../constraints')
 
 // totals including archaic jamo
 const LTotal = 90 // initial consonants

@@ -10,7 +10,7 @@ const [
   initialConsonants,
   medialVowels,
   finalConsonants
-] = require('./hangul/unicode/hangul-jamo')
+] = require('./hangul/unicode/data/hangul-jamo')
 
 /**
  * Create a map function for a given unicode jamo/letter type (initial/middle/last)...
