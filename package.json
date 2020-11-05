@@ -41,7 +41,7 @@
     "유니코드"
   ],
   "author": "James Moon <mooniker@gmail.com>",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "devDependencies": {
     "@types/jest": "^26.0.15",
     "modern-node": "^2.9.0",
