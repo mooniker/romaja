@@ -1,4 +1,4 @@
-const romanize = require('./')
+const { romanize } = require('./')
 const { searchJamo, romanizeWord } = require('./romanize')
 const words = Object.entries(require('../test').words)
 
