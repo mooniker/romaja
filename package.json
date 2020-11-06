@@ -2,7 +2,8 @@
   "name": "romaja",
   "version": "0.2.7",
   "description": "String conversion utility to romanize Korean characters",
-  "main": "./dist/main.js",
+  "main": "dist/romaja.js",
+  "module": "romaja",
   "scripts": {
     "cli": "node bin/cli.js",
     "test": "modern test",
@@ -11,7 +12,8 @@
     "lint": "modern lint",
     "precommit": "modern precommit",
     "prepare": "npm run build",
-    "build": "webpack --mode production --output-library-type commonjs"
+    "bundle": "webpack",
+    "build": "webpack"
   },
   "keywords": [
     "alphabet",
