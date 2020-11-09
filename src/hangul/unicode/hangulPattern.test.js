@@ -1,4 +1,4 @@
-const hangulPattern = require('./hangulPattern')
+const { hangulPattern } = require('./hangulPattern')
 const HANGUL_BLOCKS = Object.entries(require('./blocks')).filter(
   ([blockName]) => blockName.startsWith('HANGUL')
 )
