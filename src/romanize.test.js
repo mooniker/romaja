@@ -66,6 +66,22 @@ describe('romanize function', () => {
       'The Revised Romanization of Korean (gugeoui romaja pyogibeop; 國語ui roma字 表記法; gugeoui romaja pyogibeop. op; lit. "Roman-letter notation of the national language") is the official Korean language romanization system in South Korea.'
     )
   })
+
+  describe('when ruby annotations requested', () => {
+    const actual = romanize(
+      'Ruby characters (루비) are small, annotative glosses that are usually placed above or to the right of logographic characters such as Chinese, Japanese, Korean, or Vietnamese to show the pronunciation.',
+      { ruby: true }
+    )
+    test('should return an array', () => {
+      expect(actual).toBeInstanceOf(Array)
+    })
+
+    test('should include original/input Hangul string in output object package for Ruby annotations', () => {
+      const [{ ruby, text }] = actual.filter(item => typeof item === 'object')
+      expect(ruby).toBe('루비')
+      expect(text).toBe('rubi')
+    })
+  })
 })
 
 describe('searchJamo function', () => {
