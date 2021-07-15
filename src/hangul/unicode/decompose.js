@@ -48,13 +48,11 @@ function arithmeticDecompositionMappingLVT (s) {
  *
  * In other words:
  *
- * This function computes the code points for the Hangul letters (jamo) derived
- * algorithmically for a given Hangul syllable's code point.
+ * This function derives the code points for each Hangul letter (jamo) in a
+ * Hangul character using an algorithm described in the core spec (v. 12.1,
+ * Chapter 3), under section "3.12 Conjoining Jamo Behavior" (pp. 142-151).
  *
- * The algorithm is described in the core spec (v. 12.1, Chapter 3), under section
- * "3.12 Conjoining Jamo Behavior" (pp. 142-151).
- *
- * @param {string|number} s
+ * @param {string|number} s - a Hangul character or a code point for a Hangul character
  * @returns {number[]}
  */
 function decomposeHangulChar (s) {
