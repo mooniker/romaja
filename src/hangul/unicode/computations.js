@@ -1,4 +1,4 @@
-const { SBase, NCount, TCount, SCount } = require("./constraints");
+const { SBase, NCount, TCount, SCount } = require('./constraints')
 
 /**
  * Returns an integer division quotient (rounded down)
@@ -6,45 +6,45 @@ const { SBase, NCount, TCount, SCount } = require("./constraints");
  * @param {number} dividend
  * @param {number} divisor
  */
-const intDiv = (dividend, divisor) => Math.floor(dividend / divisor);
+const intDiv = (dividend, divisor) => Math.floor(dividend / divisor)
 
 /**
  *
- * @param {(string|integer)} s
+ * @param {(string|number)} s
  */
-function computeSIndex(s) {
-  const SIndex = (typeof s === "string" ? s.charCodeAt(0) : s) - SBase;
+function computeSIndex (s) {
+  const SIndex = (typeof s === 'string' ? s.charCodeAt(0) : s) - SBase
 
-  if (0 > SIndex || SIndex >= SCount) {
-    throw new Error(`Not a Hangul syllable: ${s}`);
+  if (SIndex < 0 || SIndex >= SCount) {
+    throw new Error(`Not a Hangul syllable: ${s}`)
   }
 
-  return SIndex;
+  return SIndex
 }
 
 /**
  *
- * @param {integer} SIndex
+ * @param {number} SIndex
  */
-const computeLIndex = SIndex => intDiv(SIndex, NCount); // integer division rounded down
+const computeLIndex = SIndex => intDiv(SIndex, NCount) // integer division rounded down
 
 /**
  *
- * @param {integer} SIndex
+ * @param {number} SIndex
  */
-const computeVIndex = SIndex => intDiv(SIndex % NCount, TCount);
+const computeVIndex = SIndex => intDiv(SIndex % NCount, TCount)
 
 /**
  *
- * @param {integer} SIndex
+ * @param {number} SIndex
  */
-const computeTIndex = SIndex => SIndex % TCount;
+const computeTIndex = SIndex => SIndex % TCount
 
 /**
  *
- * @param {integer} SIndex
+ * @param {number} SIndex
  */
-const computeLVIndex = SIndex => (SIndex / TCount) * TCount;
+const computeLVIndex = SIndex => (SIndex / TCount) * TCount
 
 module.exports = {
   intDiv,
@@ -53,4 +53,4 @@ module.exports = {
   computeVIndex,
   computeTIndex,
   computeLVIndex
-};
+}
