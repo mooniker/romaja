@@ -10,7 +10,9 @@ const isHangul = require('./hangul/isHangul')
  * Transforms a given string by replacing each Hangul character-containing substring with romaja
  * @param {string} text
  * @param {Object} [options]
- * @param {boolean} [ruby]
+ * @param {boolean} [options.ruby]
+ * @param {string} [options.method]
+ * @param {boolean} [options.hyphenate]
  */
 const romanize = (text, options = {}) => {
   if (options.ruby) {
