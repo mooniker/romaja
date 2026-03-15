@@ -110,18 +110,58 @@ const choseong = [
 
 // medial vowels
 const jungseong = [
-  { jamo: 'ㅏ', roman: 'a', bright: true },
-  { jamo: 'ㅐ', roman: 'ae', bright: true },
+  {
+    jamo: 'ㅏ',
+    roman: 'a',
+    bright: true
+  },
+  {
+    jamo: 'ㅐ',
+    roman: 'ae',
+    bright: true
+  },
   { jamo: 'ㅑ', roman: 'ya', dark: true },
   { jamo: 'ㅒ', roman: 'yae', bright: true },
-  { jamo: 'ㅓ', roman: 'eo', dark: true },
-  { jamo: 'ㅔ', roman: 'e', dark: true },
-  { jamo: 'ㅕ', roman: 'yeo', dark: true },
+  {
+    jamo: 'ㅓ',
+    // roman: 'eo',
+    roman: {
+      default: 'eo',
+      MR: 'ŏ'
+    },
+    dark: true
+  },
+  {
+    jamo: 'ㅔ',
+    // roman: 'e',
+    roman: {
+      default: 'e',
+      MR: 'ë'
+    },
+    dark: true
+  },
+  {
+    jamo: 'ㅕ',
+    // roman: 'yeo',
+    roman: {
+      default: 'yeo',
+      MR: 'yŏ'
+    },
+    dark: true
+  },
   { jamo: 'ㅖ', roman: 'ye', dark: true },
   { jamo: 'ㅗ', roman: 'o', bright: true },
   { jamo: 'ㅘ', roman: 'wa', bright: true },
   { jamo: 'ㅙ', roman: 'wae', bright: true },
-  { jamo: 'ㅚ', roman: 'woe', bright: true },
+  {
+    jamo: 'ㅚ',
+    // roman: 'woe',
+    roman: {
+      default: 'woe',
+      MR: 'oe'
+    },
+    bright: true
+  },
   { jamo: 'ㅛ', roman: 'yo', bright: true },
   { jamo: 'ㅜ', roman: 'u', dark: true },
   { jamo: 'ㅝ', roman: 'wo', dark: true },

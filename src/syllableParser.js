@@ -69,10 +69,23 @@ function searchJamo (node, params, prevNode) {
  * @returns {Function}
  */
 const syllableParser = method =>
+  /**
+   *
+   * @param {number|string[]} syllable - an array of jamos (code points)
+   * @param {number} idx
+   * @param {(number|string)[][]} word
+   * @returns
+   */
   function (syllable, idx, word) {
+    // A canonical syllable is composed of:
+    // - a leading consonaunt (초성 aka 'L'),
+    // - a vowel (중성 aka 'V'), and
+    // - (optionally) a trailing consonaunt (종성 aka 'T')
+    // To recap: S = LV or LVT
+
     // next subsequent initial consonant (choseong)
-    const next = idx + 1 < word.length ? word[idx + 1][0] : undefined
-    const vowelNext = next === 0x110b || next === 'ᄋ'
+    const nextL = idx + 1 < word.length ? word[idx + 1][0] : undefined
+    const nextV = nextL === 0x110b || nextL === 'ᄋ'
 
     // only exists this isn't first syllable in word
     const prev = idx > 0 ? word[idx - 1] : null
@@ -91,9 +104,9 @@ const syllableParser = method =>
 
       const roman = searchJamo(dict, {
         method,
-        vowelNext: jamoIdx === 2 ? vowelNext : undefined,
+        vowelNext: jamoIdx === 2 ? nextV : undefined,
         consonantPrev: jamoIdx === 0 ? consonantPrev : undefined,
-        consonantNext: jamoIdx === 2 ? next : undefined
+        consonantNext: jamoIdx === 2 ? nextL : undefined
       }) // FIXME
 
       return roman
