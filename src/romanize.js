@@ -33,7 +33,7 @@ const romanize = (text, options = {}) => {
  * @param {string} [options.method]
  * @param {boolean} [options.hyphenate]
  */
-function romanizeWord (word, options = {}) {
+function romanizeWord(word, options = {}) {
   const { method = 'RR', hyphenate = method === 'RRT' || undefined } = options
 
   const mappedToRoman = decomposeHangul(word)

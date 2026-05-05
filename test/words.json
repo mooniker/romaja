@@ -1,9 +1,7 @@
 {
   "가": {
     "RR": "ga",
-    "tags": [
-      "simple"
-    ]
+    "tags": ["simple"]
   },
   "가곡": {
     "RRT": "ga-gog"
@@ -14,28 +12,19 @@
   "같이": {
     "p": "가치",
     "RR": "gachi",
-    "tags": [
-      "palatalization"
-    ]
+    "tags": ["palatalization"]
   },
   "곧이": {
     "p": "고지",
-    "tags": [
-      "palatalization"
-    ]
+    "tags": ["palatalization"]
   },
   "구미": {
     "RR": "Gumi",
-    "tags": [
-      "plosive",
-      "place-name"
-    ]
+    "tags": ["plosive", "place-name"]
   },
   "구리": {
     "RR": "Guri",
-    "tags": [
-      "place-name"
-    ]
+    "tags": ["place-name"]
   },
   "김치": {
     "RR": "gimchi",
@@ -45,9 +34,7 @@
   },
   "국어의": {
     "RR": "gugeoui",
-    "tags": [
-      "simple"
-    ]
+    "tags": ["simple"]
   },
   "글자": {
     "IPA": "kɯl.t͈ɕa",
@@ -62,9 +49,7 @@
   "굳히다": {
     "p": "구치다",
     "RR": "guchida",
-    "tags": [
-      "palatalization"
-    ]
+    "tags": ["palatalization"]
   },
   "굳이": {
     "RRT": "gud-i"
@@ -74,15 +59,11 @@
   },
   "나": {
     "RR": "na",
-    "tags": [
-      "simple"
-    ]
+    "tags": ["simple"]
   },
   "다": {
     "RR": "da",
-    "tags": [
-      "simple"
-    ]
+    "tags": ["simple"]
   },
   "닦는다": {
     "p": "당는다"
@@ -92,42 +73,30 @@
   },
   "닫히다": {
     "p": "다치다",
-    "tags": [
-      "palatalization"
-    ]
+    "tags": ["palatalization"]
   },
   "대관령": {
     "p": "대괄령",
     "RR": "Daegwallyeong",
-    "tags": [
-      "place-name"
-    ]
+    "tags": ["place-name"]
   },
   "독립": {
     "RR": "dongnip",
     "MR": "tongnip",
     "RRT": "dog-lib",
-    "tags": [
-      "nasalization"
-    ]
+    "tags": ["nasalization"]
   },
   "동무": {
     "RR": "dongmu",
-    "tags": [
-      "simple"
-    ]
+    "tags": ["simple"]
   },
   "로마자": {
     "RR": "romaja",
-    "tags": [
-      "simple"
-    ]
+    "tags": ["simple"]
   },
   "만남": {
     "RR": "mannam",
-    "tags": [
-      "simple"
-    ]
+    "tags": ["simple"]
   },
   "먹는": {
     "RRT": "meog-neun"
@@ -137,9 +106,7 @@
   },
   "문리": {
     "default": "mulli",
-    "tags": [
-      "assimilation"
-    ]
+    "tags": ["assimilation"]
   },
   "물엿": {
     "RR": "mullyeot",
@@ -175,41 +142,28 @@
   "백마": {
     "RR": "Baengma",
     "p": "뱅마",
-    "tags": [
-      "place-name",
-      "assimilation"
-    ]
+    "tags": ["place-name", "assimilation"]
   },
   "백암": {
     "RR": "Baegam",
-    "tags": [
-      "plosive",
-      "place-name"
-    ]
+    "tags": ["plosive", "place-name"]
   },
   "법령": {
     "p": "범령"
   },
   "법무": {
     "p": "범무",
-    "tags": [
-      "nasalization"
-    ]
+    "tags": ["nasalization"]
   },
   "별내": {
     "RR": "Byeollae",
     "p": "별래",
-    "tags": [
-      "place-name",
-      "assimilation"
-    ]
+    "tags": ["place-name", "assimilation"]
   },
   "벚꽃": {
     "RR": "beotkkot",
     "p": "벋꼳",
-    "tags": [
-      "plosive"
-    ]
+    "tags": ["plosive"]
   },
   "벽": {
     "meaningEng": "wall",
@@ -264,42 +218,27 @@
   },
   "북한": {
     "p": "부칸",
-    "tags": [
-      "aspiration"
-    ]
+    "tags": ["aspiration"]
   },
   "붓꽃": {
     "RRT": "bus-kkoch"
   },
   "설악": {
     "RR": "Seorak",
-    "tags": [
-      "place-name"
-    ]
+    "tags": ["place-name"]
   },
   "신문로": {
     "p": "신문노",
-    "tags": [
-      "place-name",
-      "assimilation",
-      "ㄹ"
-    ]
+    "tags": ["place-name", "assimilation", "ㄹ"]
   },
   "신라": {
     "RR": "Silla",
     "p": "실라",
-    "tags": [
-      "place-name",
-      "assimilation",
-      "ㄹ"
-    ]
+    "tags": ["place-name", "assimilation", "ㄹ"]
   },
   "실내": {
     "p": "실래",
-    "tags": [
-      "ㄹ",
-      "assimilation"
-    ]
+    "tags": ["ㄹ", "assimilation"]
   },
   "설날": {
     "p": "설랄"
@@ -321,43 +260,28 @@
   "왕십리": {
     "RR": "Wangsimni",
     "p": "왕심니",
-    "tags": [
-      "place-name",
-      "assimilation"
-    ]
+    "tags": ["place-name", "assimilation"]
   },
   "월곶": {
     "RR": "Wolgot",
     "p": "월곧",
-    "tags": [
-      "place-name"
-    ]
+    "tags": ["place-name"]
   },
   "영동": {
     "RR": "Yeongdong",
-    "tags": [
-      "plosive",
-      "place-name"
-    ]
+    "tags": ["plosive", "place-name"]
   },
   "옥천": {
     "RR": "Okcheon",
-    "tags": [
-      "plosive",
-      "place-name"
-    ]
+    "tags": ["plosive", "place-name"]
   },
   "임실": {
     "RR": "Imsil",
-    "tags": [
-      "place-name"
-    ]
+    "tags": ["place-name"]
   },
   "울릉": {
     "RR": "Ulleung",
-    "tags": [
-      "place-name"
-    ]
+    "tags": ["place-name"]
   },
   "있느냐": {
     "p": "인느냐"
@@ -397,43 +321,31 @@
   "종로": {
     "RR": "Jongno",
     "p": "종노",
-    "tags": [
-      "assimilation"
-    ]
+    "tags": ["assimilation"]
   },
   "좋다": {
     "p": "조타",
     "RRT": "joh-da",
-    "tags": [
-      "aspiration"
-    ]
+    "tags": ["aspiration"]
   },
   "집": {
     "RRT": "jib",
-    "tags": [
-      "simple"
-    ]
+    "tags": ["simple"]
   },
   "짚": {
     "RRT": "jip"
   },
   "친구": {
     "RR": "chingu",
-    "tags": [
-      "simple"
-    ]
+    "tags": ["simple"]
   },
   "칠곡": {
     "RR": "Chilgok",
-    "tags": [
-      "place-name"
-    ]
+    "tags": ["place-name"]
   },
   "표기법": {
     "RR": "pyogibeop",
-    "tags": [
-      "simple"
-    ]
+    "tags": ["simple"]
   },
   "하": {
     "RR": "ha"
@@ -448,16 +360,11 @@
   "한국말": {
     "p": "한궁말",
     "RR": "han-gungmal",
-    "tags": [
-      "nasalization"
-    ]
+    "tags": ["nasalization"]
   },
   "한글": {
     "IPA": "han.ɡɯl",
-    "RR": [
-      "hangeul",
-      "han-geul"
-    ],
+    "RR": ["hangeul", "han-geul"],
     "RRT": "han-geul",
     "MR": "han'gŭl",
     "yale": "hānkul",
@@ -468,9 +375,7 @@
   "한밭": {
     "RR": "Hanbat",
     "p": "한받",
-    "tags": [
-      "plosive"
-    ]
+    "tags": ["plosive"]
   },
   "한자": {
     "RR": "hanja",
@@ -480,23 +385,16 @@
   },
   "합덕": {
     "RR": "Hapdeok",
-    "tags": [
-      "plosive",
-      "place-name"
-    ]
+    "tags": ["plosive", "place-name"]
   },
   "해돋이": {
     "p": "해돚이",
     "RR": "haedoji",
-    "tags": [
-      "palatalization"
-    ]
+    "tags": ["palatalization"]
   },
   "호법": {
     "RR": "Hobeop",
-    "tags": [
-      "plosive"
-    ]
+    "tags": ["plosive"]
   },
   "훈민정음": {
     "RR": "Hunminjeong'eum",

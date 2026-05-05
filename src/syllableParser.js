@@ -6,7 +6,7 @@ const maps = [
 ]
 const jamoToCompat = jamoData[3]
 
-function createJamoMap (data) {
+function createJamoMap(data) {
   const map = new Map()
   data.forEach(item => {
     if (item.jamo) map.set(item.jamo, item.roman)
@@ -18,15 +18,10 @@ function createJamoMap (data) {
   return map
 }
 
-function resolveRoman (rules, params) {
+function resolveRoman(rules, params) {
   let current = rules
-  const {
-    method,
-    vowelNext,
-    nextJungseong,
-    consonantNext,
-    consonantPrev
-  } = params
+  const { method, vowelNext, nextJungseong, consonantNext, consonantPrev } =
+    params
 
   while (
     typeof current !== 'string' &&

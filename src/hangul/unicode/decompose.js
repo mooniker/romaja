@@ -13,7 +13,7 @@ const {
  * @param {string|number} s
  * @returns {number[]}
  */
-function arithmeticDecompositionMappingLV (s) {
+function arithmeticDecompositionMappingLV(s) {
   const SIndex = computeSIndex(s)
   const LIndex = computeLIndex(SIndex)
   const VIndex = computeVIndex(SIndex)
@@ -29,7 +29,7 @@ function arithmeticDecompositionMappingLV (s) {
  * @param {string|number} s
  * @returns {number[]}
  */
-function arithmeticDecompositionMappingLVT (s) {
+function arithmeticDecompositionMappingLVT(s) {
   const SIndex = computeSIndex(s)
   const LVIndex = computeLVIndex(SIndex)
   const TIndex = computeTIndex(SIndex)
@@ -55,7 +55,7 @@ function arithmeticDecompositionMappingLVT (s) {
  * @param {string|number} s - a Hangul character or a code point for a Hangul character
  * @returns {number[]}
  */
-function decomposeHangulChar (s) {
+function decomposeHangulChar(s) {
   const SIndex = (typeof s === 'string' ? s.charCodeAt(0) : s) - SBase
 
   const LVPart = arithmeticDecompositionMappingLV(s)

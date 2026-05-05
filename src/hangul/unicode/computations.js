@@ -12,7 +12,7 @@ const intDiv = (dividend, divisor) => Math.floor(dividend / divisor)
  *
  * @param {(string|number)} s
  */
-function computeSIndex (s) {
+function computeSIndex(s) {
   const SIndex = (typeof s === 'string' ? s.charCodeAt(0) : s) - SBase
 
   if (SIndex < 0 || SIndex >= SCount) {

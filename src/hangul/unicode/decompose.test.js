@@ -24,15 +24,13 @@ const hangulHexCases = {
 describe('arithmeticDecompositionMappingLV', () => {
   test('should pull out correct code points for ㅍ and ㅟ from 0xd4db (퓛)', () => {
     expect(arithmeticDecompositionMappingLV(0xd4db)).toStrictEqual([
-      0x1111,
-      0x1171
+      0x1111, 0x1171
     ])
   })
 
   test('should pull out correct code points for ㅍ and ㅟ from 퓛', () => {
     expect(arithmeticDecompositionMappingLV('퓛')).toStrictEqual([
-      0x1111,
-      0x1171
+      0x1111, 0x1171
     ])
   })
 })

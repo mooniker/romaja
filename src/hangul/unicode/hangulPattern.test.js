@@ -50,7 +50,7 @@ describe('String.replace with hangul pattern and callback', () => {
     })
   })
 
-  test(`should find nothing in a given Japanese sentence`, () => {
+  test('should find nothing in a given Japanese sentence', () => {
     const nara =
       '8世紀初頭から末にかけては奈良時代と呼ばれ、奈良に都城（平城京）が置かれた。'
     const mockCallback = jest.fn()
@@ -58,7 +58,7 @@ describe('String.replace with hangul pattern and callback', () => {
     expect(mockCallback).not.toHaveBeenCalled()
   })
 
-  test(`should find nothing in a given English sentence`, () => {
+  test('should find nothing in a given English sentence', () => {
     const seoJaePil =
       'One of the first Korean Americans was Seo Jae-pil, or Philip Jaisohn, who came to America shortly after participating in an abortive coup with other progressives to institute political reform in 1884. He became a citizen in 1890 and earned a medical degree in 1892 from what is now George Washington University.'
     const mockCallback = jest.fn()
