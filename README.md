@@ -1,6 +1,6 @@
 # `romaja` (로마자) [![npm version](https://badge.fury.io/js/romaja.svg)](https://badge.fury.io/js/romaja)
 
-> A high-performance, linguistically accurate Korean (Hangeul) romanization engine.
+> A high-performance, linguistically accurate Korean (Hangul) romanization engine.
 
 ```sh
 npm install --global romaja
