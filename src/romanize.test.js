@@ -1,5 +1,5 @@
 const { romanize } = require('./')
-const { searchJamo, romanizeWord } = require('./romanize')
+const { romanizeWord } = require('./romanize')
 const words = Object.entries(require('../test').words)
 
 describe('romanizeWord function', () => {
@@ -44,6 +44,24 @@ describe('romanizeWord function', () => {
         })
       })
   })
+
+  describe('phonetic rules (aspiration and palatalization)', () => {
+    test('aspiration: 좋다 to jota', () => {
+      expect(romanizeWord('좋다')).toBe('jota')
+    })
+    test('aspiration: 먹히다 to meokida', () => {
+      expect(romanizeWord('먹히다')).toBe('meokida')
+    })
+    test('palatalization: 해돋이 to haedoji', () => {
+      expect(romanizeWord('해돋이')).toBe('haedoji')
+    })
+    test('palatalization: 같이 to gachi', () => {
+      expect(romanizeWord('같이')).toBe('gachi')
+    })
+    test('combined: 굳히다 to guchida', () => {
+      expect(romanizeWord('굳히다')).toBe('guchida')
+    })
+  })
 })
 
 describe('romanize function', () => {
@@ -81,11 +99,5 @@ describe('romanize function', () => {
       expect(ruby).toBe('루비')
       expect(text).toBe('rubi')
     })
-  })
-})
-
-describe('searchJamo function', () => {
-  test('should throw an error if not supplied with a node to search', () => {
-    expect(() => searchJamo()).toThrow()
   })
 })
