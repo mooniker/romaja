@@ -6,7 +6,7 @@ const maps = [
 ]
 const jamoToCompat = jamoData[3]
 
-function createJamoMap(data) {
+function createJamoMap (data) {
   const map = new Map()
   data.forEach(item => {
     if (item.jamo) map.set(item.jamo, item.roman)
@@ -18,35 +18,33 @@ function createJamoMap(data) {
   return map
 }
 
-function resolveRoman(rules, params) {
+function resolveRoman (rules, params) {
   let current = rules
-  const { method, vowelNext, nextJungseong, consonantNext, consonantPrev } =
-    params
+  const { method, vowelNext, nextJungseong, consonantNext, consonantPrev, isVoiced } = params
 
-  while (
-    typeof current !== 'string' &&
-    current !== null &&
-    current !== undefined
-  ) {
+  while (typeof current !== 'string' && current !== null && current !== undefined) {
     if (current.roman !== undefined) {
       current = current.roman
       continue
     }
 
     if (method && current[method] !== undefined) {
+      if (typeof current[method] === 'object' && isVoiced && current[method].voiced !== undefined) {
+        current = current[method].voiced
+        continue
+      }
       current = current[method]
       continue
     }
 
+    if (isVoiced && current.voiced !== undefined) {
+      current = current.voiced
+      continue
+    }
+
     if (vowelNext && current.vowelNext !== undefined) {
-      if (
-        typeof current.vowelNext === 'object' &&
-        nextJungseong !== undefined
-      ) {
-        const vowelChar =
-          typeof nextJungseong === 'number'
-            ? String.fromCodePoint(nextJungseong)
-            : nextJungseong
+      if (typeof current.vowelNext === 'object' && nextJungseong !== undefined) {
+        const vowelChar = typeof nextJungseong === 'number' ? String.fromCodePoint(nextJungseong) : nextJungseong
         const compatVowel = jamoToCompat.get(vowelChar) || vowelChar
         if (current.vowelNext[vowelChar] !== undefined) {
           current = current.vowelNext[vowelChar]
@@ -71,10 +69,7 @@ function resolveRoman(rules, params) {
 
       if (current[char] !== undefined) {
         if (typeof current[char] === 'object' && nextJungseong !== undefined) {
-          const vowelChar =
-            typeof nextJungseong === 'number'
-              ? String.fromCodePoint(nextJungseong)
-              : nextJungseong
+          const vowelChar = typeof nextJungseong === 'number' ? String.fromCodePoint(nextJungseong) : nextJungseong
           const compatVowel = jamoToCompat.get(vowelChar) || vowelChar
           if (current[char][vowelChar] !== undefined) {
             current = current[char][vowelChar]
@@ -93,14 +88,8 @@ function resolveRoman(rules, params) {
         continue
       }
       if (current[compat] !== undefined) {
-        if (
-          typeof current[compat] === 'object' &&
-          nextJungseong !== undefined
-        ) {
-          const vowelChar =
-            typeof nextJungseong === 'number'
-              ? String.fromCodePoint(nextJungseong)
-              : nextJungseong
+        if (typeof current[compat] === 'object' && nextJungseong !== undefined) {
+          const vowelChar = typeof nextJungseong === 'number' ? String.fromCodePoint(nextJungseong) : nextJungseong
           const compatVowel = jamoToCompat.get(vowelChar) || vowelChar
           if (current[compat][vowelChar] !== undefined) {
             current = current[compat][vowelChar]
@@ -131,6 +120,8 @@ function resolveRoman(rules, params) {
   return typeof current === 'string' ? current : ''
 }
 
+const voicedJongseong = new Set([0x11ab, 0x11af, 0x11b7, 0x11bc])
+
 const syllableParser = method => (syllable, idx, word) => {
   const nextSyllable = idx + 1 < word.length ? word[idx + 1] : null
   const nextChoseong = nextSyllable ? nextSyllable[0] : undefined
@@ -138,8 +129,10 @@ const syllableParser = method => (syllable, idx, word) => {
   const vowelNext = nextChoseong === 0x110b || nextChoseong === 'ᄋ'
 
   const prevSyllable = idx > 0 ? word[idx - 1] : null
-  const consonantPrev =
-    prevSyllable && prevSyllable[2] ? prevSyllable[2] : undefined
+  const consonantPrev = prevSyllable && prevSyllable[2] ? prevSyllable[2] : undefined
+
+  // For MR: voiced if preceded by vowel (consonantPrev undefined) or voiced consonant
+  const isVoiced = method === 'MR' && idx > 0 && (consonantPrev === undefined || voicedJongseong.has(consonantPrev))
 
   return syllable.map((jamo, jamoIdx) => {
     const rules = maps[jamoIdx].get(jamo)
@@ -148,10 +141,10 @@ const syllableParser = method => (syllable, idx, word) => {
     return resolveRoman(rules, {
       method,
       vowelNext: jamoIdx === 2 ? vowelNext : undefined,
-      nextJungseong:
-        jamoIdx === 2 ? nextJungseong : jamoIdx === 0 ? syllable[1] : undefined,
+      nextJungseong: jamoIdx === 2 ? nextJungseong : (jamoIdx === 0 ? syllable[1] : undefined),
       consonantPrev: jamoIdx === 0 ? consonantPrev : undefined,
-      consonantNext: jamoIdx === 2 ? nextChoseong : undefined
+      consonantNext: jamoIdx === 2 ? nextChoseong : undefined,
+      isVoiced: jamoIdx === 0 ? isVoiced : undefined
     })
   })
 }

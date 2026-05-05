@@ -62,6 +62,31 @@ describe('romanizeWord function', () => {
       expect(romanizeWord('굳히다')).toBe('guchida')
     })
   })
+
+  describe('McCune-Reischauer (MR) method', () => {
+    test('initial plosives should be k, t, p, ch', () => {
+      expect(romanizeWord('부산', { method: 'MR' })).toBe('pusan')
+      expect(romanizeWord('대구', { method: 'MR' })).toBe('taegu')
+      expect(romanizeWord('광주', { method: 'MR' })).toBe('kwangju')
+      expect(romanizeWord('진주', { method: 'MR' })).toBe('chinju')
+    })
+
+    test('voiced plosives between vowels should be g, d, b, j', () => {
+      expect(romanizeWord('국어', { method: 'MR' })).toBe('kugŏ')
+      expect(romanizeWord('대구', { method: 'MR' })).toBe('taegu')
+      expect(romanizeWord('진주', { method: 'MR' })).toBe('chinju')
+    })
+
+    test('special vowels (eo, eu) should use breves', () => {
+      expect(romanizeWord('먹었다', { method: 'MR' })).toBe('mŏgŏtta')
+      expect(romanizeWord('금강', { method: 'MR' })).toBe('kŭmgang')
+    })
+
+    test('aspirated consonants should use apostrophes', () => {
+      expect(romanizeWord('김치', { method: 'MR' })).toBe('kimch\'i')
+      expect(romanizeWord('쾌차', { method: 'MR' })).toBe('k\'waech\'a')
+    })
+  })
 })
 
 describe('romanize function', () => {
