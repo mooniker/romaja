@@ -1,6 +1,6 @@
 {
   "name": "romaja",
-  "version": "0.7.1",
+  "version": "0.7.2",
   "description": "String conversion utility to romanize Korean characters",
   "type": "module",
   "main": "dist/romaja.cjs",
@@ -52,11 +52,8 @@
   "license": "MIT",
   "devDependencies": {
     "@types/jest": "^29.5.14",
-    "eslint": "^8.57.1",
-    "eslint-config-standard": "^17.1.0",
-    "eslint-plugin-import": "^2.31.0",
-    "eslint-plugin-n": "^16.6.2",
-    "eslint-plugin-promise": "^6.6.0",
+    "eslint": "^9.16.0",
+    "eslint-config-next": "^15.0.0",
     "husky": "^9.1.7",
     "jest": "^29.7.0",
     "lint-staged": "^15.4.3",
