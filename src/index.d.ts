@@ -28,6 +28,18 @@ export interface RomanizeOptions {
    * Key is the Hangul word, value is the custom romanization.
    */
   overrides?: Record<string, string> | Map<string, string>;
+
+  /**
+   * Whether to identify and romanize Hanja (Chinese characters).
+   * @default false
+   */
+  hanja?: boolean;
+
+  /**
+   * Whether to apply South Korean Initial Sound Rule (Dueum Beopchik) during Hanja conversion.
+   * @default true
+   */
+  initialSoundRule?: boolean;
 }
 
 /**
@@ -44,9 +56,18 @@ export interface RubyResult {
  * @param text The string containing Hangul to romanize.
  * @param options Romanization options.
  */
-export function romanize(text: string, options?: RomanizeOptions & { ruby?: false }): string;
-export function romanize(text: string, options: RomanizeOptions & { ruby: true }): Array<string | RubyResult>;
-export function romanize(text: string, options?: RomanizeOptions): string | Array<string | RubyResult>;
+export function romanize(
+  text: string,
+  options?: RomanizeOptions & { ruby?: false }
+): string;
+export function romanize(
+  text: string,
+  options: RomanizeOptions & { ruby: true }
+): Array<string | RubyResult>;
+export function romanize(
+  text: string,
+  options?: RomanizeOptions
+): string | Array<string | RubyResult>;
 
 /**
  * Transforms a single Hangul word into its Roman equivalent.
@@ -55,3 +76,14 @@ export function romanize(text: string, options?: RomanizeOptions): string | Arra
  * @param options Romanization options.
  */
 export function romanizeWord(word: string, options?: RomanizeOptions): string;
+
+/**
+ * Converts Hanja characters in a string to their Hangul equivalents.
+ *
+ * @param text The string containing Hanja.
+ * @param options Hanja conversion options.
+ */
+export function hanjaToHangul(
+  text: string,
+  options?: { initialSoundRule?: boolean }
+): string;

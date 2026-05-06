@@ -130,6 +130,27 @@ describe('romanizeWord function', () => {
       expect(romanize(text, options)).toBe('Samsung means Three Stars.')
     })
   })
+
+  describe('hanja support', () => {
+    test('should romanize common hanja', () => {
+      expect(romanize('大韓民國', { hanja: true })).toBe('daehanminguk')
+    })
+
+    test('should apply South Korean Initial Sound Rule', () => {
+      // 女子 (녀자 -> 여자)
+      expect(romanize('女子', { hanja: true })).toBe('yeoja')
+    })
+
+    test('should allow disabling Initial Sound Rule (North Korean style)', () => {
+      expect(romanize('女子', { hanja: true, initialSoundRule: false })).toBe(
+        'nyeoja'
+      )
+    })
+
+    test('should handle mixed Hanja and Hangul', () => {
+      expect(romanize('大韓은 한글.', { hanja: true })).toBe('daehaneun hangeul.')
+    })
+  })
 })
 
 describe('romanize function', () => {
