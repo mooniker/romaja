@@ -1,16 +1,17 @@
 {
   "name": "romaja",
-  "version": "0.7.2",
+  "version": "0.8.0",
   "description": "String conversion utility to romanize Korean characters",
   "type": "module",
   "main": "dist/romaja.cjs",
-  "module": "src/index.js",
   "exports": {
     ".": {
+      "types": "./dist/index.d.ts",
       "import": "./src/index.js",
       "require": "./dist/romaja.cjs"
     }
   },
+  "sideEffects": false,
   "scripts": {
     "cli": "node bin/cli.js",
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
@@ -19,7 +20,7 @@
     "lint": "eslint .",
     "prepare": "npm run build",
     "bundle": "webpack --config webpack.config.cjs",
-    "build": "webpack --config webpack.config.cjs"
+    "build": "webpack --config webpack.config.cjs && copyfiles -u 1 src/index.d.ts dist/"
   },
   "keywords": [
     "alphabet",
@@ -52,6 +53,7 @@
   "license": "MIT",
   "devDependencies": {
     "@types/jest": "^29.5.14",
+    "copyfiles": "^2.4.1",
     "eslint": "^9.16.0",
     "eslint-config-next": "^15.0.0",
     "husky": "^9.1.7",
