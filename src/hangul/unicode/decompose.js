@@ -1,19 +1,22 @@
-const { SBase, LBase, VBase, TBase } = require('./constraints')
-
-const {
+import constraints from './constraints.js'
+import {
   computeSIndex,
   computeLIndex,
   computeVIndex,
-  computeLVIndex,
   computeTIndex
-} = require('./computations')
+} from './computations.js'
+
+const { SBase, LBase, VBase, TBase } = constraints
 
 /**
  * Based on "Arithmetic Decomposition Mapping" as described in Unicode core spec for "LV" Hangul syllable types
- * @param {string|number} s
- * @returns {number[]}
+ *
+ * (Unicode spec v.12.1.0, Sec 3.12, eq. D133)
+ *
+ * @param {string} s - a Hangul character
+ * @returns {number[]} an array containing the code points for the decomposed Jamo
  */
-function arithmeticDecompositionMappingLV(s) {
+export function arithmeticDecompositionMappingLV(s) {
   const SIndex = computeSIndex(s)
   const LIndex = computeLIndex(SIndex)
   const VIndex = computeVIndex(SIndex)
@@ -26,47 +29,38 @@ function arithmeticDecompositionMappingLV(s) {
 
 /**
  * Based on "Arithmetic Decomposition Mapping" as described in Unicode core spec for "LVT" Hangul syllable types
- * @param {string|number} s
- * @returns {number[]}
+ *
+ * (Unicode spec v.12.1.0, Sec 3.12, eq. D134)
+ *
+ * @param {string} s - a Hangul character
+ * @returns {number[]} an array containing the code points for the decomposed Jamo
  */
-function arithmeticDecompositionMappingLVT(s) {
+export function arithmeticDecompositionMappingLVT(s) {
   const SIndex = computeSIndex(s)
-  const LVIndex = computeLVIndex(SIndex)
   const TIndex = computeTIndex(SIndex)
+  const LVIndex = (SIndex / constraints.TCount) * constraints.TCount
 
   const LVPart = SBase + LVIndex
   const TPart = TBase + TIndex
 
-  return [LVPart, TPart]
+  return [...arithmeticDecompositionMappingLV(LVPart), TPart]
 }
 
 /**
  * Derives a canonical decomposition of a precomposed/composite Hangul syllable
  *
- * Based on "Full Canonical Decomposition" as described in Unicode core
- * specification for canonical decomposition mappings.
- *
- * In other words:
- *
- * This function derives the code points for each Hangul letter (jamo) in a
- * Hangul character using an algorithm described in the core spec (v. 12.1,
- * Chapter 3), under section "3.12 Conjoining Jamo Behavior" (pp. 142-151).
- *
  * @param {string|number} s - a Hangul character or a code point for a Hangul character
- * @returns {number[]}
+ * @returns {number[]} an array containing the code points for the decomposed Jamo
  */
-function decomposeHangulChar(s) {
-  const SIndex = (typeof s === 'string' ? s.charCodeAt(0) : s) - SBase
-
-  const LVPart = arithmeticDecompositionMappingLV(s)
+export function decomposeHangulChar(s) {
+  const SIndex = computeSIndex(s)
   const TIndex = computeTIndex(SIndex)
 
-  if (TIndex > 0) {
-    const TPart = TBase + TIndex
-    return LVPart.concat([TPart])
+  if (TIndex !== 0) {
+    return arithmeticDecompositionMappingLVT(s)
   }
 
-  return LVPart
+  return arithmeticDecompositionMappingLV(s)
 }
 
 /**
@@ -75,11 +69,4 @@ function decomposeHangulChar(s) {
  * @param {string} word
  * @returns {number[][]}
  */
-const decomposeHangul = word => [...word].map(decomposeHangulChar)
-
-module.exports = {
-  arithmeticDecompositionMappingLV,
-  arithmeticDecompositionMappingLVT,
-  decomposeHangulChar,
-  decomposeHangul
-}
+export const decomposeHangul = word => [...word].map(decomposeHangulChar)

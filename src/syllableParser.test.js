@@ -1,4 +1,4 @@
-const { syllableParser } = require('./syllableParser')
+import { syllableParser } from './syllableParser.js'
 
 describe('syllableParser', () => {
   const parseSyllable = syllableParser({})

@@ -1,3 +1,1 @@
-const { romanize, romanizeWord } = require('./romanize')
-
-module.exports = { romanize, romanizeWord }
+export { romanize, romanizeWord } from './romanize.js'

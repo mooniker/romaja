@@ -1,4 +1,4 @@
-const { intDiv, computeSIndex } = require('./computations')
+import { intDiv, computeSIndex } from './computations.js'
 
 describe('Integer division function', () => {
   test('should divide 5 by 2 and round the quotient down to the nearest integer', () => {

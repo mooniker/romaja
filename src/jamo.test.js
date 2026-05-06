@@ -1,33 +1,45 @@
-const [initialConsonants, medialVowels, finalConsonants] = require('./jamo')
+import jamos from './jamo.js'
 
-describe('Jamo dictionary', () => {
-  test('should contain array of initial consonants (choseong)', () => {
-    expect(initialConsonants).toBeInstanceOf(Array)
+describe('Jamo data', () => {
+  test('choseong should have 19 items', () => {
+    expect(jamos[0]).toHaveLength(19)
   })
 
-  test('should contain initial consonants (choseong) array of length 19', () => {
-    expect(initialConsonants).toHaveLength(19)
+  test('jungseong should have 21 items', () => {
+    expect(jamos[1]).toHaveLength(21)
   })
 
-  test('should contain array of medial vowels (jungseong)', () => {
-    expect(medialVowels).toBeInstanceOf(Array)
+  test('jongseong should have 28 items (including null)', () => {
+    expect(jamos[2]).toHaveLength(28)
   })
 
-  test('should contain medial vowels (jungseong) array of length 21', () => {
-    expect(medialVowels).toHaveLength(21)
+  test('jamoToCompat should be a Map', () => {
+    expect(jamos[3]).toBeInstanceOf(Map)
   })
 
-  test('should contain array of final consonants (jongseong)', () => {
-    expect(finalConsonants).toBeInstanceOf(Array)
-  })
-
-  test('should contain final consonants (jongseong) array of length 28', () => {
-    expect(finalConsonants).toHaveLength(28)
-  })
-
-  describe('roman', () => {
-    test('should contain a Roman lookup object for final consonant ㄱ', () => {
-      expect(finalConsonants[1].roman).toBeInstanceOf(Object)
-    })
+  test('choseong should match expected initial consonants', () => {
+    const expected = [
+      'ᄀ',
+      'ᄁ',
+      'ᄂ',
+      'ᄃ',
+      'ᄄ',
+      'ᄅ',
+      'ᄆ',
+      'ᄇ',
+      'ᄈ',
+      'ᄉ',
+      'ᄊ',
+      'ᄋ',
+      'ᄌ',
+      'ᄍ',
+      'ᄎ',
+      'ᄏ',
+      'ᄐ',
+      'ᄑ',
+      'ᄒ'
+    ]
+    const actual = jamos[0].map(item => item.jamo)
+    expect(actual).toStrictEqual(expected)
   })
 })

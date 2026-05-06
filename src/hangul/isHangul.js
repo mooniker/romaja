@@ -1,4 +1,5 @@
-const unicodeBlocks = require('./unicode/blocks')
+import unicodeBlocks from './unicode/blocks.js'
+
 const hangulBlocks = Object.entries(unicodeBlocks).filter(([blockName]) =>
   blockName.startsWith('HANGUL')
 )
@@ -24,4 +25,4 @@ const isHangul = (char, blocks = hangulBlocks) => {
   return false
 }
 
-module.exports = isHangul
+export default isHangul

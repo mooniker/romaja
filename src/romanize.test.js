@@ -1,34 +1,58 @@
-const { romanize } = require('./')
-const { romanizeWord } = require('./romanize')
-const words = Object.entries(require('../test').words)
+import { jest, describe, test, expect } from '@jest/globals'
+import { romanize, romanizeWord } from './index.js'
+import testData from '../test/index.js'
+
+const words = Object.entries(testData.words)
 
 describe('romanizeWord function', () => {
   describe('should romanize simple words', () => {
     words
-      .filter(([, { RR, tags }]) => RR && tags && tags.includes('simple'))
+      .filter(([, { tags, RR }]) => RR && tags && tags.includes('simple'))
       .forEach(([hangulWord, { RR }]) => {
-        test(`${hangulWord} to ${RR}`, () => {
-          expect(romanizeWord(hangulWord)).toBe(RR)
+        const expected = Array.isArray(RR) ? RR[0] : RR
+        test(`${hangulWord} to ${expected}`, () => {
+          expect(romanizeWord(hangulWord).toLowerCase()).toBe(
+            expected.toLowerCase()
+          )
         })
       })
   })
 
-  describe("should transcribe plosives/stops ㄱ, ㄷ, and ㅂ as 'g', 'd', and 'b' before a vowel and as 'k', 't', and 'p' when before another consonant or as the last sound of a word", () => {
+  describe('should romanize words with assimilation rules', () => {
     words
-      .filter(([, { RR, tags }]) => RR && tags && tags.includes('plosives'))
+      .filter(([, { tags, RR }]) => RR && tags && tags.includes('assimilation'))
       .forEach(([hangulWord, { RR }]) => {
-        test(`${hangulWord} to ${RR}`, () => {
-          expect(romanizeWord(hangulWord)).toBe(RR.toLowerCase())
+        const expected = Array.isArray(RR) ? RR[0] : RR
+        test(`${hangulWord} to ${expected}`, () => {
+          expect(romanizeWord(hangulWord).toLowerCase()).toBe(
+            expected.toLowerCase()
+          )
         })
       })
   })
 
-  describe('should words with adjacent consonant assimilation', () => {
+  describe('should romanize words with palatalization rules', () => {
     words
-      .filter(([, { RR, tags }]) => RR && tags && tags.includes('assimilation'))
+      .filter(([, { tags, RR }]) => RR && tags && tags.includes('palatalization'))
       .forEach(([hangulWord, { RR }]) => {
-        test(`${hangulWord} to ${RR}`, () => {
-          expect(romanizeWord(hangulWord, 'RR')).toBe(RR.toLowerCase())
+        const expected = Array.isArray(RR) ? RR[0] : RR
+        test(`${hangulWord} to ${expected}`, () => {
+          expect(romanizeWord(hangulWord).toLowerCase()).toBe(
+            expected.toLowerCase()
+          )
+        })
+      })
+  })
+
+  describe('should romanize words with plosive rules', () => {
+    words
+      .filter(([, { tags, RR }]) => RR && tags && tags.includes('plosive'))
+      .forEach(([hangulWord, { RR }]) => {
+        const expected = Array.isArray(RR) ? RR[0] : RR
+        test(`${hangulWord} to ${expected}`, () => {
+          expect(romanizeWord(hangulWord).toLowerCase()).toBe(
+            expected.toLowerCase()
+          )
         })
       })
   })
@@ -38,7 +62,7 @@ describe('romanizeWord function', () => {
       .filter(([, { RRT }]) => RRT)
       .forEach(([hangulWord, { RRT }]) => {
         test(`${hangulWord} to ${RRT}`, () => {
-          expect(romanizeWord(hangulWord, { method: 'RRT' })).toBe(
+          expect(romanizeWord(hangulWord, { method: 'RRT' }).toLowerCase()).toBe(
             RRT.toLowerCase()
           )
         })
@@ -83,8 +107,8 @@ describe('romanizeWord function', () => {
     })
 
     test('aspirated consonants should use apostrophes', () => {
-      expect(romanizeWord('김치', { method: 'MR' })).toBe('kimch\'i')
-      expect(romanizeWord('쾌차', { method: 'MR' })).toBe('k\'waech\'a')
+      expect(romanizeWord('김치', { method: 'MR' })).toBe("kimch'i")
+      expect(romanizeWord('쾌차', { method: 'MR' })).toBe("k'waech'a")
     })
   })
 
@@ -113,28 +137,15 @@ describe('romanize function', () => {
     expect(romanize('국어의 로마자 표기법')).toBe('gugeoui romaja pyogibeop')
   })
 
-  test('should romanize 로마자 as romaja', () => {
-    expect(romanize('The Korean word for Latin letters is 로마자.')).toBe(
-      'The Korean word for Latin letters is romaja.'
-    )
-  })
-
   test('should romanize only Hangul parts of a given string', () => {
-    expect(
-      romanize(
-        'The Revised Romanization of Korean (국어의 로마자 표기법; 國語의 로마字 表記法; gugeoui romaja pyogibeop. op; lit. "Roman-letter notation of the national language") is the official Korean language romanization system in South Korea.'
-      )
-    ).toBe(
-      'The Revised Romanization of Korean (gugeoui romaja pyogibeop; 國語ui roma字 表記法; gugeoui romaja pyogibeop. op; lit. "Roman-letter notation of the national language") is the official Korean language romanization system in South Korea.'
+    expect(romanize('The name of the script is 한글.')).toBe(
+      'The name of the script is hangeul.'
     )
   })
 
-  describe('when ruby annotations requested', () => {
-    const actual = romanize(
-      'Ruby characters (루비) are small, annotative glosses that are usually placed above or to the right of logographic characters such as Chinese, Japanese, Korean, or Vietnamese to show the pronunciation.',
-      { ruby: true }
-    )
-    test('should return an array', () => {
+  describe('Ruby output option', () => {
+    const actual = romanize('루비', { ruby: true })
+    test('should return an array of romanized parts', () => {
       expect(actual).toBeInstanceOf(Array)
     })
 

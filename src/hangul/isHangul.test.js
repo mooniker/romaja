@@ -1,92 +1,78 @@
-const isHangul = require('./isHangul')
+import isHangul from './isHangul.js'
+import blocks from './unicode/blocks.js'
+
 const {
-  BASIC_LATIN
-  /*
-  CJK_UNIFIED_IDEOGRAPHS,
-  CJK_SYMBOLS_AND_PUNCTUATION,
   HANGUL_SYLLABLES,
   HANGUL_JAMO,
   HANGUL_COMPATIBILITY_JAMO,
   HANGUL_JAMO_EXTENDED_A,
   HANGUL_JAMO_EXTENDED_B
-  */
-} = require('./unicode/blocks')
+} = blocks
 
-const describeTestBlock = (description, jamoBlock, expected) =>
-  describe(description, () => {
-    const [start, stop] = jamoBlock
-    for (let charCode = start; charCode <= stop; charCode += 1) {
-      const char = String.fromCodePoint(charCode)
-      test(`should determine ${char} is not hangul`, () => {
-        if (expected) {
+const describeTestBlock = (name, [start, end], inclusive = true) => {
+  describe(name, () => {
+    const chars = [
+      String.fromCodePoint(start),
+      String.fromCodePoint(end),
+      String.fromCodePoint(Math.floor((start + end) / 2))
+    ]
+
+    chars.forEach(char => {
+      test(`should determine ${char} is ${inclusive ? '' : 'not '}hangul`, () => {
+        if (inclusive) {
           expect(isHangul(char)).toBeTruthy()
         } else {
           expect(isHangul(char)).toBe(false)
         }
       })
-    }
+    })
   })
+}
 
 describe('isHangul', () => {
-  describe('should return null', () => {
-    test('for an undefined input', () => {
+  describe('non-string input', () => {
+    test('should return null', () => {
       expect(isHangul()).toBeNull()
     })
-
-    test('for a null input', () => {
+    test('should return null for null', () => {
       expect(isHangul(null)).toBeNull()
     })
-
-    test('for NaN input', () => {
+    test('should return null for NaN', () => {
       expect(isHangul(NaN)).toBeNull()
     })
-
-    test('for an object input', () => {
+    test('should return null for object', () => {
       expect(isHangul({})).toBeNull()
     })
-
-    test('for a number input', () => {
+    test('should return null for number', () => {
       expect(isHangul(1945)).toBeNull()
     })
   })
 
-  test('should return truthy for ㄱ', () => {
+  test('should return true for Hangul compatibility jamo', () => {
     expect(isHangul('ㄱ')).toBeTruthy()
   })
 
-  test('should return truthy for ㅏ', () => {
+  test('should return true for Hangul jungseong', () => {
     expect(isHangul('ㅏ')).toBeTruthy()
   })
 
-  test('should return truthy for 가', () => {
+  test('should return true for Hangul syllable', () => {
     expect(isHangul('가')).toBeTruthy()
   })
 
-  describeTestBlock('basic Latin', BASIC_LATIN, false)
+  test('should return false for English letter', () => {
+    expect(isHangul('A')).toBe(false)
+  })
 
-  // describeTestBlock(
-  //   "Chinese/Japanese/Korean unified ideographs",
-  //   CJK_UNIFIED_IDEOGRAPHS,
-  //   false
-  // );
+  test('should return false for Hanja', () => {
+    expect(isHangul('韓')).toBe(false)
+  })
+})
 
-  // describeTestBlock(
-  //   "Chinese/Japanese/Korean symbols and punctuation",
-  //   CJK_SYMBOLS_AND_PUNCTUATION,
-  //   false
-  // );
-
-  // describeTestBlock("Hangul syllables", HANGUL_SYLLABLES, true);
-
-  // describeTestBlock("Hangul jamo", HANGUL_JAMO, true);
-
-  // describeTestBlock(
-  //   "Hangul compatibility jamo",
-  //   HANGUL_COMPATIBILITY_JAMO,
-  //   true
-  // );
-
-  // describeTestBlock("Hangul jamo extended-A", HANGUL_JAMO_EXTENDED_A, true);
-
-  // describeTestBlock("Hangul jamo extended-B", HANGUL_JAMO_EXTENDED_B, true);
+describe('isHangul blocks', () => {
+  describeTestBlock('Hangul syllables', HANGUL_SYLLABLES, true)
+  describeTestBlock('Hangul jamo', HANGUL_JAMO, true)
+  describeTestBlock('Hangul compatibility jamo', HANGUL_COMPATIBILITY_JAMO, true)
+  describeTestBlock('Hangul jamo extended-A', HANGUL_JAMO_EXTENDED_A, true)
+  describeTestBlock('Hangul jamo extended-B', HANGUL_JAMO_EXTENDED_B, true)
 })

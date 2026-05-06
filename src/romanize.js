@@ -1,10 +1,10 @@
-const {
+import {
   hangulPattern,
   splitPattern
-} = require('./hangul/unicode/hangulPattern')
-const { decomposeHangul } = require('./hangul/unicode/decompose')
-const { syllableParser } = require('./syllableParser')
-const isHangul = require('./hangul/isHangul')
+} from './hangul/unicode/hangulPattern.js'
+import { decomposeHangul } from './hangul/unicode/decompose.js'
+import { syllableParser } from './syllableParser.js'
+import isHangul from './hangul/isHangul.js'
 
 /**
  * Transforms a given string by replacing each Hangul character-containing substring with romaja
@@ -14,11 +14,11 @@ const isHangul = require('./hangul/isHangul')
  * @param {string} [options.method]
  * @param {boolean} [options.hyphenate]
  */
-const romanize = (text, options = {}) => {
+export const romanize = (text, options = {}) => {
   if (options.ruby) {
     return text.split(splitPattern).map(str => {
       if (isHangul(str[0])) {
-        return { text: romanizeWord(str), ruby: str }
+        return { text: romanizeWord(str, options), ruby: str }
       }
       return str
     })
@@ -33,7 +33,7 @@ const romanize = (text, options = {}) => {
  * @param {string} [options.method]
  * @param {boolean} [options.hyphenate]
  */
-function romanizeWord(word, options = {}) {
+export function romanizeWord(word, options = {}) {
   const {
     method = 'RR',
     hyphenate = method === 'RRT' || undefined,
@@ -62,5 +62,3 @@ function romanizeWord(word, options = {}) {
     ? mappedToRoman.replace('-', '')
     : mappedToRoman.replace(/-$/, '')
 }
-
-module.exports = { romanize, romanizeWord }

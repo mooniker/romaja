@@ -368,4 +368,4 @@ const jamoToCompat = new Map()
   }
 })
 
-module.exports = [choseong, jungseong, jongseong, jamoToCompat]
+export default [choseong, jungseong, jongseong, jamoToCompat]
