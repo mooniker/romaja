@@ -1,6 +1,6 @@
 {
   "name": "romaja",
-  "version": "0.3.1",
+  "version": "0.4.0",
   "description": "String conversion utility to romanize Korean characters",
   "main": "dist/romaja.js",
   "module": "romaja",
