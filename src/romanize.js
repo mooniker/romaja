@@ -34,7 +34,17 @@ const romanize = (text, options = {}) => {
  * @param {boolean} [options.hyphenate]
  */
 function romanizeWord(word, options = {}) {
-  const { method = 'RR', hyphenate = method === 'RRT' || undefined } = options
+  const {
+    method = 'RR',
+    hyphenate = method === 'RRT' || undefined,
+    overrides
+  } = options
+
+  if (overrides) {
+    const override =
+      overrides instanceof Map ? overrides.get(word) : overrides[word]
+    if (override !== undefined) return override
+  }
 
   const mappedToRoman = decomposeHangul(word)
     .map(syllableParser(method))

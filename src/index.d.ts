@@ -22,6 +22,12 @@ export interface RomanizeOptions {
    * @default false
    */
   ruby?: boolean;
+
+  /**
+   * A dictionary of custom romanization overrides.
+   * Key is the Hangul word, value is the custom romanization.
+   */
+  overrides?: Record<string, string> | Map<string, string>;
 }
 
 /**

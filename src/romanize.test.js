@@ -87,6 +87,25 @@ describe('romanizeWord function', () => {
       expect(romanizeWord('쾌차', { method: 'MR' })).toBe('k\'waech\'a')
     })
   })
+
+  describe('custom override dictionary', () => {
+    test('should override using an object', () => {
+      const options = { overrides: { 삼성: 'Samsung', 현대: 'Hyundai' } }
+      expect(romanizeWord('삼성', options)).toBe('Samsung')
+      expect(romanizeWord('현대', options)).toBe('Hyundai')
+    })
+
+    test('should override using a Map', () => {
+      const overrides = new Map([['삼성', 'Samsung']])
+      expect(romanizeWord('삼성', { overrides })).toBe('Samsung')
+    })
+
+    test('should work within romanize function', () => {
+      const text = '삼성 means Three Stars.'
+      const options = { overrides: { 삼성: 'Samsung' } }
+      expect(romanize(text, options)).toBe('Samsung means Three Stars.')
+    })
+  })
 })
 
 describe('romanize function', () => {
