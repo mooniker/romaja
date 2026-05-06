@@ -5,7 +5,7 @@ module.exports = {
   entry: './src/index.js',
   output: {
     path: resolve(__dirname, 'dist'),
-    filename: 'romaja.js',
+    filename: 'romaja.cjs',
     library: 'romaja',
     libraryTarget: 'umd',
     globalObject: 'this'

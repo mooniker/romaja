@@ -1,14 +1,14 @@
 {
   "name": "romaja",
-  "version": "0.7.0",
+  "version": "0.7.1",
   "description": "String conversion utility to romanize Korean characters",
   "type": "module",
-  "main": "dist/romaja.js",
+  "main": "dist/romaja.cjs",
   "module": "src/index.js",
   "exports": {
     ".": {
       "import": "./src/index.js",
-      "require": "./dist/romaja.js"
+      "require": "./dist/romaja.cjs"
     }
   },
   "scripts": {
