@@ -112,6 +112,25 @@ describe('romanizeWord function', () => {
     })
   })
 
+  describe('Yale Romanization method', () => {
+    test('should map structural components (no phonetic shifts)', () => {
+      expect(romanizeWord('신라', { method: 'Yale' })).toBe('sinla')
+      expect(romanizeWord('같이', { method: 'Yale' })).toBe('kathi')
+      expect(romanizeWord('좋다', { method: 'Yale' })).toBe('cohta')
+    })
+
+    test('should handle Yale-specific vowels', () => {
+      expect(romanizeWord('한글', { method: 'Yale' })).toBe('hankul')
+      expect(romanizeWord('국어', { method: 'Yale' })).toBe('kwuke')
+      expect(romanizeWord('사람', { method: 'Yale' })).toBe('salam')
+    })
+
+    test('should map complex final consonants structurally', () => {
+      expect(romanizeWord('밖', { method: 'Yale' })).toBe('pakk')
+      expect(romanizeWord('값', { method: 'Yale' })).toBe('kaps')
+    })
+  })
+
   describe('custom override dictionary', () => {
     test('should override using an object', () => {
       const options = { overrides: { 삼성: 'Samsung', 현대: 'Hyundai' } }

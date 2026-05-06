@@ -37,16 +37,18 @@ const choseong = [
     roman: {
       default: 'g',
       MR: { default: 'k', voiced: 'g' },
+      Yale: 'k',
       ᇂ: 'k', // Aspiration: G + H -> K
       RRT: 'g'
     }
   },
-  { jamo: 'ᄁ', compat: 'ㄲ', roman: { default: 'kk', MR: 'kk' } },
+  { jamo: 'ᄁ', compat: 'ㄲ', roman: { default: 'kk', MR: 'kk', Yale: 'kk' } },
   {
     jamo: 'ᄂ',
     compat: 'ㄴ',
     roman: {
       default: 'n',
+      Yale: 'n',
       ㄹ: 'l', // Lateralization: N + L -> L
       ᆮ: 'l',
       RRT: 'n'
@@ -58,19 +60,21 @@ const choseong = [
     roman: {
       default: 'd',
       MR: { default: 't', voiced: 'd', ᆻ: 'tt' }, // tta in MR
+      Yale: 't',
       ㄵ: 'dd',
       ㄼ: 'dd',
       ᇂ: 't', // Aspiration: D + H -> T
       RRT: 'd'
     }
   },
-  { jamo: 'ᄄ', compat: 'ㄸ', roman: { default: 'tt', MR: 'tt' } },
+  { jamo: 'ᄄ', compat: 'ㄸ', roman: { default: 'tt', MR: 'tt', Yale: 'tt' } },
   {
     jamo: 'ᄅ',
     compat: 'ㄹ',
     roman: {
       default: 'r',
       MR: { default: 'r', voiced: 'r' }, // MR uses 'r' before vowels
+      Yale: 'l',
       ㄴ: 'l', // Lateralization: R + N -> L
       ᆰ: 'l',
       ᆮ: 'l',
@@ -89,25 +93,35 @@ const choseong = [
       RRT: 'l'
     }
   },
-  { jamo: 'ᄆ', compat: 'ㅁ', roman: 'm' },
+  { jamo: 'ᄆ', compat: 'ㅁ', roman: { default: 'm', Yale: 'm' } },
   {
     jamo: 'ᄇ',
     compat: 'ㅂ',
     roman: {
       default: 'b',
       MR: { default: 'p', voiced: 'b' },
+      Yale: 'p',
       ᇂ: 'p', // Aspiration: B + H -> P
       RRT: 'b'
     }
   },
-  { jamo: 'ᄈ', compat: 'ㅃ', roman: { default: 'pp', MR: 'pp' } },
-  { jamo: 'ᄉ', compat: 'ㅅ', roman: { default: 's', MR: 's', RRT: 's' } },
-  { jamo: 'ᄊ', compat: 'ㅆ', roman: { default: 'ss', MR: 'ss', RRT: 'ss' } },
+  { jamo: 'ᄈ', compat: 'ㅃ', roman: { default: 'pp', MR: 'pp', Yale: 'pp' } },
+  {
+    jamo: 'ᄉ',
+    compat: 'ㅅ',
+    roman: { default: 's', MR: 's', Yale: 's', RRT: 's' }
+  },
+  {
+    jamo: 'ᄊ',
+    compat: 'ㅆ',
+    roman: { default: 'ss', MR: 'ss', Yale: 'ss', RRT: 'ss' }
+  },
   {
     jamo: 'ᄋ',
     compat: 'ㅇ',
     roman: {
       default: '', // Silent initial for Linking (Yeoneum)
+      Yale: '',
       血液: 'j',
       ㄼ: 'b',
       RRT: ''
@@ -119,25 +133,27 @@ const choseong = [
     roman: {
       default: 'j',
       MR: { default: 'ch', voiced: 'j' },
+      Yale: 'c',
       ᇂ: 'ch', // Aspiration: J + H -> CH
       RRT: 'j'
     }
   },
-  { jamo: 'ᄍ', compat: 'ㅉ', roman: { default: 'jj', MR: 'tch' } },
-  { jamo: 'ᄎ', compat: 'ㅊ', roman: { default: 'ch', MR: "ch'" } },
+  { jamo: 'ᄍ', compat: 'ㅉ', roman: { default: 'jj', MR: 'tch', Yale: 'cc' } },
+  { jamo: 'ᄎ', compat: 'ㅊ', roman: { default: 'ch', MR: "ch'", Yale: 'ch' } },
   {
     jamo: 'ᄏ',
     compat: 'ㅋ',
-    roman: { default: 'k', MR: "k'" }
+    roman: { default: 'k', MR: "k'", Yale: 'kh' }
   },
-  { jamo: 'ᄐ', compat: 'ㅌ', roman: { default: 't', MR: "t'" } },
-  { jamo: 'ᄑ', compat: 'ㅍ', roman: { default: 'p', MR: "p'" } },
+  { jamo: 'ᄐ', compat: 'ㅌ', roman: { default: 't', MR: "t'", Yale: 'th' } },
+  { jamo: 'ᄑ', compat: 'ㅍ', roman: { default: 'p', MR: "p'", Yale: 'ph' } },
   {
     jamo: 'ᄒ',
     compat: 'ㅎ',
     roman: {
       default: 'h',
       MR: 'h',
+      Yale: 'h',
       ᆨ: 'k', // Aspiration: K + H -> K
       ᆮ: {
         default: 't', // Aspiration: T + H -> T
@@ -155,27 +171,31 @@ const choseong = [
  * Jungseong (중성 - Medial Vowels).
  */
 const jungseong = [
-  { jamo: 'ᅡ', compat: 'ㅏ', roman: 'a' },
-  { jamo: 'ᅢ', compat: 'ㅐ', roman: 'ae' },
-  { jamo: 'ᅣ', compat: 'ㅑ', roman: 'ya' },
-  { jamo: 'ᅤ', compat: 'ㅒ', roman: 'yae' },
-  { jamo: 'ᅥ', compat: 'ㅓ', roman: { default: 'eo', MR: 'ŏ' } },
-  { jamo: 'ᅦ', compat: 'ㅔ', roman: 'e' },
-  { jamo: 'ᅧ', compat: 'ㅕ', roman: { default: 'yeo', MR: 'yŏ' } },
-  { jamo: 'ᅨ', compat: 'ㅖ', roman: 'ye' },
-  { jamo: 'ᅩ', compat: 'ㅗ', roman: 'o' },
-  { jamo: 'ᅪ', compat: 'ㅘ', roman: 'wa' },
-  { jamo: 'ᅫ', compat: 'ㅙ', roman: 'wae' },
-  { jamo: 'ᅬ', compat: 'ㅚ', roman: 'oe' },
-  { jamo: 'ᅭ', compat: 'ㅛ', roman: 'yo' },
-  { jamo: 'ᅮ', compat: 'ㅜ', roman: 'u' },
-  { jamo: 'ᅯ', compat: '원', roman: { default: 'wo', MR: 'wŏ' } },
-  { jamo: 'ᅰ', compat: 'ㅞ', roman: 'we' },
-  { jamo: 'ᅱ', compat: 'ㅟ', roman: 'wi' },
-  { jamo: 'ᅲ', compat: 'ㅠ', roman: 'yu' },
-  { jamo: 'ᅳ', compat: 'ㅡ', roman: { default: 'eu', MR: 'ŭ' } },
-  { jamo: 'ᅴ', compat: 'ㅢ', roman: { default: 'ui', MR: 'ŭi' } },
-  { jamo: 'ᅵ', compat: 'ㅣ', roman: 'i' }
+  { jamo: 'ᅡ', compat: 'ㅏ', roman: { default: 'a', Yale: 'a' } },
+  { jamo: 'ᅢ', compat: 'ㅐ', roman: { default: 'ae', Yale: 'ay' } },
+  { jamo: 'ᅣ', compat: 'ㅑ', roman: { default: 'ya', Yale: 'ya' } },
+  { jamo: 'ᅤ', compat: 'ㅒ', roman: { default: 'yae', Yale: 'yay' } },
+  { jamo: 'ᅥ', compat: 'ㅓ', roman: { default: 'eo', MR: 'ŏ', Yale: 'e' } },
+  { jamo: 'ᅦ', compat: 'ㅔ', roman: { default: 'e', Yale: 'ey' } },
+  { jamo: 'ᅧ', compat: 'ㅕ', roman: { default: 'yeo', MR: 'yŏ', Yale: 'ye' } },
+  { jamo: 'ᅨ', compat: 'ㅖ', roman: { default: 'ye', Yale: 'yey' } },
+  { jamo: 'ᅩ', compat: 'ㅗ', roman: { default: 'o', Yale: 'o' } },
+  { jamo: 'ᅪ', compat: 'ㅘ', roman: { default: 'wa', Yale: 'wa' } },
+  { jamo: 'ᅫ', compat: 'ㅙ', roman: { default: 'wae', Yale: 'way' } },
+  { jamo: 'ᅬ', compat: 'ㅚ', roman: { default: 'oe', Yale: 'oy' } },
+  { jamo: 'ᅭ', compat: 'ㅛ', roman: { default: 'yo', Yale: 'yo' } },
+  { jamo: 'ᅮ', compat: 'ㅜ', roman: { default: 'u', Yale: 'wu' } },
+  {
+    jamo: 'ᅯ',
+    compat: 'ㅝ',
+    roman: { default: 'wo', MR: 'wŏ', Yale: 'we' }
+  },
+  { jamo: 'ᅰ', compat: 'ㅞ', roman: { default: 'we', Yale: 'wey' } },
+  { jamo: 'ᅱ', compat: 'ㅟ', roman: { default: 'wi', Yale: 'wi' } },
+  { jamo: 'ᅲ', compat: 'ㅠ', roman: { default: 'yu', Yale: 'yu' } },
+  { jamo: 'ᅳ', compat: 'ㅡ', roman: { default: 'eu', MR: 'ŭ', Yale: 'u' } },
+  { jamo: 'ᅴ', compat: 'ㅢ', roman: { default: 'ui', MR: 'ŭi', Yale: 'uy' } },
+  { jamo: 'ᅵ', compat: 'ㅣ', roman: { default: 'i', Yale: 'i' } }
 ]
 
 /**
@@ -189,6 +209,7 @@ const jongseong = [
     compat: 'ㄱ',
     roman: {
       default: 'k',
+      Yale: 'k',
       vowelNext: 'g', // Linking (Yeoneum)
       ㄹ: 'ng', // Nasalization: K + R -> NG
       ᄅ: 'ng',
@@ -200,25 +221,31 @@ const jongseong = [
   {
     jamo: 'ᆩ',
     compat: 'ㄲ',
-    roman: { default: 'kk', RRT: 'kk', ...nasalAssimilation.trailingGNg }
+    roman: {
+      default: 'kk',
+      Yale: 'kk',
+      RRT: 'kk',
+      ...nasalAssimilation.trailingGNg
+    }
   },
   {
     jamo: 'ᆪ',
     compat: 'ㄳ',
-    roman: { default: 'k', ...nasalAssimilation.trailingGNg }
+    roman: { default: 'k', Yale: 'ks', ...nasalAssimilation.trailingGNg }
   },
   {
     jamo: 'ᆫ',
     compat: 'ㄴ',
-    roman: { default: 'n', ㄱ: 'n', ᄀ: 'n', ㄹ: 'l', ᄅ: 'l' }
+    roman: { default: 'n', Yale: 'n', ㄱ: 'n', ᄀ: 'n', ㄹ: 'l', ᄅ: 'l' }
   },
-  { jamo: 'ᆬ', compat: 'ㄵ', roman: 'n' },
-  { jamo: 'ᆭ', compat: 'ㄶ', roman: 'n' },
+  { jamo: 'ᆬ', compat: 'ㄵ', roman: { default: 'n', Yale: 'nc' } },
+  { jamo: 'ᆭ', compat: 'ㄶ', roman: { default: 'n', Yale: 'nh' } },
   {
     jamo: 'ᆮ',
     compat: 'ㄷ',
     roman: {
       default: 't',
+      Yale: 't',
       vowelNext: {
         default: 'd', // Linking (Yeoneum)
         ㅣ: 'j', // Palatalization: D + I -> J
@@ -233,33 +260,42 @@ const jongseong = [
   {
     jamo: 'ᆯ',
     compat: 'ㄹ',
-    roman: { default: 'l', MR: 'l', RRT: 'l', vowelNext: 'r', ㄴ: 'l', ㄹ: 'l' }
+    roman: {
+      default: 'l',
+      MR: 'l',
+      Yale: 'l',
+      RRT: 'l',
+      vowelNext: 'r',
+      ㄴ: 'l',
+      ㄹ: 'l'
+    }
   },
   {
     jamo: 'ᆰ',
     compat: 'ㄺ',
-    roman: { default: 'r', vowelNext: 'lg', ...nasalAssimilation.trailingGNg }
+    roman: { default: 'r', Yale: 'lk', vowelNext: 'lg', ...nasalAssimilation.trailingGNg }
   },
-  { jamo: 'ᆱ', compat: 'ㄻ', roman: 'lm' },
+  { jamo: 'ᆱ', compat: 'ㄻ', roman: { default: 'lm', Yale: 'lm' } },
   {
     jamo: 'ᆲ',
     compat: 'ㄼ',
-    roman: { default: 'lb', ...nasalAssimilation.trailingBM }
+    roman: { default: 'lb', Yale: 'lp', ...nasalAssimilation.trailingBM }
   },
-  { jamo: 'ᆳ', compat: 'ㄽ', roman: 'ls' },
-  { jamo: 'ᆴ', compat: 'ㄾ', roman: 'lt' },
+  { jamo: 'ᆳ', compat: 'ㄽ', roman: { default: 'ls', Yale: 'ls' } },
+  { jamo: 'ᆴ', compat: 'ㄾ', roman: { default: 'lt', Yale: 'lth' } },
   {
     jamo: 'ᆵ',
     compat: 'ㄿ',
-    roman: { default: 'lp', ...nasalAssimilation.trailingBM }
+    roman: { default: 'lp', Yale: 'lph', ...nasalAssimilation.trailingBM }
   },
-  { jamo: 'ᆶ', compat: 'ㅀ', roman: 'lh' },
-  { jamo: 'ᆷ', compat: 'ㅁ', roman: 'm' },
+  { jamo: 'ᆶ', compat: 'ㅀ', roman: { default: 'lh', Yale: 'lh' } },
+  { jamo: 'ᆷ', compat: 'ㅁ', roman: { default: 'm', Yale: 'm' } },
   {
     jamo: 'ᆸ',
     compat: 'ㅂ',
     roman: {
       default: 'p',
+      Yale: 'p',
       vowelNext: 'b', // Linking (Yeoneum)
       ㄹ: 'm', // Nasalization: P + R -> M
       ᄅ: 'm',
@@ -271,13 +307,14 @@ const jongseong = [
   {
     jamo: 'ᆹ',
     compat: 'ㅄ',
-    roman: { default: 'bs', RRT: 'bs', ...nasalAssimilation.trailingBM }
+    roman: { default: 'bs', Yale: 'ps', RRT: 'bs', ...nasalAssimilation.trailingBM }
   },
   {
     jamo: 'ᆺ',
     compat: 'ㅅ',
     roman: {
       default: 't',
+      Yale: 's',
       vowelNext: 's', // Linking (Yeoneum)
       ㄹ: 'n', // Nasalization: T + R -> N
       ...nasalAssimilation.trailingDN,
@@ -289,17 +326,19 @@ const jongseong = [
     compat: 'ㅆ',
     roman: {
       default: 't',
+      Yale: 'ss',
       MR: { default: 't', ᄃ: '' }, // Silence ss in MR if followed by d (becomes tta)
       RRT: 'ss',
       ...nasalAssimilation.trailingDN
     }
   },
-  { jamo: 'ᆼ', compat: 'ㅇ', roman: { default: 'ng', vowelNext: 'ng-' } },
+  { jamo: 'ᆼ', compat: 'ㅇ', roman: { default: 'ng', Yale: 'ng', vowelNext: 'ng-' } },
   {
     jamo: 'ᆽ',
     compat: 'ㅈ',
     roman: {
       default: 't',
+      Yale: 'c',
       vowelNext: 'j', // Linking (Yeoneum)
       ㄹ: 'n', // Nasalization: CH + R -> N
       ᄒ: '', // Silence J; aspiration handled by following H
@@ -311,6 +350,7 @@ const jongseong = [
     compat: 'ㅊ',
     roman: {
       default: 't',
+      Yale: 'ch',
       vowelNext: 'ch',
       ㄱ: 'n',
       ㄹ: 'n',
@@ -321,13 +361,14 @@ const jongseong = [
   {
     jamo: 'ᆿ',
     compat: 'ㅋ',
-    roman: { default: 'k', RRT: 'k', ...nasalAssimilation.trailingGNg }
+    roman: { default: 'k', Yale: 'kh', RRT: 'k', ...nasalAssimilation.trailingGNg }
   },
   {
     jamo: 'ᇀ',
     compat: 'ㅌ',
     roman: {
       default: 't',
+      Yale: 'th',
       vowelNext: {
         default: 't', // Linking (Yeoneum)
         ㅣ: 'ch', // Palatalization: T + I -> CH
@@ -340,13 +381,14 @@ const jongseong = [
   {
     jamo: 'ᇁ',
     compat: 'ㅍ',
-    roman: { default: 'p', ...nasalAssimilation.trailingBM }
+    roman: { default: 'p', Yale: 'ph', ...nasalAssimilation.trailingBM }
   },
   {
     jamo: 'ᇂ',
     compat: 'ㅎ',
     roman: {
       default: 't',
+      Yale: 'h',
       vowelNext: 'h',
       MR: { default: 't', voiced: 'h' },
       ᄀ: '', // Silence H; aspiration handled by following Plosive
