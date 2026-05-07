@@ -15,7 +15,7 @@ romaja "안녕하십니까?"
   - **Assimilation:** `백마` → `baengma`, `신라` → `silla`
   - **Aspiration:** `좋다` → `jota`, `먹히다` → `meokida`
   - **Palatalization:** `해돋이` → `haedoji`, `같이` → `gachi`
-- **Lightweight:** Zero dependencies and a tiny 8.5KB minified footprint.
+- **Lightweight:** Zero dependencies and a tiny ~9KB minified footprint (~4.3KB gzipped).
 - **Ruby Support:** Generate phonetic annotations for educational applications.
 - **Unicode Standard:** Based on conjoining Jamo logic for modern and compatible Hangul.
 

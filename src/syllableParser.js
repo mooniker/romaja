@@ -20,6 +20,12 @@ const maps = [
   createJamoMap(jamoData[2])
 ]
 
+const methodMap = {
+  MR: 'm',
+  Yale: 'y',
+  RRT: 't'
+}
+
 function resolveRoman(rules, params) {
   let current = rules
   const {
@@ -31,6 +37,8 @@ function resolveRoman(rules, params) {
     isVoiced
   } = params
 
+  const mKey = methodMap[method] || method
+
   while (
     typeof current !== 'string' &&
     current !== null &&
@@ -41,45 +49,51 @@ function resolveRoman(rules, params) {
       continue
     }
 
-    if (method && current[method] !== undefined) {
+    // Try short key first, then long key
+    if (mKey && current[mKey] !== undefined) {
       if (
-        typeof current[method] === 'object' &&
+        typeof current[mKey] === 'object' &&
         isVoiced &&
-        current[method].voiced !== undefined
+        (current[mKey].z !== undefined || current[mKey].voiced !== undefined)
       ) {
-        current = current[method].voiced
+        current = current[mKey].z !== undefined ? current[mKey].z : current[mKey].voiced
         continue
       }
-      current = current[method]
+      current = current[mKey]
       continue
     }
 
-    if (isVoiced && current.voiced !== undefined) {
-      current = current.voiced
+    if (isVoiced && (current.z !== undefined || current.voiced !== undefined)) {
+      current = current.z !== undefined ? current.z : current.voiced
       continue
     }
 
-    if (vowelNext && current.vowelNext !== undefined) {
-      if (typeof current.vowelNext === 'object' && nextJungseong !== undefined) {
+    const vNext = current.v !== undefined ? current.v : current.vowelNext
+    if (vowelNext && vNext !== undefined) {
+      if (typeof vNext === 'object' && nextJungseong !== undefined) {
         const vowelChar =
           typeof nextJungseong === 'number'
             ? String.fromCodePoint(nextJungseong)
             : nextJungseong
         const compatVowel = jamoToCompat.get(vowelChar) || vowelChar
-        if (current.vowelNext[vowelChar] !== undefined) {
-          current = current.vowelNext[vowelChar]
+        if (vNext[vowelChar] !== undefined) {
+          current = vNext[vowelChar]
           continue
         }
-        if (current.vowelNext[compatVowel] !== undefined) {
-          current = current.vowelNext[compatVowel]
+        if (vNext[compatVowel] !== undefined) {
+          current = vNext[compatVowel]
           continue
         }
-        if (current.vowelNext.default !== undefined) {
-          current = current.vowelNext.default
+        if (vNext.d !== undefined) {
+          current = vNext.d
+          continue
+        }
+        if (vNext.default !== undefined) {
+          current = vNext.default
           continue
         }
       }
-      current = current.vowelNext
+      current = vNext
       continue
     }
 
@@ -87,54 +101,40 @@ function resolveRoman(rules, params) {
       const char = String.fromCodePoint(consonantNext || consonantPrev)
       const compat = jamoToCompat.get(char) || char
 
-      if (current[char] !== undefined) {
-        if (typeof current[char] === 'object' && nextJungseong !== undefined) {
+      const target = current[char] !== undefined ? current[char] : current[compat]
+      if (target !== undefined) {
+        if (typeof target === 'object' && nextJungseong !== undefined) {
           const vowelChar =
             typeof nextJungseong === 'number'
               ? String.fromCodePoint(nextJungseong)
               : nextJungseong
           const compatVowel = jamoToCompat.get(vowelChar) || vowelChar
-          if (current[char][vowelChar] !== undefined) {
-            current = current[char][vowelChar]
+          if (target[vowelChar] !== undefined) {
+            current = target[vowelChar]
             continue
           }
-          if (current[char][compatVowel] !== undefined) {
-            current = current[char][compatVowel]
+          if (target[compatVowel] !== undefined) {
+            current = target[compatVowel]
             continue
           }
-          if (current[char].default !== undefined) {
-            current = current[char].default
+          if (target.d !== undefined) {
+            current = target.d
             continue
           }
-        }
-        current = current[char]
-        continue
-      }
-      if (current[compat] !== undefined) {
-        if (typeof current[compat] === 'object' && nextJungseong !== undefined) {
-          const vowelChar =
-            typeof nextJungseong === 'number'
-              ? String.fromCodePoint(nextJungseong)
-              : nextJungseong
-          const compatVowel = jamoToCompat.get(vowelChar) || vowelChar
-          if (current[compat][vowelChar] !== undefined) {
-            current = current[compat][vowelChar]
-            continue
-          }
-          if (current[compat][compatVowel] !== undefined) {
-            current = current[compat][compatVowel]
-            continue
-          }
-          if (current[compat].default !== undefined) {
-            current = current[compat].default
+          if (target.default !== undefined) {
+            current = target.default
             continue
           }
         }
-        current = current[compat]
+        current = target
         continue
       }
     }
 
+    if (current.d !== undefined) {
+      current = current.d
+      continue
+    }
     if (current.default !== undefined) {
       current = current.default
       continue

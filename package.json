@@ -1,6 +1,6 @@
 {
   "name": "romaja",
-  "version": "0.8.0",
+  "version": "0.9.0",
   "description": "String conversion utility to romanize Korean characters",
   "type": "module",
   "main": "dist/romaja.cjs",
@@ -30,7 +30,6 @@
     "hangul",
     "han-geul",
     "han'gŭl",
-    "hangul",
     "한글",
     "korean",
     "language",
@@ -65,7 +64,7 @@
     "webpack-cli": "^7.0.2"
   },
   "bin": {
-    "romaja": "./bin/cli.js"
+    "romaja": "bin/cli.js"
   },
   "repository": {
     "type": "git",

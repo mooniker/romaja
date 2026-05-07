@@ -3,8 +3,7 @@ const fromPairs = pairs =>
     cache[pair[0]] = pair[1]
     return cache
   }, {})
-
-const assimilate = (jamos, sound) => fromPairs(jamos.map(jamo => [jamo, sound]))
+const assimilate = (jamos, sound) => fromPairs(jamos.map(jamo => [jamo, { d: sound }]))
 
 const nasalAssimilators = [
   'ㄴ', // Compatibility Nieun
@@ -13,10 +12,6 @@ const nasalAssimilators = [
   String.fromCodePoint(0x1106) // Choseong Mieum
 ]
 
-/**
- * Nasalization (Bieumhwa - 비음화) rules.
- * Final consonants shift to nasal sounds when followed by Nieun (ㄴ) or Mieum (ㅁ).
- */
 const nasalAssimilation = {
   // Plosives P/B (ㅂ, ㅍ, ㅄ, ㄿ, ㄼ) -> Nasal M (ㅁ)
   trailingBM: assimilate(nasalAssimilators, 'm'),
@@ -28,174 +23,56 @@ const nasalAssimilation = {
 
 /**
  * Choseong (초성 - Initial Consonants).
+...
  * Rules handle Aspiration, Lateralization, and Transliteration (RRT) overrides.
  */
 const choseong = [
-  {
-    jamo: 'ᄀ',
-    compat: 'ㄱ',
-    roman: {
-      default: 'g',
-      MR: { default: 'k', voiced: 'g' },
-      Yale: 'k',
-      ᇂ: 'k', // Aspiration: G + H -> K
-      RRT: 'g'
-    }
-  },
-  { jamo: 'ᄁ', compat: 'ㄲ', roman: { default: 'kk', MR: 'kk', Yale: 'kk' } },
-  {
-    jamo: 'ᄂ',
-    compat: 'ㄴ',
-    roman: {
-      default: 'n',
-      Yale: 'n',
-      ㄹ: 'l', // Lateralization: N + L -> L
-      ᆮ: 'l',
-      RRT: 'n'
-    }
-  },
-  {
-    jamo: 'ᄃ',
-    compat: 'ㄷ',
-    roman: {
-      default: 'd',
-      MR: { default: 't', voiced: 'd', ᆻ: 'tt' }, // tta in MR
-      Yale: 't',
-      ㄵ: 'dd',
-      ㄼ: 'dd',
-      ᇂ: 't', // Aspiration: D + H -> T
-      RRT: 'd'
-    }
-  },
-  { jamo: 'ᄄ', compat: 'ㄸ', roman: { default: 'tt', MR: 'tt', Yale: 'tt' } },
-  {
-    jamo: 'ᄅ',
-    compat: 'ㄹ',
-    roman: {
-      default: 'r',
-      MR: { default: 'r', voiced: 'r' }, // MR uses 'r' before vowels
-      Yale: 'l',
-      ㄴ: 'l', // Lateralization: R + N -> L
-      ᆰ: 'l',
-      ᆮ: 'l',
-      ㄷ: 'n',
-      ㄹ: 'l',
-      ㅁ: 'n',
-      ㅂ: 'n',
-      ᆳ: 'n',
-      ㅅ: 'n',
-      ㅇ: 'n',
-      ᆷ: 'n',
-      ㅈ: 'n',
-      ㅊ: 'n',
-      ㅌ: 'n',
-      ㅎ: 'n',
-      RRT: 'l'
-    }
-  },
-  { jamo: 'ᄆ', compat: 'ㅁ', roman: { default: 'm', Yale: 'm' } },
-  {
-    jamo: 'ᄇ',
-    compat: 'ㅂ',
-    roman: {
-      default: 'b',
-      MR: { default: 'p', voiced: 'b' },
-      Yale: 'p',
-      ᇂ: 'p', // Aspiration: B + H -> P
-      RRT: 'b'
-    }
-  },
-  { jamo: 'ᄈ', compat: 'ㅃ', roman: { default: 'pp', MR: 'pp', Yale: 'pp' } },
-  {
-    jamo: 'ᄉ',
-    compat: 'ㅅ',
-    roman: { default: 's', MR: 's', Yale: 's', RRT: 's' }
-  },
-  {
-    jamo: 'ᄊ',
-    compat: 'ㅆ',
-    roman: { default: 'ss', MR: 'ss', Yale: 'ss', RRT: 'ss' }
-  },
-  {
-    jamo: 'ᄋ',
-    compat: 'ㅇ',
-    roman: {
-      default: '', // Silent initial for Linking (Yeoneum)
-      Yale: '',
-      血液: 'j',
-      ㄼ: 'b',
-      RRT: ''
-    }
-  },
-  {
-    jamo: 'ᄌ',
-    compat: 'ㅈ',
-    roman: {
-      default: 'j',
-      MR: { default: 'ch', voiced: 'j' },
-      Yale: 'c',
-      ᇂ: 'ch', // Aspiration: J + H -> CH
-      RRT: 'j'
-    }
-  },
-  { jamo: 'ᄍ', compat: 'ㅉ', roman: { default: 'jj', MR: 'tch', Yale: 'cc' } },
-  { jamo: 'ᄎ', compat: 'ㅊ', roman: { default: 'ch', MR: "ch'", Yale: 'ch' } },
-  {
-    jamo: 'ᄏ',
-    compat: 'ㅋ',
-    roman: { default: 'k', MR: "k'", Yale: 'kh' }
-  },
-  { jamo: 'ᄐ', compat: 'ㅌ', roman: { default: 't', MR: "t'", Yale: 'th' } },
-  { jamo: 'ᄑ', compat: 'ㅍ', roman: { default: 'p', MR: "p'", Yale: 'ph' } },
-  {
-    jamo: 'ᄒ',
-    compat: 'ㅎ',
-    roman: {
-      default: 'h',
-      MR: 'h',
-      Yale: 'h',
-      ᆨ: 'k', // Aspiration: K + H -> K
-      ᆮ: {
-        default: 't', // Aspiration: T + H -> T
-        ㅣ: 'ch', // Palatalization + Aspiration: T + H + I -> CH
-        ᅵ: 'ch'
-      },
-      ᆸ: 'p', // Aspiration: P + H -> P
-      ᆽ: 'ch', // Aspiration: CH + H -> CH
-      RRT: 'h'
-    }
-  }
+  ['ᄀ', 'ㄱ', { d: 'g', m: { d: 'k', z: 'g' }, y: 'k', ᇂ: 'k', t: 'g' }],
+  ['ᄁ', 'ㄲ', { d: 'kk', m: 'kk', y: 'kk' }],
+  ['ᄂ', 'ㄴ', { d: 'n', y: 'n', ㄹ: 'l', ᆮ: 'l', t: 'n' }],
+  ['ᄃ', 'ㄷ', { d: 'd', m: { d: 't', z: 'd', ᆻ: 'tt' }, y: 't', ㄵ: 'dd', ㄼ: 'dd', ᇂ: 't', t: 'd' }],
+  ['ᄄ', 'ㄸ', { d: 'tt', m: 'tt', y: 'tt' }],
+  ['ᄅ', 'ㄹ', { d: 'r', m: { d: 'r', z: 'r' }, y: 'l', ㄴ: 'l', ᆰ: 'l', ᆮ: 'l', ㄷ: 'n', ㄹ: 'l', ㅁ: 'n', ㅂ: 'n', ᆳ: 'n', ㅅ: 'n', ㅇ: 'n', ᆷ: 'n', ㅈ: 'n', ㅊ: 'n', ㅌ: 'n', ㅎ: 'n', t: 'l' }],
+  ['ᄆ', 'ㅁ', { d: 'm', y: 'm' }],
+  ['ᄇ', 'ㅂ', { d: 'b', m: { d: 'p', z: 'b' }, y: 'p', ᇂ: 'p', t: 'b' }],
+  ['ᄈ', 'ㅃ', { d: 'pp', m: 'pp', y: 'pp' }],
+  ['ᄉ', 'ㅅ', { d: 's', m: 's', y: 's', t: 's' }],
+  ['ᄊ', 'ㅆ', { d: 'ss', m: 'ss', y: 'ss', t: 'ss' }],
+  ['ᄋ', 'ㅇ', { d: '', y: '', t: '' }],
+  ['ᄌ', 'ㅈ', { d: 'j', m: { d: 'ch', z: 'j' }, y: 'c', ᇂ: 'ch', t: 'j' }],
+  ['ᄍ', 'ㅉ', { d: 'jj', m: 'tch', y: 'cc' }],
+  ['ᄎ', 'ㅊ', { d: 'ch', m: "ch'", y: 'ch' }],
+  ['ᄏ', 'ㅋ', { d: 'k', m: "k'", y: 'kh' }],
+  ['ᄐ', 'ㅌ', { d: 't', m: "t'", y: 'th' }],
+  ['ᄑ', 'ㅍ', { d: 'p', m: "p'", y: 'ph' }],
+  ['ᄒ', 'ㅎ', { d: 'h', m: 'h', y: 'h', ᆨ: 'k', ᆮ: { d: 't', ㅣ: 'ch', ᅵ: 'ch' }, ᆸ: 'p', ᆽ: 'ch', t: 'h' }]
 ]
 
 /**
  * Jungseong (중성 - Medial Vowels).
  */
 const jungseong = [
-  { jamo: 'ᅡ', compat: 'ㅏ', roman: { default: 'a', Yale: 'a' } },
-  { jamo: 'ᅢ', compat: 'ㅐ', roman: { default: 'ae', Yale: 'ay' } },
-  { jamo: 'ᅣ', compat: 'ㅑ', roman: { default: 'ya', Yale: 'ya' } },
-  { jamo: 'ᅤ', compat: 'ㅒ', roman: { default: 'yae', Yale: 'yay' } },
-  { jamo: 'ᅥ', compat: 'ㅓ', roman: { default: 'eo', MR: 'ŏ', Yale: 'e' } },
-  { jamo: 'ᅦ', compat: 'ㅔ', roman: { default: 'e', Yale: 'ey' } },
-  { jamo: 'ᅧ', compat: 'ㅕ', roman: { default: 'yeo', MR: 'yŏ', Yale: 'ye' } },
-  { jamo: 'ᅨ', compat: 'ㅖ', roman: { default: 'ye', Yale: 'yey' } },
-  { jamo: 'ᅩ', compat: 'ㅗ', roman: { default: 'o', Yale: 'o' } },
-  { jamo: 'ᅪ', compat: 'ㅘ', roman: { default: 'wa', Yale: 'wa' } },
-  { jamo: 'ᅫ', compat: 'ㅙ', roman: { default: 'wae', Yale: 'way' } },
-  { jamo: 'ᅬ', compat: 'ㅚ', roman: { default: 'oe', Yale: 'oy' } },
-  { jamo: 'ᅭ', compat: 'ㅛ', roman: { default: 'yo', Yale: 'yo' } },
-  { jamo: 'ᅮ', compat: 'ㅜ', roman: { default: 'u', Yale: 'wu' } },
-  {
-    jamo: 'ᅯ',
-    compat: 'ㅝ',
-    roman: { default: 'wo', MR: 'wŏ', Yale: 'we' }
-  },
-  { jamo: 'ᅰ', compat: 'ㅞ', roman: { default: 'we', Yale: 'wey' } },
-  { jamo: 'ᅱ', compat: 'ㅟ', roman: { default: 'wi', Yale: 'wi' } },
-  { jamo: 'ᅲ', compat: 'ㅠ', roman: { default: 'yu', Yale: 'yu' } },
-  { jamo: 'ᅳ', compat: 'ㅡ', roman: { default: 'eu', MR: 'ŭ', Yale: 'u' } },
-  { jamo: 'ᅴ', compat: 'ㅢ', roman: { default: 'ui', MR: 'ŭi', Yale: 'uy' } },
-  { jamo: 'ᅵ', compat: 'ㅣ', roman: { default: 'i', Yale: 'i' } }
+  ['ᅡ', 'ㅏ', { d: 'a', y: 'a' }],
+  ['ᅢ', 'ㅐ', { d: 'ae', y: 'ay' }],
+  ['ᅣ', 'ㅑ', { d: 'ya', y: 'ya' }],
+  ['ᅤ', 'ㅒ', { d: 'yae', y: 'yay' }],
+  ['ᅥ', 'ㅓ', { d: 'eo', m: 'ŏ', y: 'e' }],
+  ['ᅦ', 'ㅔ', { d: 'e', y: 'ey' }],
+  ['ᅧ', 'ㅕ', { d: 'yeo', m: 'yŏ', y: 'ye' }],
+  ['ᅨ', 'ㅖ', { d: 'ye', y: 'yey' }],
+  ['ᅩ', 'ㅗ', { d: 'o', y: 'o' }],
+  ['ᅪ', 'ㅘ', { d: 'wa', y: 'wa' }],
+  ['ᅫ', 'ㅙ', { d: 'wae', y: 'way' }],
+  ['ᅬ', 'ㅚ', { d: 'oe', y: 'oy' }],
+  ['ᅭ', 'ㅛ', { d: 'yo', y: 'yo' }],
+  ['ᅮ', 'ㅜ', { d: 'u', y: 'wu' }],
+  ['ᅯ', 'ㅝ', { d: 'wo', m: 'wŏ', y: 'we' }],
+  ['ᅰ', 'ㅞ', { d: 'we', y: 'wey' }],
+  ['ᅱ', 'ㅟ', { d: 'wi', y: 'wi' }],
+  ['ᅲ', 'ㅠ', { d: 'yu', y: 'yu' }],
+  ['ᅳ', 'ㅡ', { d: 'eu', m: 'ŭ', y: 'u' }],
+  ['ᅴ', 'ㅢ', { d: 'ui', m: 'ŭi', y: 'uy' }],
+  ['ᅵ', 'ㅣ', { d: 'i', y: 'i' }]
 ]
 
 /**
@@ -203,211 +80,47 @@ const jungseong = [
  * Rules handle Linking (Yeoneum), Nasalization (Bieumhwa), and Aspiration triggering.
  */
 const jongseong = [
-  { jamo: null, compat: null, roman: '' },
-  {
-    jamo: 'ᆨ',
-    compat: 'ㄱ',
-    roman: {
-      default: 'k',
-      Yale: 'k',
-      vowelNext: 'g', // Linking (Yeoneum)
-      ㄹ: 'ng', // Nasalization: K + R -> NG
-      ᄅ: 'ng',
-      ᄒ: '', // Silence K; aspiration handled by following H
-      ...nasalAssimilation.trailingGNg,
-      RRT: 'g'
-    }
-  },
-  {
-    jamo: 'ᆩ',
-    compat: 'ㄲ',
-    roman: {
-      default: 'kk',
-      Yale: 'kk',
-      RRT: 'kk',
-      ...nasalAssimilation.trailingGNg
-    }
-  },
-  {
-    jamo: 'ᆪ',
-    compat: 'ㄳ',
-    roman: { default: 'k', Yale: 'ks', ...nasalAssimilation.trailingGNg }
-  },
-  {
-    jamo: 'ᆫ',
-    compat: 'ㄴ',
-    roman: { default: 'n', Yale: 'n', ㄱ: 'n', ᄀ: 'n', ㄹ: 'l', ᄅ: 'l' }
-  },
-  { jamo: 'ᆬ', compat: 'ㄵ', roman: { default: 'n', Yale: 'nc' } },
-  { jamo: 'ᆭ', compat: 'ㄶ', roman: { default: 'n', Yale: 'nh' } },
-  {
-    jamo: 'ᆮ',
-    compat: 'ㄷ',
-    roman: {
-      default: 't',
-      Yale: 't',
-      vowelNext: {
-        default: 'd', // Linking (Yeoneum)
-        ㅣ: 'j', // Palatalization: D + I -> J
-        ᅵ: 'j'
-      },
-      ㄹ: 'n', // Nasalization: T + R -> N
-      ᄒ: '', // Silence D; aspiration handled by following H
-      ...nasalAssimilation.trailingDN,
-      RRT: 'd'
-    }
-  },
-  {
-    jamo: 'ᆯ',
-    compat: 'ㄹ',
-    roman: {
-      default: 'l',
-      MR: 'l',
-      Yale: 'l',
-      RRT: 'l',
-      vowelNext: 'r',
-      ㄴ: 'l',
-      ㄹ: 'l'
-    }
-  },
-  {
-    jamo: 'ᆰ',
-    compat: 'ㄺ',
-    roman: { default: 'r', Yale: 'lk', vowelNext: 'lg', ...nasalAssimilation.trailingGNg }
-  },
-  { jamo: 'ᆱ', compat: 'ㄻ', roman: { default: 'lm', Yale: 'lm' } },
-  {
-    jamo: 'ᆲ',
-    compat: 'ㄼ',
-    roman: { default: 'lb', Yale: 'lp', ...nasalAssimilation.trailingBM }
-  },
-  { jamo: 'ᆳ', compat: 'ㄽ', roman: { default: 'ls', Yale: 'ls' } },
-  { jamo: 'ᆴ', compat: 'ㄾ', roman: { default: 'lt', Yale: 'lth' } },
-  {
-    jamo: 'ᆵ',
-    compat: 'ㄿ',
-    roman: { default: 'lp', Yale: 'lph', ...nasalAssimilation.trailingBM }
-  },
-  { jamo: 'ᆶ', compat: 'ㅀ', roman: { default: 'lh', Yale: 'lh' } },
-  { jamo: 'ᆷ', compat: 'ㅁ', roman: { default: 'm', Yale: 'm' } },
-  {
-    jamo: 'ᆸ',
-    compat: 'ㅂ',
-    roman: {
-      default: 'p',
-      Yale: 'p',
-      vowelNext: 'b', // Linking (Yeoneum)
-      ㄹ: 'm', // Nasalization: P + R -> M
-      ᄅ: 'm',
-      ᄒ: '', // Silence P; aspiration handled by following H
-      ...nasalAssimilation.trailingBM,
-      RRT: 'b'
-    }
-  },
-  {
-    jamo: 'ᆹ',
-    compat: 'ㅄ',
-    roman: { default: 'bs', Yale: 'ps', RRT: 'bs', ...nasalAssimilation.trailingBM }
-  },
-  {
-    jamo: 'ᆺ',
-    compat: 'ㅅ',
-    roman: {
-      default: 't',
-      Yale: 's',
-      vowelNext: 's', // Linking (Yeoneum)
-      ㄹ: 'n', // Nasalization: T + R -> N
-      ...nasalAssimilation.trailingDN,
-      RRT: 's'
-    }
-  },
-  {
-    jamo: 'ᆻ',
-    compat: 'ㅆ',
-    roman: {
-      default: 't',
-      Yale: 'ss',
-      MR: { default: 't', ᄃ: '' }, // Silence ss in MR if followed by d (becomes tta)
-      RRT: 'ss',
-      ...nasalAssimilation.trailingDN
-    }
-  },
-  { jamo: 'ᆼ', compat: 'ㅇ', roman: { default: 'ng', Yale: 'ng', vowelNext: 'ng-' } },
-  {
-    jamo: 'ᆽ',
-    compat: 'ㅈ',
-    roman: {
-      default: 't',
-      Yale: 'c',
-      vowelNext: 'j', // Linking (Yeoneum)
-      ㄹ: 'n', // Nasalization: CH + R -> N
-      ᄒ: '', // Silence J; aspiration handled by following H
-      ...nasalAssimilation.trailingDN
-    }
-  },
-  {
-    jamo: 'ᆾ',
-    compat: 'ㅊ',
-    roman: {
-      default: 't',
-      Yale: 'ch',
-      vowelNext: 'ch',
-      ㄱ: 'n',
-      ㄹ: 'n',
-      ...nasalAssimilation.trailingDN,
-      RRT: 'ch'
-    }
-  },
-  {
-    jamo: 'ᆿ',
-    compat: 'ㅋ',
-    roman: { default: 'k', Yale: 'kh', RRT: 'k', ...nasalAssimilation.trailingGNg }
-  },
-  {
-    jamo: 'ᇀ',
-    compat: 'ㅌ',
-    roman: {
-      default: 't',
-      Yale: 'th',
-      vowelNext: {
-        default: 't', // Linking (Yeoneum)
-        ㅣ: 'ch', // Palatalization: T + I -> CH
-        ᅵ: 'ch'
-      },
-      ㄹ: 'n', // Nasalization
-      ...nasalAssimilation.trailingDN
-    }
-  },
-  {
-    jamo: 'ᇁ',
-    compat: 'ㅍ',
-    roman: { default: 'p', Yale: 'ph', ...nasalAssimilation.trailingBM }
-  },
-  {
-    jamo: 'ᇂ',
-    compat: 'ㅎ',
-    roman: {
-      default: 't',
-      Yale: 'h',
-      vowelNext: 'h',
-      MR: { default: 't', voiced: 'h' },
-      ᄀ: '', // Silence H; aspiration handled by following Plosive
-      ᄃ: '',
-      ᄇ: '',
-      ᄌ: '',
-      ㄱ: 'n',
-      ㄹ: 'n',
-      ㅁ: 'n',
-      RRT: 'h'
-    }
-  }
+  [null, null, ''],
+  ['ᆨ', 'ㄱ', { d: 'k', y: 'k', v: 'g', ㄹ: 'ng', ᄅ: 'ng', ᄒ: '', ...nasalAssimilation.trailingGNg, t: 'g' }],
+  ['ᆩ', 'ㄲ', { d: 'kk', y: 'kk', t: 'kk', ...nasalAssimilation.trailingGNg }],
+  ['ᆪ', 'ㄳ', { d: 'k', y: 'ks', ...nasalAssimilation.trailingGNg }],
+  ['ᆫ', 'ㄴ', { d: 'n', y: 'n', ㄱ: 'n', ᄀ: 'n', ㄹ: 'l', ᄅ: 'l' }],
+  ['ᆬ', 'ㄵ', { d: 'n', y: 'nc' }],
+  ['ᆭ', 'ㄶ', { d: 'n', y: 'nh' }],
+  ['ᆮ', 'ㄷ', { d: 't', y: 't', v: { d: 'd', ㅣ: 'j', ᅵ: 'j' }, ㄹ: 'n', ᄒ: '', ...nasalAssimilation.trailingDN, t: 'd' }],
+  ['ᆯ', 'ㄹ', { d: 'l', m: 'l', y: 'l', t: 'l', v: 'r', ㄴ: 'l', ㄹ: 'l' }],
+  ['ᆰ', 'ㄺ', { d: 'r', y: 'lk', v: 'lg', ...nasalAssimilation.trailingGNg }],
+  ['ᆱ', 'ㄻ', { d: 'lm', y: 'lm' }],
+  ['ᆲ', 'ㄼ', { d: 'lb', y: 'lp', ...nasalAssimilation.trailingBM }],
+  ['ᆳ', 'ㄽ', { d: 'ls', y: 'ls' }],
+  ['ᆴ', 'ㄾ', { d: 'lt', y: 'lth' }],
+  ['ᆵ', 'ㄿ', { d: 'lp', y: 'lph', ...nasalAssimilation.trailingBM }],
+  ['ᆶ', 'ㅀ', { d: 'lh', y: 'lh' }],
+  ['ᆷ', 'ㅁ', { d: 'm', y: 'm' }],
+  ['ᆸ', 'ㅂ', { d: 'p', y: 'p', v: 'b', ㄹ: 'm', ᄅ: 'm', ᄒ: '', ...nasalAssimilation.trailingBM, t: 'b' }],
+  ['ᆹ', 'ㅄ', { d: 'bs', y: 'ps', t: 'bs', ...nasalAssimilation.trailingBM }],
+  ['ᆺ', 'ㅅ', { d: 't', y: 's', v: 's', ㄹ: 'n', ...nasalAssimilation.trailingDN, t: 's' }],
+  ['ᆻ', 'ㅆ', { d: 't', y: 'ss', m: { d: 't', ᄃ: '' }, t: 'ss', ...nasalAssimilation.trailingDN }],
+  ['ᆼ', 'ㅇ', { d: 'ng', y: 'ng', v: 'ng-' }],
+  ['ᆽ', 'ㅈ', { d: 't', y: 'c', v: 'j', ㄹ: 'n', ᄒ: '', ...nasalAssimilation.trailingDN }],
+  ['ᆾ', 'ㅊ', { d: 't', y: 'ch', v: 'ch', ㄱ: 'n', ㄹ: 'n', ...nasalAssimilation.trailingDN, t: 'ch' }],
+  ['ᆿ', 'ㅋ', { d: 'k', y: 'kh', t: 'k', ...nasalAssimilation.trailingGNg }],
+  ['ᇀ', 'ㅌ', { d: 't', y: 'th', v: { d: 't', ㅣ: 'ch', ᅵ: 'ch' }, ㄹ: 'n', ...nasalAssimilation.trailingDN }],
+  ['ᇁ', 'ㅍ', { d: 'p', y: 'ph', ...nasalAssimilation.trailingBM }],
+  ['ᇂ', 'ㅎ', { d: 't', y: 'h', v: 'h', m: { d: 't', z: 'h' }, ᄀ: '', ᄃ: '', ᄇ: '', ᄌ: '', ㄱ: 'n', ㄹ: 'n', ㅁ: 'n', t: 'h' }]
 ]
 
+const hydrate = list => list.map(([j, c, r]) => ({ jamo: j, compat: c, roman: r }))
+
+const hChoseong = hydrate(choseong)
+const hJungseong = hydrate(jungseong)
+const hJongseong = hydrate(jongseong)
+
 const jamoToCompat = new Map()
-;[...choseong, ...jungseong, ...jongseong].forEach(item => {
+;[...hChoseong, ...hJungseong, ...hJongseong].forEach(item => {
   if (item.jamo && item.compat) {
     jamoToCompat.set(item.jamo, item.compat)
   }
 })
 
-export default [choseong, jungseong, jongseong, jamoToCompat]
+export default [hChoseong, hJungseong, hJongseong, jamoToCompat]
